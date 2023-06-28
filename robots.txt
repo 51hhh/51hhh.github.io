@@ -1,0 +1,5 @@
+# robots.txt generated at https://help.bj.cn/robots/ 
+User-agent: *
+Disallow: 
+Disallow: /bin/
+Sitemap: https://polar-bear.eu.org/sitemap.xml
