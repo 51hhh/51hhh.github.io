@@ -306,17 +306,42 @@
 <p>在本地博客文件夹中右键选择Git Bash Here调出命令行，输入以下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;YourGithubName&quot;		//双引号内填写你的GitHub用户名</span><br><span class="line">git config --global user.email &quot;YourGithubEmail&quot;	//双引号内填写你的Github个人邮箱</span><br></pre></td></tr></table></figure>
 <p>用户名和邮箱根据你Github自己的信息自行更改。</p>
-<p>然后输入以下命令生成SSH密钥：</p>
+<p>然后输入以下命令生成SSH密钥：<br>注：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">输入以下命令：ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 。其中 “-t” 参数指定密钥算法，“-b” 参数指定密钥长度，“-C” 参数则为注释，用于描述此公钥</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;YourGithubEmail&quot;		//双引号内填写你的Github个人邮箱</span><br></pre></td></tr></table></figure>
-<p>此时你个人的SSH密钥就已经生成，输入以下命令将其 Copy：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub		//在Git命令提示符中显示出SSH密钥</span><br></pre></td></tr></table></figure>
-<p>接下来打开Github，点击头像在选项卡中找到Setting设置选项，再点击SSH and GPG keys，新建一个SSH，命名随意，将刚才再Git输入框中复制的密钥粘贴在此处，点击保存。</p>
+<p>输入后会显示</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (C:\Users\you/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
+<p>然后输入你想要保存的目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你的目录 already exists.</span><br><span class="line">Overwrite (y/n)?</span><br></pre></td></tr></table></figure>
+<p>输入y即可</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):</span><br></pre></td></tr></table></figure>
+<p>输入密码短语（空表示没有密码）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Enter same passphrase again:</span><br></pre></td></tr></table></figure>
+<p>再次输入相同的密码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in C:\Users\zzh/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in C:\Users\zzh/.ssh/id_rsa.pub</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:3l4qvsqogiIULif/dGsMa6fUhyyyp7gdfgverIdWgxFU youremail@gmail.com</span><br><span class="line">The key&#x27;s randomart image is:</span><br><span class="line">+---[RSA 3072]----+</span><br><span class="line">|   .++o.E|</span><br><span class="line">|.   .   |</span><br><span class="line">|o.      |</span><br><span class="line">|*    o  |</span><br><span class="line">| *o +S . |</span><br><span class="line">|o .+ +o  |</span><br><span class="line">| o..o .  |</span><br><span class="line">|*o+  . . |</span><br><span class="line">+----[SHA256]-----+</span><br></pre></td></tr></table></figure>
+<p>然后</p>
+<p>此时你个人的SSH密钥就已经生成</p>
+<p>这里的地址就是C:\Users\zzh&#x2F;.ssh&#x2F;id_rsa.pub</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文件位置：</span><br><span class="line"></span><br><span class="line">windows：C:\Users\[当前用户名]\.ssh</span><br><span class="line"></span><br><span class="line">linux:~/.ssh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>SSH Key导入</p>
+<p>GitHub：</p>
+<p>点击用户头像 </p>
+<p>Setting </p>
+<p>SSH and GPG keys </p>
+<p>New SSH key  </p>
+<p>粘贴你生成的公钥</p>
 <p>然后回到Git命令行，输入以下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com		//查看本地是否与Github连接成功</span><br></pre></td></tr></table></figure>
-<p>如果出现自己的用户名，那就已经将本地环境与Github连接成功，以后就可以通过ssh的方式提交代码，一劳永逸。</p>
+<p>如果出现自己的用户名，那就连接成功，以后就可以通过ssh的方式提交代码。</p>
+<p>关联本地仓库和远程仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add origin https://**************.git</span><br></pre></td></tr></table></figure>
+<p>后面的https地址是你的仓库地址。</p>
+<p>如果是新仓库用 git push -u origin master 命令推送</p>
+<p>下次再推送就用 git push origin master 命令就可以了</p>
+<p>提示</p>
 <h3 id="创建多个ssh-key"><a href="#创建多个ssh-key" class="headerlink" title="创建多个ssh key"></a>创建多个ssh key</h3><p>在创建ssh key时自行输入路径和文件名称，而非使用默认路径和文件名即可。</p>
 <p>或者使用 -f来指定文件名</p>
-<p>ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#117;&#114;&#x65;&#109;&#97;&#x69;&#108;&#x40;&#101;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#109;">&#121;&#111;&#117;&#114;&#x65;&#109;&#97;&#x69;&#108;&#x40;&#101;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#109;</a>“ （-f ~&#x2F;.ssh&#x2F;second-rsa）</p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#117;&#114;&#101;&#x6d;&#x61;&#105;&#x6c;&#64;&#101;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#121;&#111;&#117;&#114;&#101;&#x6d;&#x61;&#105;&#x6c;&#64;&#101;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>“ （-f ~&#x2F;.ssh&#x2F;second-rsa）</p>
 <h3 id="GitHub-x2F-GitLab-中导入SSH-Key"><a href="#GitHub-x2F-GitLab-中导入SSH-Key" class="headerlink" title="GitHub&#x2F;GitLab 中导入SSH Key"></a>GitHub&#x2F;GitLab 中导入SSH Key</h3><p>SSH Key导入<br>GitHub：<br>点击用户头像<br>Setting<br>SSH and GPG keys<br>New SSH key<br>粘贴你生成的公钥</p>
 ]]></content>
       <categories>
@@ -977,6 +1002,88 @@
 </li>
 </ol>
 <p>请注意，Live2D模型的使用可能需要遵循一些授权和使用规定，请确保您具备合法的使用权或遵守相关规定。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Download</title>
+    <url>/2023/06/28/Download/</url>
+    <content><![CDATA[<h2 id="下载页面"><a href="#下载页面" class="headerlink" title="下载页面"></a>下载页面</h2><p>作者主页<a class="btn-beautify green larger" href="https://space.bilibili.com/3493118064200406" 
+  title="山茶花呀a"><span>山茶花呀a</span></a></p>
+<div class="gallery-group-main">
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e44f300.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e43fe2a.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e48df3d.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e5176e6.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+</div>
+
+
+
+
+<div class="gallery">
+    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
+    <span class="gallery-data">[{"url":"https://img.locyan.cn/i/2023/06/28/649c12dd9c91c.png","alt":"5 (4).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e44f300.png","alt":"1 (11).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c12dd705d9.png","alt":"5.png(1).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e43fe2a.png","alt":"9 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c12de32df2.png","alt":"1 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e48df3d.png","alt":"10 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c13024c116.png","alt":"2 (5).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c130320bbc.png","alt":"2 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e5176e6.png","alt":"7 (1).png"}]</span>
+    </div>
+    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+
+
+
+
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>推荐使用IDM等多线程下载工具</p>
+<div class="btn-center">
+
+<a class="btn-beautify outline blue larger" href="https://pixeldrain.com/u/qwHJvcvk" 
+  title="小猫乐园.zip（pixeldrain盘—8MB/S）"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip（pixeldrain盘—8MB/S）</span></a>
+<a class="btn-beautify outline pink larger" href="https://external.githubfast.com/https/codeload.github.com/51hhh/img/zip/refs/heads/main" 
+  title="小猫乐园.zip（githubfast—15MB/S）"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip（githubfast—15MB/S）</span></a>
+<a class="btn-beautify outline orange larger" href="https://www.mediafire.com/file/zxd19h3fn4m4hf6/%25E5%25B0%258F%25E7%258C%25AB%25E4%25B9%2590%25E5%259B%25AD.zip/file" 
+  title="小猫乐园.zip(mediafire盘—15MB/S)"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip(mediafire盘—15MB/S)</span></a>
+</div>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>【Hexo】git上传大文件失败</title>
+    <url>/2023/06/28/%E3%80%90Hexo%E3%80%91git%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</url>
+    <content><![CDATA[<h3 id="git上传大文件重复失败"><a href="#git上传大文件重复失败" class="headerlink" title="git上传大文件重复失败"></a>git上传大文件重复失败</h3><p> 在public文件夹里面放了一个超过100MB的压缩包<br> 在hexo d 用git上传时<br> 显示上传文件不能超过100MB</p>
+<p> 在删除该文件后<br> 仍然失败<br> 而且仍然是在上传一个较大的文件<br> 但是明明在public里面已经删除</p>
+<p> 原因是<br> 在.deploy_git<br> 缓存目录里<br> 只需要删除.deploy_git即可</p>
 ]]></content>
   </entry>
 </search>
