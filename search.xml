@@ -1125,16 +1125,30 @@
   <entry>
     <title>hexo-generator-alias 网页重定向</title>
     <url>/2023/06/29/hexo-generator-alias-wang-ye-chong-ding-xiang/</url>
-    <content><![CDATA[<p>hexo-generator-alias 网页重定向<br>如果你的博客页面路径进行了大的更改并且访问量很大的话，那么建议你使用</p>
-<p>可以给一篇文章设置多个网址，也可以让一篇博客跳到其他网站</p>
-<p>一篇文章设置多个网址<br>例如我的一篇访问量很大的文章</p>
-<p>我的一篇博客的原地址为: &#x2F;2020&#x2F;03&#x2F;12&#x2F;174a4435&#x2F;</p>
-<p>为了让url更好看，现在改为了: &#x2F;post&#x2F;vmware-linux&#x2F;</p>
-<p>但是这样更改会导致原来的链接打开后404，所以可以在这一篇文章加一个属性，让一篇文章拥有两个url</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">alias:</span><br><span class="line">  - /2020/03/12/174a4435/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h2 id="hexo-generator-alias-网页重定向"><a href="#hexo-generator-alias-网页重定向" class="headerlink" title="hexo-generator-alias 网页重定向"></a>hexo-generator-alias 网页重定向</h2><p>安装hexo-generator-alias 网页重定向插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-alias --save</span><br></pre></td></tr></table></figure>
 
-
-<p>一篇博客跳到另一个网址<br>打开文章后跳到百度</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">redirect: &#x27;https://www.baidu.com&#x27;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+<p>如果你的博客页面使用了 hexo-permalink-pinyin Hexo 插件（中文链接转拼音）</p>
+<p>而之前的链接已经被搜索引擎收录的话</p>
+<p>可以使用hexo-generator-alias 网页重定向</p>
+<p>将原本的链接重定向为新的链接</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>我的一篇博客的原地址为: <a href="https://polar-bear.eu.org/2023/06/28/%E3%80%90Hexo%E3%80%91git%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/">https://polar-bear.eu.org/2023/06/28/%E3%80%90Hexo%E3%80%91git%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</a></p>
+<p>因为使用了 hexo-permalink-pinyin Hexo 插件（中文链接转拼音）<br>链接变为:<a href="https://polar-bear.eu.org/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/">https://polar-bear.eu.org/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/</a></p>
+<p>由于我网站已经提交了许多搜索引擎的收录</p>
+<p>使用插件改变链接会导致原来的链接打开后404，所以可以在这一篇文章加一个属性，让一篇文章拥有两个url<br>在原始文章的.md文件中的文章头加入以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alias:</span><br><span class="line">  - 被更换的链接/已经被收录的链接（去掉固定域名）</span><br></pre></td></tr></table></figure>
+<p>如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://polar-bear.eu.org/2023/06/28/%E3%80%90Hexo%E3%80%91git%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</span><br><span class="line">去掉https://polar-bear.eu.org即可</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">alias:</span><br><span class="line">  - /2023/06/28/%E3%80%90Hexo%E3%80%91git%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="生成的重定向html"><a href="#生成的重定向html" class="headerlink" title="生成的重定向html"></a>生成的重定向html</h2><p>插件会在原来链接目录下生成一个index.html文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;Redirecting...&lt;/title&gt;&lt;link rel=&quot;canonical&quot; href=&quot;https://polar-bear.eu.org/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/&quot;&gt;&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; url=https://polar-bear.eu.org/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/&quot;&gt;&lt;/head&gt;&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>用于指向新的链接</p>
+<h2 id="文章头"><a href="#文章头" class="headerlink" title="文章头"></a>文章头</h2><p>hexo的文章.md文件位于</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo目录\source\_posts  （已发布文章）</span><br></pre></td></tr></table></figure>
+<p>内容一般有</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 【Hexo】git上传大文件失败</span><br><span class="line">author: polar-bear</span><br><span class="line">date: 2023-06-28 16:31:20</span><br><span class="line">tags:</span><br><span class="line">alias:</span><br><span class="line">  - /2023/06/28/【Hexo】git上传大文件失败/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="404回家"><a href="#404回家" class="headerlink" title="404回家"></a>404回家</h2><p>如存在无法清除的死链</p>
+<p>可以在文章投加入以下内容</p>
+<p>打开文章后跳到主页</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">redirect: &#x27;https://polar-bear.eu.org&#x27;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
