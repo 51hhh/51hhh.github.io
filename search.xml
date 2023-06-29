@@ -1122,4 +1122,19 @@
 <p>版本：hexo@”^6.3.0”</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>hexo-generator-alias 网页重定向</title>
+    <url>/2023/06/29/hexo-generator-alias-wang-ye-chong-ding-xiang/</url>
+    <content><![CDATA[<p>hexo-generator-alias 网页重定向<br>如果你的博客页面路径进行了大的更改并且访问量很大的话，那么建议你使用</p>
+<p>可以给一篇文章设置多个网址，也可以让一篇博客跳到其他网站</p>
+<p>一篇文章设置多个网址<br>例如我的一篇访问量很大的文章</p>
+<p>我的一篇博客的原地址为: &#x2F;2020&#x2F;03&#x2F;12&#x2F;174a4435&#x2F;</p>
+<p>为了让url更好看，现在改为了: &#x2F;post&#x2F;vmware-linux&#x2F;</p>
+<p>但是这样更改会导致原来的链接打开后404，所以可以在这一篇文章加一个属性，让一篇文章拥有两个url</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">alias:</span><br><span class="line">  - /2020/03/12/174a4435/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+<p>一篇博客跳到另一个网址<br>打开文章后跳到百度</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">redirect: &#x27;https://www.baidu.com&#x27;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
 </search>
