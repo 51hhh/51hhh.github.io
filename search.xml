@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>2023MC联机教程--需实名（18岁以下都行）无需人脸 免费方案</title>
-    <url>/2023/06/18/2023MC%E8%81%94%E6%9C%BA%E6%95%99%E7%A8%8B-%E6%97%A0%E9%9C%80%E5%AE%9E%E5%90%8D-%E5%85%8D%E8%B4%B9%E6%96%B9%E6%A1%88/</url>
+    <url>/2023/06/18/2023mc-lian-ji-jiao-cheng-wu-xu-shi-ming-mian-fei-fang-an/</url>
     <content><![CDATA[<p>原创by自由如风   2023.06.18</p>
 <h2 id="开始前"><a href="#开始前" class="headerlink" title="开始前"></a>开始前</h2><pre><code>注意事项：
   此方法为内网穿透开放局域网端口，进行远程联机
@@ -127,7 +127,7 @@
   </entry>
   <entry>
     <title>Write for you and myself</title>
-    <url>/2023/06/17/Write-for-myself/</url>
+    <url>/2023/06/17/write-for-myself/</url>
     <content><![CDATA[<p>遇到问题的时候不妨先自己努力寻找错误原因，而不是直接求助他人，<br>    这或许可以锻炼自己的能力，自己能解决也可以加强自己的信心。<br>        记得要利用好好的工具，”工欲善其事必先利其器”，一个好的工具可以节省<br>     许多时间精力，可以用UI就不要用命令行，可以用插件就不要手敲，任何工具的<br>     存在都有它的价值，就是有你利用，不需要很帅的花招，简简单单的解决复杂的<br>     问题才是高效。<br>        注意差别，编码差别，版本差别，类似的字符串，任何一个小小的错误必会<br>     拖累整个大的整体。</p>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>    要是累了，烦了，就听听歌，看看番，没必要被带节奏而生活忙碌，学会掌
  控自己的生活,而不是被他人裹挟。
@@ -150,7 +150,7 @@
   </entry>
   <entry>
     <title>chatGPT教我CSS控件</title>
-    <url>/2023/06/18/chatGPT%E6%95%99%E6%88%91%E5%81%9A%E7%BD%91%E7%AB%99/</url>
+    <url>/2023/06/18/chatgpt-jiao-wo-zuo-wang-zhan/</url>
     <content><![CDATA[<p>原创by自由如风</p>
 <h4 id="在chatGPT的帮助下迅速完成音乐小部件插入"><a href="#在chatGPT的帮助下迅速完成音乐小部件插入" class="headerlink" title="在chatGPT的帮助下迅速完成音乐小部件插入"></a>在chatGPT的帮助下迅速完成音乐小部件插入</h4><div class="gallery">
     <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
@@ -301,7 +301,7 @@
   </entry>
   <entry>
     <title>ssh key连接到git</title>
-    <url>/2023/06/26/ssh-key%E8%BF%9E%E6%8E%A5%E5%88%B0git/</url>
+    <url>/2023/06/26/ssh-key-lian-jie-dao-git/</url>
     <content><![CDATA[<h3 id="生成ssh密钥添加到Github"><a href="#生成ssh密钥添加到Github" class="headerlink" title="生成ssh密钥添加到Github"></a>生成ssh密钥添加到Github</h3><p>这一步的目的是可以使用Github的ssh地址pull、push仓库。设置使用ssh密钥的好处是可以使用ssh连接，提交代码的时候可以不用输入密码，免密提交。<br>Github下载代码有三种方式，http下载、ssh下载、zip下载，到个人仓库页面就可以看到这三种下载方式。</p>
 <p>在本地博客文件夹中右键选择Git Bash Here调出命令行，输入以下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;YourGithubName&quot;		//双引号内填写你的GitHub用户名</span><br><span class="line">git config --global user.email &quot;YourGithubEmail&quot;	//双引号内填写你的Github个人邮箱</span><br></pre></td></tr></table></figure>
@@ -355,7 +355,7 @@
   </entry>
   <entry>
     <title>Butterfly 主题 中文章封面</title>
-    <url>/2023/06/17/Butterfly-%E4%B8%BB%E9%A2%98-%E4%B8%AD%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/</url>
+    <url>/2023/06/17/butterfly-zhu-ti-zhong-wen-zhang-feng-mian/</url>
     <content><![CDATA[<h4 id="允许多张图片随机选择"><a href="#允许多张图片随机选择" class="headerlink" title="允许多张图片随机选择"></a>允许多张图片随机选择</h4><pre><code>  cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
@@ -399,7 +399,7 @@
   </entry>
   <entry>
     <title>无需魔法，国内部署可直接访问的chatGPT</title>
-    <url>/2023/06/23/chatGPT/</url>
+    <url>/2023/06/23/chatgpt/</url>
     <content><![CDATA[<h2 id="无需魔法，国内部署可直接访问的chatGPT"><a href="#无需魔法，国内部署可直接访问的chatGPT" class="headerlink" title="无需魔法，国内部署可直接访问的chatGPT"></a>无需魔法，国内部署可直接访问的chatGPT</h2><pre><code>需要：
  Github    vercel   cloudflare    chatGPT账号（可以网上找共享的或者自己注册）   域名（子域名）
  
@@ -558,7 +558,7 @@
   </entry>
   <entry>
     <title>ssh到github出现连接错误问题</title>
-    <url>/2023/06/17/ssh%E5%88%B0github%E5%87%BA%E7%8E%B0%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/</url>
+    <url>/2023/06/17/ssh-dao-github-chu-xian-lian-jie-cuo-wu-wen-ti/</url>
     <content><![CDATA[<p>问题如下</p>
 <p>报错信息</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:\win\polar\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:513:28)</span><br><span class="line">    at cp.emit (D:\win\polar\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br></pre></td></tr></table></figure>
@@ -647,7 +647,7 @@
   </entry>
   <entry>
     <title>博客搭建完成</title>
-    <url>/2023/06/17/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90%E5%95%A6/</url>
+    <url>/2023/06/17/bo-ke-da-jian-wan-cheng-la/</url>
     <content><![CDATA[<h2 id="博客搭建完成"><a href="#博客搭建完成" class="headerlink" title="博客搭建完成"></a>博客搭建完成</h2><pre><code>截至2023 06 17 博客已经完成基础功能搭建
 </code></pre>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>目前已有功能：
@@ -692,7 +692,7 @@
   </entry>
   <entry>
     <title>思维笔记</title>
-    <url>/2023/06/20/%E6%80%9D%E7%BB%B4%E7%AC%94%E8%AE%B0/</url>
+    <url>/2023/06/20/si-wei-bi-ji/</url>
     <content><![CDATA[<iframe src="//player.bilibili.com/player.html?bvid=BV1uh411M7Su&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
@@ -700,7 +700,7 @@
   </entry>
   <entry>
     <title>域名申请</title>
-    <url>/2023/06/21/%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7/</url>
+    <url>/2023/06/21/yu-ming-shen-qing/</url>
     <content><![CDATA[<h1 id="免费域名申请"><a href="#免费域名申请" class="headerlink" title="免费域名申请"></a>免费域名申请</h1><p>说在前面：nic.eu.org申请的为二级域名，已经有域名的友友可以无需申请<br>只为建站可以接受github分配的网址的友友可以不用额外申请域名。<br>不想折腾的友友们可以不用申请</p>
 <h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><iframe src="//player.bilibili.com/player.html?bvid=BV1oj411D7FJ&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
     
@@ -769,7 +769,7 @@
   </entry>
   <entry>
     <title>小说</title>
-    <url>/2023/06/18/%E5%B0%8F%E8%AF%B4/</url>
+    <url>/2023/06/18/xiao-shuo/</url>
     <content><![CDATA[<ul>
 <li>这是一个关于一只小猫和一只小狗的故事，它们住在同一个农场里，每天都一起玩耍。小猫叫做咪咪，它有一双蓝色的眼睛，一身白色的毛，非常可爱。小狗叫做旺旺，它有一条黑色的尾巴，一双棕色的耳朵，非常聪明。</li>
 <li>有一天，咪咪和旺旺在农场里散步，突然发现了一个木头制成的箱子，箱子上有一个锁，但是锁已经生锈了。它们好奇地走过去，用牙齿和爪子把锁打开了。它们打开箱子，发现里面有很多奇怪的东西，比如一个闪亮的皇冠，一个漂亮的项链，还有一个会说话的魔法棒。魔法棒是金色的，上面有很多彩色的珠子和星星。</li>
@@ -796,7 +796,7 @@
   </entry>
   <entry>
     <title>当小鱼碰上小兔</title>
-    <url>/2023/06/18/%E5%BD%93%E5%B0%8F%E9%B1%BC%E7%A2%B0%E4%B8%8A%E5%B0%8F%E5%85%94-1/</url>
+    <url>/2023/06/18/dang-xiao-yu-peng-shang-xiao-tu-1/</url>
     <content><![CDATA[<p>从前有一个小鱼，它叫波波。 波波是一个非常好奇的小鱼，总是对周围的世界充满了好奇心。 波波住在一条清澈见底的小溪里，每天游来游去，与小溪中的朋友们一起玩耍。</p>
 <p>有一天，波波决定去探险，看看世界的另一边是什么样子。 于是，它开始向上游游去，一路上遇到了各种各样的鱼类和水生生物。 它们告诉波波，上游有一片神奇的湖泊，湖泊中有一个传说中的宝藏，可以实现每个人的愿望。</p>
 <p>波波听了非常兴奋，决定要去找到那个宝藏。 它游了一整天，终于到达了湖泊。 湖泊的水非常清澈，波波可以看到湖底的一切。 它慢慢游向湖底，寻找宝藏的踪迹。</p>
@@ -823,7 +823,7 @@
   </entry>
   <entry>
     <title>绮良良</title>
-    <url>/2023/06/17/%E7%BB%AE%E8%89%AF%E8%89%AF/</url>
+    <url>/2023/06/17/qi-liang-liang/</url>
     <content><![CDATA[<h2 id="绮良良"><a href="#绮良良" class="headerlink" title="绮良良"></a>绮良良</h2><pre><code>鲁迅：“学习之余也要学会娱乐”
 </code></pre>
 <img src="https://img.locyan.cn/i/2023/06/17/648d5cfd7ce42.jpg" alt="3C6E6700DF1FCEC29404FF4FEA013B3D.jpg" title="3C6E6700DF1FCEC29404FF4FEA013B3D.jpg" />
@@ -868,7 +868,7 @@
   </entry>
   <entry>
     <title>新型催化剂实现甲烷高效转化</title>
-    <url>/2023/06/18/%E6%96%B0%E5%9E%8B%E5%82%AC%E5%8C%96%E5%89%82%E5%AE%9E%E7%8E%B0%E7%94%B2%E7%83%B7%E9%AB%98%E6%95%88%E8%BD%AC%E5%8C%96/</url>
+    <url>/2023/06/18/xin-xing-cui-hua-ji-shi-xian-jia-wan-gao-xiao-zhuan-hua/</url>
     <content><![CDATA[<p>这是一篇发表在《美国化学会志》上的论文，题目是新型催化剂实现甲烷高效转化<br>文章地址：<a href="https://pubs.acs.org/doi/10.1021/jacs.1c04367">https://pubs.acs.org/doi/10.1021/jacs.1c04367</a></p>
 <p>作者利用一种新型的铜基催化剂，能够在低温下实现甲烷的选择性氧化，生成甲醛和甲酸，为甲烷的高值化利用提供了新途径。</p>
 <p>作者通过原位光谱和理论计算，揭示了催化剂上的铜单原子和铜氧团簇之间的协同作用，以及甲烷氧化反应的机理和动力学。</p>
@@ -903,7 +903,7 @@
   </entry>
   <entry>
     <title>超快回收废旧锂离子电池正极</title>
-    <url>/2023/06/18/%E8%B6%85%E5%BF%AB%E5%9B%9E%E6%94%B6%E5%BA%9F%E6%97%A7%E9%94%82%E7%A6%BB%E5%AD%90%E7%94%B5%E6%B1%A0%E6%AD%A3%E6%9E%81/</url>
+    <url>/2023/06/18/chao-kuai-hui-shou-fei-jiu-li-chi-zi-dian-chi-zheng-ji/</url>
     <content><![CDATA[<p>这是一篇发表在《ACS能源快报》上的论文，题目是超快回收废旧锂离子电池正极。这篇论文的主要内容和创新点是：</p>
 <p>作者介绍了一种利用超声波和酸碱溶液快速回收废旧锂离子电池正极材料的方法，提高了回收效率和资源利用率。</p>
 <p>作者通过实验和理论分析，揭示了超声波和酸碱溶液对正极材料的物理和化学作用机制，以及回收过程中的关键参数和影响因素。</p>
@@ -939,7 +939,7 @@
   </entry>
   <entry>
     <title>关于</title>
-    <url>/2023/06/17/%E5%85%B3%E4%BA%8E/</url>
+    <url>/2023/06/17/guan-yu/</url>
     <content><![CDATA[<h3 id="关于我："><a href="#关于我：" class="headerlink" title="关于我："></a>关于我：</h3><pre><code>    通过电报联系我
 </code></pre>
 <p>   <a href="https://img.locyan.cn/i/2023/06/17/648d22cabaff9.jpg">点这里</a></p>
@@ -957,7 +957,7 @@
   </entry>
   <entry>
     <title>为网站添加live2D</title>
-    <url>/2023/06/27/%E4%B8%BA%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0live2D/</url>
+    <url>/2023/06/27/wei-wang-zhan-tian-jia-live2d/</url>
     <content><![CDATA[<h3 id="为网站添加live2D"><a href="#为网站添加live2D" class="headerlink" title="为网站添加live2D"></a>为网站添加live2D</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>hexo-helper-live2d</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
 
@@ -1006,7 +1006,7 @@
   </entry>
   <entry>
     <title>Download</title>
-    <url>/2023/06/28/Download/</url>
+    <url>/2023/06/28/download/</url>
     <content><![CDATA[<h2 id="下载页面"><a href="#下载页面" class="headerlink" title="下载页面"></a>下载页面</h2><p>作者主页<a class="btn-beautify green larger" href="https://space.bilibili.com/3493118064200406" 
   title="山茶花呀a"><span>山茶花呀a</span></a></p>
 <div class="gallery-group-main">
@@ -1080,7 +1080,7 @@
   </entry>
   <entry>
     <title>【Hexo】git上传大文件失败</title>
-    <url>/2023/06/28/%E3%80%90Hexo%E3%80%91git%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</url>
+    <url>/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/</url>
     <content><![CDATA[<h3 id="git上传大文件重复失败"><a href="#git上传大文件重复失败" class="headerlink" title="git上传大文件重复失败"></a>git上传大文件重复失败</h3><p> 在public文件夹里面放了一个超过100MB的压缩包<br> 在hexo d 用git上传时<br> 显示上传文件不能超过100MB</p>
 <p> 在删除该文件后<br> 仍然失败<br> 而且仍然是在上传一个较大的文件<br> 但是明明在public里面已经删除</p>
 <p> 原因是<br> 在.deploy_git<br> 缓存目录里<br> 只需要删除.deploy_git即可</p>
@@ -1088,9 +1088,9 @@
   </entry>
   <entry>
     <title>hexo-covers安装时遇到的错误</title>
-    <url>/2023/06/29/hexo-covers%E5%AE%89%E8%A3%85%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
+    <url>/2023/06/29/hexo-covers-an-zhuang-shi-yu-dao-de-cuo-wu/</url>
     <content><![CDATA[<h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">运行</span><br><span class="line">npm install hexo-covers --save</span><br><span class="line">时</span><br></pre></td></tr></table></figure>
-<p>出现错误<br>npm ERR! code ERESOLVE<br>npm ERR! ERESOLVE unable to resolve dependency tree<br>npm ERR!<br>npm ERR! While resolving: <a href="mailto:&#104;&#101;&#x78;&#x6f;&#45;&#x73;&#x69;&#116;&#101;&#x40;&#48;&#46;&#x30;&#46;&#48;">&#104;&#101;&#x78;&#x6f;&#45;&#x73;&#x69;&#116;&#101;&#x40;&#48;&#46;&#x30;&#46;&#48;</a><br>npm ERR! Found: <a href="mailto:&#104;&#101;&#x78;&#111;&#x40;&#x36;&#x2e;&#51;&#x2e;&#48;">&#104;&#101;&#x78;&#111;&#x40;&#x36;&#x2e;&#51;&#x2e;&#48;</a><br>npm ERR! node_modules&#x2F;hexo<br>npm ERR!   hexo@”^6.3.0” from the root project<br>npm ERR!<br>npm ERR! Could not resolve dependency:<br>npm ERR! peer hexo@”^5.2.0” from <a href="mailto:&#104;&#101;&#x78;&#111;&#x2d;&#x63;&#111;&#x76;&#101;&#x72;&#115;&#64;&#x32;&#46;&#48;&#x2e;&#48;">&#104;&#101;&#x78;&#111;&#x2d;&#x63;&#111;&#x76;&#101;&#x72;&#115;&#64;&#x32;&#46;&#48;&#x2e;&#48;</a><br>npm ERR! node_modules&#x2F;hexo-covers<br>npm ERR!   hexo-covers@”*” from the root project<br>npm ERR!<br>npm ERR! Fix the upstream dependency conflict, or retry<br>npm ERR! this command with –force or –legacy-peer-deps<br>npm ERR! to accept an incorrect (and potentially broken) dependency resolution.<br>npm ERR!<br>npm ERR!<br>npm ERR! For a full report see:<br>npm ERR! eresolve-report.txt</p>
+<p>出现错误<br>npm ERR! code ERESOLVE<br>npm ERR! ERESOLVE unable to resolve dependency tree<br>npm ERR!<br>npm ERR! While resolving: <a href="mailto:&#x68;&#101;&#x78;&#x6f;&#45;&#115;&#x69;&#x74;&#x65;&#64;&#x30;&#x2e;&#x30;&#x2e;&#x30;">&#x68;&#101;&#x78;&#x6f;&#45;&#115;&#x69;&#x74;&#x65;&#64;&#x30;&#x2e;&#x30;&#x2e;&#x30;</a><br>npm ERR! Found: <a href="mailto:&#x68;&#101;&#x78;&#111;&#x40;&#x36;&#46;&#51;&#x2e;&#48;">&#x68;&#101;&#x78;&#111;&#x40;&#x36;&#46;&#51;&#x2e;&#48;</a><br>npm ERR! node_modules&#x2F;hexo<br>npm ERR!   hexo@”^6.3.0” from the root project<br>npm ERR!<br>npm ERR! Could not resolve dependency:<br>npm ERR! peer hexo@”^5.2.0” from <a href="mailto:&#104;&#x65;&#120;&#x6f;&#x2d;&#x63;&#111;&#118;&#101;&#x72;&#115;&#64;&#50;&#x2e;&#x30;&#x2e;&#x30;">&#104;&#x65;&#120;&#x6f;&#x2d;&#x63;&#111;&#118;&#101;&#x72;&#115;&#64;&#50;&#x2e;&#x30;&#x2e;&#x30;</a><br>npm ERR! node_modules&#x2F;hexo-covers<br>npm ERR!   hexo-covers@”*” from the root project<br>npm ERR!<br>npm ERR! Fix the upstream dependency conflict, or retry<br>npm ERR! this command with –force or –legacy-peer-deps<br>npm ERR! to accept an incorrect (and potentially broken) dependency resolution.<br>npm ERR!<br>npm ERR!<br>npm ERR! For a full report see:<br>npm ERR! eresolve-report.txt</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm ERR! code ERESOLVE</span><br><span class="line">npm ERR! ERESOLVE unable to resolve dependency tree</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! While resolving: hexo-site@0.0.0</span><br><span class="line">npm ERR! Found: hexo@6.3.0</span><br><span class="line">npm ERR! node_modules/hexo</span><br><span class="line">npm ERR!   hexo@&quot;^6.3.0&quot; from the root project</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Could not resolve dependency:</span><br><span class="line">npm ERR! peer hexo@&quot;^5.2.0&quot; from hexo-covers@2.0.0</span><br><span class="line">npm ERR! node_modules/hexo-covers</span><br><span class="line">npm ERR!   hexo-covers@&quot;*&quot; from the root project</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Fix the upstream dependency conflict, or retry</span><br><span class="line">npm ERR! this command with --force or --legacy-peer-deps</span><br><span class="line">npm ERR! to accept an incorrect (and potentially broken) dependency resolution.</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! For a full report see:</span><br><span class="line">npm ERR! eresolve-report.txt</span><br></pre></td></tr></table></figure>
 
 <h2 id="原因及解决方法"><a href="#原因及解决方法" class="headerlink" title="原因及解决方法"></a>原因及解决方法</h2><p>Github项目地址<br><a href="https://github.com/sergeyzwezdin/hexo-covers">https://github.com/sergeyzwezdin/hexo-covers</a></p>
