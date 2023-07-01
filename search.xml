@@ -1183,4 +1183,30 @@
         <tag>记录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>自定义侧边栏</title>
+    <url>/2023/07/01/zi-ding-yi-ce-bian-lan/</url>
+    <content><![CDATA[<h2 id="自定义-widget"><a href="#自定义-widget" class="headerlink" title="自定义 widget"></a>自定义 widget</h2><h3 id="创建-widget-yml"><a href="#创建-widget-yml" class="headerlink" title="创建 widget.yml"></a>创建 widget.yml</h3><p>在Hexo博客目录中的（如果没有_data 文件夹，请自行创建），创建一个文件 source&#x2F; _data &#x2F; widget.yml</p>
+<p>格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">top:</span><br><span class="line">  - class_name:</span><br><span class="line">    id_name:</span><br><span class="line">    name:</span><br><span class="line">    icon:</span><br><span class="line">    html:</span><br><span class="line"></span><br><span class="line">bottom:</span><br><span class="line">  - class_name:</span><br><span class="line">    id_name:</span><br><span class="line">    name:</span><br><span class="line">    icon:</span><br><span class="line">    order:</span><br><span class="line">    html:</span><br></pre></td></tr></table></figure>
+
+<p>top： 创建的 widget 会出现在非 sticky 区域（即所有页面都会显示）</p>
+<p>bottom： 创建的 widget 会出现在 sticky 区域（除了文章页都会显示）</p>
+<p>参数	解释</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class_name	所创建的 widget 父类 class 名 （可选）</span><br><span class="line">id_name	所创建的 widget 父类 id 名（可选）</span><br><span class="line">name	所创建的 widget 标题（会显示出来的）</span><br><span class="line">icon	所创建的 widget 图标 </span><br><span class="line">order	创建的 widget 排序 （可选）</span><br><span class="line">.html	所创建的 widget 相关代码</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>这里的icon<br>应该是<a href="https://fontawesome.dashgame.com/">Font Awesome</a>这里面已经有的图标。找到合适的图标，复制代码在上面||后直接时候即可。注意不要删掉原有的fa或者fab。</p>
+<p>如：<br>找到一个小图标<br>叫fa-desktop<br>在使用时需要变为fas fa-desktop</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
 </search>
