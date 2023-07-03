@@ -336,7 +336,7 @@
   </url>
   
   <url>
-    <loc>https://polar-bear.eu.org/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://polar-bear.eu.org/tags/%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -351,6 +351,13 @@
   
   <url>
     <loc>https://polar-bear.eu.org/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://polar-bear.eu.org/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -379,13 +386,6 @@
   
   <url>
     <loc>https://polar-bear.eu.org/tags/%E7%9B%B8%E5%86%8C/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://polar-bear.eu.org/tags/%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

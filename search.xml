@@ -193,80 +193,6 @@
       </tags>
   </entry>
   <entry>
-    <title>download</title>
-    <url>/2023/06/28/download/</url>
-    <content><![CDATA[<h2 id="下载页面"><a href="#下载页面" class="headerlink" title="下载页面"></a>下载页面</h2><p>作者主页<a class="btn-beautify green larger" href="https://space.bilibili.com/3493118064200406" 
-  title="山茶花呀a"><span>山茶花呀a</span></a></p>
-<div class="gallery-group-main">
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e44f300.png' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name"></div>
-  <p></p>
-  <a href='/'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e43fe2a.png' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name"></div>
-  <p></p>
-  <a href='/'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e48df3d.png' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name"></div>
-  <p></p>
-  <a href='/'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e5176e6.png' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name"></div>
-  <p></p>
-  <a href='/'></a>
-  </figcaption>
-  </figure>
-  
-</div>
-
-
-
-
-<div class="gallery">
-    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">[{"url":"https://img.locyan.cn/i/2023/06/28/649c12dd9c91c.png","alt":"5 (4).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e44f300.png","alt":"1 (11).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c12dd705d9.png","alt":"5.png(1).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e43fe2a.png","alt":"9 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c12de32df2.png","alt":"1 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e48df3d.png","alt":"10 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c13024c116.png","alt":"2 (5).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c130320bbc.png","alt":"2 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e5176e6.png","alt":"7 (1).png"}]</span>
-    </div>
-    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
-    </div>
-
-
-
-
-<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>推荐使用IDM等多线程下载工具</p>
-<div class="btn-center">
-
-<a class="btn-beautify outline blue larger" href="https://pixeldrain.com/u/qwHJvcvk" 
-  title="小猫乐园.zip（pixeldrain盘—8MB/S）"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip（pixeldrain盘—8MB/S）</span></a>
-<a class="btn-beautify outline pink larger" href="https://external.githubfast.com/https/codeload.github.com/51hhh/img/zip/refs/heads/main" 
-  title="小猫乐园.zip（githubfast—15MB/S）"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip（githubfast—15MB/S）</span></a>
-<a class="btn-beautify outline orange larger" href="https://www.mediafire.com/file/zxd19h3fn4m4hf6/%25E5%25B0%258F%25E7%258C%25AB%25E4%25B9%2590%25E5%259B%25AD.zip/file" 
-  title="小猫乐园.zip(mediafire盘—15MB/S)"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip(mediafire盘—15MB/S)</span></a>
-</div>
-
-]]></content>
-  </entry>
-  <entry>
     <title>chatGPT教我CSS控件</title>
     <url>/2023/06/18/chatgpt-jiao-wo-zuo-wang-zhan/</url>
     <content><![CDATA[<p>原创by自由如风</p>
@@ -559,67 +485,78 @@
       </tags>
   </entry>
   <entry>
-    <title>cloudflare</title>
-    <url>/2023/06/18/cloudflare/</url>
-    <content><![CDATA[<h3 id="cloudflare"><a href="#cloudflare" class="headerlink" title="cloudflare"></a>cloudflare</h3><pre><code>Cloudflare是一家提供网络性能和安全服务的公司，它拥有一个全球性的网络，可以让你连接到互联网的任何内容都更加安全、私密、快速和可靠。Cloudflare可以帮助你保护你的网站、应用程序和API免受DDoS攻击、恶意机器人和其他威胁，也可以通过将内容和服务部署在离你更近的位置来提高你的访问速度。Cloudflare还提供了一些其他的功能，比如SSL证书、内容分发网络、边缘计算平台等。
-</code></pre>
-<p>   Cloudflare有很多优势，比如：</p>
-<p>它可以免费为基本用户提供服务，而且设置非常简单<br>它可以隐藏你的IP地址，让黑客难以攻击你的服务器<br>它可以保护你的网站免受DDoS攻击、SQL注入、评论垃圾邮件等威胁<br>它可以通过Web应用防火墙（WAF）来阻止常见的网络攻击，比如OWASP TOP 10和CMS漏洞<br>它可以通过压缩和缓存你的网站内容来提高你的网站速度<br>它可以通过支持HTTP&#x2F;2协议和免费的SSL证书来提高你的网站安全性和性能<br>它可以通过DNSSEC来增加你的域名的DNS安全性<br>它可以通过Polish功能来优化你的网站图片，减少图片大小</p>
-<p>你可以访问Cloudflare的官方网站，或者查看Cloudflare的学习中心，那里有很多关于Cloudflare的介绍和教程</p>
-<p>注册一个Cloudflare账户，然后登录。<br>点击“添加网站”，输入你的网站域名，然后点击“扫描DNS记录”。<br>等待扫描完成，然后点击“继续”。<br>选择一个Cloudflare套餐，根据你的需求和预算，你可以选择免费、专业、商业或企业套餐，然后点击“继续”。<br>检查你的DNS记录，确保所有你想通过Cloudflare代理的记录都有一个橙色的云彩图标，如果没有，你可以点击图标来切换状态，然后点击“继续”。<br>更改你的域名服务器，按照Cloudflare给出的指示，将你的域名服务器从原来的提供商更改为Cloudflare提供的域名服务器，这可能需要一些时间才能生效，然后点击“完成”。<br>等待Cloudflare激活你的网站，这可能需要几分钟到几小时不等，你可以在Cloudflare的仪表盘上看到你的网站状态，当它变成绿色时，就表示已经激活了。<br>享受Cloudflare带来的性能和安全优势吧！</p>
-<p>本网站由cloudflare提供DNS服务及代理服务</p>
+    <title>download</title>
+    <url>/2023/06/28/download/</url>
+    <content><![CDATA[<h2 id="下载页面"><a href="#下载页面" class="headerlink" title="下载页面"></a>下载页面</h2><p>作者主页<a class="btn-beautify green larger" href="https://space.bilibili.com/3493118064200406" 
+  title="山茶花呀a"><span>山茶花呀a</span></a></p>
+<div class="gallery-group-main">
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e44f300.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e43fe2a.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e48df3d.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+
+  <figure class="gallery-group">
+  <img class="gallery-group-img no-lightbox" src='https://img.locyan.cn/i/2023/06/28/649c11e5176e6.png' alt="Group Image Gallery">
+  <figcaption>
+  <div class="gallery-group-name"></div>
+  <p></p>
+  <a href='/'></a>
+  </figcaption>
+  </figure>
+  
+</div>
+
+
+
+
+<div class="gallery">
+    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
+    <span class="gallery-data">[{"url":"https://img.locyan.cn/i/2023/06/28/649c12dd9c91c.png","alt":"5 (4).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e44f300.png","alt":"1 (11).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c12dd705d9.png","alt":"5.png(1).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e43fe2a.png","alt":"9 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c12de32df2.png","alt":"1 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e48df3d.png","alt":"10 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c13024c116.png","alt":"2 (5).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c130320bbc.png","alt":"2 (3).png"},{"url":"https://img.locyan.cn/i/2023/06/28/649c11e5176e6.png","alt":"7 (1).png"}]</span>
+    </div>
+    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+
+
+
+
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>推荐使用IDM等多线程下载工具</p>
+<div class="btn-center">
+
+<a class="btn-beautify outline blue larger" href="https://pixeldrain.com/u/qwHJvcvk" 
+  title="小猫乐园.zip（pixeldrain盘—8MB/S）"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip（pixeldrain盘—8MB/S）</span></a>
+<a class="btn-beautify outline pink larger" href="https://external.githubfast.com/https/codeload.github.com/51hhh/img/zip/refs/heads/main" 
+  title="小猫乐园.zip（githubfast—15MB/S）"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip（githubfast—15MB/S）</span></a>
+<a class="btn-beautify outline orange larger" href="https://www.mediafire.com/file/zxd19h3fn4m4hf6/%25E5%25B0%258F%25E7%258C%25AB%25E4%25B9%2590%25E5%259B%25AD.zip/file" 
+  title="小猫乐园.zip(mediafire盘—15MB/S)"><i class="far fa-hand-point-right"></i><span>小猫乐园.zip(mediafire盘—15MB/S)</span></a>
+</div>
+
 ]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo-covers安装时遇到的错误</title>
-    <url>/2023/06/29/hexo-covers-an-zhuang-shi-yu-dao-de-cuo-wu/</url>
-    <content><![CDATA[<h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">运行</span><br><span class="line">npm install hexo-covers --save</span><br><span class="line">时</span><br></pre></td></tr></table></figure>
-<p>出现错误<br>npm ERR! code ERESOLVE<br>npm ERR! ERESOLVE unable to resolve dependency tree<br>npm ERR!<br>npm ERR! While resolving: <a href="mailto:&#104;&#101;&#x78;&#111;&#x2d;&#x73;&#105;&#116;&#101;&#x40;&#48;&#46;&#x30;&#x2e;&#x30;">&#104;&#101;&#x78;&#111;&#x2d;&#x73;&#105;&#116;&#101;&#x40;&#48;&#46;&#x30;&#x2e;&#x30;</a><br>npm ERR! Found: <a href="mailto:&#x68;&#101;&#x78;&#x6f;&#64;&#54;&#46;&#51;&#x2e;&#x30;">&#x68;&#101;&#x78;&#x6f;&#64;&#54;&#46;&#51;&#x2e;&#x30;</a><br>npm ERR! node_modules&#x2F;hexo<br>npm ERR!   hexo@”^6.3.0” from the root project<br>npm ERR!<br>npm ERR! Could not resolve dependency:<br>npm ERR! peer hexo@”^5.2.0” from <a href="mailto:&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x63;&#x6f;&#118;&#x65;&#114;&#x73;&#64;&#x32;&#x2e;&#48;&#46;&#48;">&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x63;&#x6f;&#118;&#x65;&#114;&#x73;&#64;&#x32;&#x2e;&#48;&#46;&#48;</a><br>npm ERR! node_modules&#x2F;hexo-covers<br>npm ERR!   hexo-covers@”*” from the root project<br>npm ERR!<br>npm ERR! Fix the upstream dependency conflict, or retry<br>npm ERR! this command with –force or –legacy-peer-deps<br>npm ERR! to accept an incorrect (and potentially broken) dependency resolution.<br>npm ERR!<br>npm ERR!<br>npm ERR! For a full report see:<br>npm ERR! eresolve-report.txt</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm ERR! code ERESOLVE</span><br><span class="line">npm ERR! ERESOLVE unable to resolve dependency tree</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! While resolving: hexo-site@0.0.0</span><br><span class="line">npm ERR! Found: hexo@6.3.0</span><br><span class="line">npm ERR! node_modules/hexo</span><br><span class="line">npm ERR!   hexo@&quot;^6.3.0&quot; from the root project</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Could not resolve dependency:</span><br><span class="line">npm ERR! peer hexo@&quot;^5.2.0&quot; from hexo-covers@2.0.0</span><br><span class="line">npm ERR! node_modules/hexo-covers</span><br><span class="line">npm ERR!   hexo-covers@&quot;*&quot; from the root project</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Fix the upstream dependency conflict, or retry</span><br><span class="line">npm ERR! this command with --force or --legacy-peer-deps</span><br><span class="line">npm ERR! to accept an incorrect (and potentially broken) dependency resolution.</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! For a full report see:</span><br><span class="line">npm ERR! eresolve-report.txt</span><br></pre></td></tr></table></figure>
-
-<h2 id="原因及解决方法"><a href="#原因及解决方法" class="headerlink" title="原因及解决方法"></a>原因及解决方法</h2><p>Github项目地址<br><a href="https://github.com/sergeyzwezdin/hexo-covers">https://github.com/sergeyzwezdin/hexo-covers</a></p>
-<p>该错误是由于依赖关系解析问题导致的。在项目中，正在尝试安装<code>hexo-covers</code>包，但它需要的<code>hexo</code>版本范围与你当前安装的<code>hexo</code>版本存在冲突。</p>
-<p>错误消息中提到，项目需要<code>hexo@^5.2.0</code>作为对<code>hexo-covers@2.0.0</code>的对等依赖。然而，当前安装的是<code>hexo@6.3.0</code>，版本不匹配。</p>
-<p>可以尝试以下几种解决方法：</p>
-<ol>
-<li><p>更新<code>hexo-covers</code>以支持<code>hexo@6.3.0</code>：检查是否有<code>hexo-covers</code>的更新版本可用，其中已解决了与<code>hexo@6.3.0</code>的兼容性问题。你可以尝试更新<code>hexo-covers</code>的版本，并再次运行<code>npm install</code>命令。</p>
-</li>
-<li><p>降级<code>hexo</code>至与<code>hexo-covers</code>兼容的版本：如果没有<code>hexo-covers</code>的更新版本可用，你可以尝试将<code>hexo</code>降级到与<code>hexo-covers@2.0.0</code>兼容的版本，即<code>hexo@^5.2.0</code>。可以通过运行以下命令来实现：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo@^5.2.0</span><br></pre></td></tr></table></figure>
-
-<p>这将安装符合<code>hexo-covers</code>依赖的<code>hexo</code>版本。然后你可以再次运行<code>npm install hexo-covers --save</code>命令。</p>
-</li>
-<li><p>使用<code>--force</code>或<code>--legacy-peer-deps</code>选项：在运行<code>npm install hexo-covers --save</code>命令时，你可以尝试使用<code>--force</code>或<code>--legacy-peer-deps</code>选项来绕过依赖解析错误。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-covers --save --force</span><br></pre></td></tr></table></figure>
-
-<p>或</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-covers --save --legacy-peer-deps</span><br></pre></td></tr></table></figure>
-
-<p>这将强制安装依赖项，但请注意，这可能会引入其他问题，因为它接受不正确和潜在破损的依赖解析。</p>
-</li>
-</ol>
-<p>你可以尝试上述方法之一来解决该错误。如果问题仍然存在，请检查报错信息中提到的日志文件，它们可能会提供更多有关错误的详细信息，以便更好地进行故障排除。</p>
-<p>使用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-covers --save --force</span><br></pre></td></tr></table></figure>
-<p>解决安装问题</p>
-<p>2023&#x2F;6&#x2F;29</p>
-<p>版本：hexo@”^6.3.0”</p>
-]]></content>
-      <categories>
-        <category>记录</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-        <tag>教程</tag>
-        <tag>错误</tag>
-      </tags>
   </entry>
   <entry>
     <title>hexo-generator-alias 网页重定向</title>
@@ -659,77 +596,48 @@
       </tags>
   </entry>
   <entry>
-    <title>How to use bing</title>
-    <url>/2023/06/18/test/</url>
-    <content><![CDATA[<p>如果你想在互联网上搜索信息，你可能会想到使用谷歌或百度等常见的搜索引擎。但是你知道吗，还有一个非常强大和智能的搜索引擎，它就是bing。bing是微软开发的一款搜索引擎，它不仅可以提供快速准确的搜索结果，还可以提供各种有趣和实用的功能，让你的搜索体验更加丰富和便捷。在这篇博客中，我将向你介绍如何使用bing，以及它有哪些优势和特色。</p>
-<p>首先，你需要访问bing的网站。当你打开bing的网站时，你会看到一个简洁美观的界面，上面有一个搜索框和一些常用的选项，如新闻、地图、视频等。你还会看到每天更新的一张精美的背景图片，这些图片都是来自世界各地的风景或文化，你可以点击图片下方的小图标，了解更多关于图片的信息。</p>
-<p><img src="https://www.bing.com/th?id=OHR.SnowyOwl_ZH-CN8677499058_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" alt="bing首页"></p>
-<p>要使用bing进行搜索，你只需要在搜索框中输入你想要查找的内容，然后按回车键或点击放大镜图标。bing会根据你的输入，给出相关的搜索结果，包括网页、图片、视频、地图等。你可以点击结果中的链接，直接访问目标网站，或者点击结果下方的预览图标，查看网页的快照。你还可以点击结果上方的选项卡，切换不同类型的结果，如新闻、购物、学术等。</p>
-<p>除了基本的搜索功能外，bing还有很多其他的特色功能，让你的搜索更加高效和有趣。例如：</p>
-<ul>
-<li>语音搜索：如果你不想输入文字，或者想用其他语言进行搜索，你可以点击搜索框旁边的麦克风图标，使用语音搜索功能。bing支持多种语言的语音识别和翻译，让你可以用自己喜欢的语言进行搜索。</li>
-<li>图片搜索：如果你想要找到某张图片的来源或相关信息，或者想要找到类似的图片，你可以点击搜索框旁边的相机图标，使用图片搜索功能。你可以上传一张图片或输入一个图片网址，bing会给出与之匹配或相似的图片结果，并提供相关信息。</li>
-<li>视频搜索：如果你想要找到某个视频或相关视频，或者想要观看最新最热门的视频内容，你可以点击视频选项卡，使用视频搜索功能。bing会给出与你输入相关的视频结果，并提供预览和播放功能。你还可以根据时长、分辨率、来源等条件进行筛选。</li>
-<li>地图搜索：如果你想要查找某个地点或路线，或者想要探索世界各地的风光和文化，你可以点击地图选项卡，使用地图搜索功能。bing会给出与你输入相关的地点结果，并提供详细的地图信息和导航功能。你还可以切换不同的视角和模式，如卫星、街景、3D等。</li>
-<li>聊天模式：如果你想要与bing进行交流和互动，或者想要获取更多的帮助和建议，你可以点击搜索框旁边的聊天图标，使用聊天模式功能。bing会以一个友好和智能的聊天机器人的形式，与你进行对话和回答你的问题。你还可以让bing为你生成一些有趣和创意的内容，如诗歌、故事、代码等。</li>
-</ul>
-<p>你是否经常在网上搜索信息，但是感觉结果不够满意？你是否想要一个更智能、更有趣、更全面的搜索引擎？如果你的答案是肯定的，那么你一定要试试bing。bing是微软开发的一款搜索引擎，它不仅可以帮你快速找到你想要的信息，还可以提供各种有用的功能和服务，让你的搜索体验更加丰富和愉快。在这篇博客中，我将给你介绍几个不同场景下使用bing的例子，希望能让你对bing有一个更深入的了解。</p>
-<p>第一个场景是当你想要学习一门新的语言时，你可以使用bing的翻译功能。bing支持超过70种语言的翻译，无论是文字、语音还是图片，都可以轻松实现。你可以在bing的首页输入你想要翻译的内容，或者直接点击右上角的翻译图标，就可以看到翻译结果。你还可以选择听取原文和译文的发音，或者查看更多的例句和用法。bing的翻译功能不仅准确而且实用，可以帮助你学习和掌握一门新的语言。</p>
-<p>第二个场景是当你想要了解一些新闻或者趣事时，你可以使用bing的新闻功能。bing每天都会为你推荐最新、最热、最有趣的新闻和话题，涵盖了国内外、社会、娱乐、体育、科技等各个领域。你可以在bing的首页点击新闻标签，或者直接输入你感兴趣的关键词，就可以看到各种相关的新闻报道和评论。你还可以根据自己的喜好，定制自己的新闻频道和订阅源。bing的新闻功能不仅及时而且多样，可以让你随时随地了解世界动态和社会趣闻。</p>
-<p>第三个场景是当你想要寻找一些灵感或者创意时，你可以使用bing的图片功能。bing拥有海量的高清图片资源，无论是风景、人物、动物、艺术还是设计，都可以找到你想要的图片。你可以在bing的首页点击图片标签，或者直接输入你想要查找的内容，就可以看到各种精美的图片展示和分类。你还可以使用bing的图像搜索功能，通过上传一张图片或者拍摄一张照片，就可以找到相似或者相关的图片。bing的图片功能不仅美观而且智能，可以帮助你寻找和激发灵感和创意。</p>
-<p>以上就是我给大家介绍的几个不同场景下使用bing的例子，当然这只是冰山一角。bing还有很多其他的功能和服务，比如地图、视频、音乐、购物等等，都值得你去探索和体验。如果你还没有使用过bing，那么赶快去试试吧！如果你已经是bing的用户，那么继续享受它带给你的便利和乐趣吧！</p>
-<p>以上就是我对如何使用bing的简单介绍，希望你能通过这篇博客，了解到bing的强大和魅力。如果你想要体验更多的功能和服务，欢迎你访问bing的网站，或者下载bing的移动应用。bing是一个值得你信赖和喜爱的搜索引擎，它会为你提供最优质和最个性化的搜索体验。谢谢你的阅读，祝你搜索愉快！</p>
+    <title>hexo-covers安装时遇到的错误</title>
+    <url>/2023/06/29/hexo-covers-an-zhuang-shi-yu-dao-de-cuo-wu/</url>
+    <content><![CDATA[<h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">运行</span><br><span class="line">npm install hexo-covers --save</span><br><span class="line">时</span><br></pre></td></tr></table></figure>
+<p>出现错误<br>npm ERR! code ERESOLVE<br>npm ERR! ERESOLVE unable to resolve dependency tree<br>npm ERR!<br>npm ERR! While resolving: <a href="mailto:&#104;&#101;&#120;&#111;&#x2d;&#x73;&#105;&#x74;&#x65;&#x40;&#x30;&#46;&#48;&#46;&#48;">&#104;&#101;&#120;&#111;&#x2d;&#x73;&#105;&#x74;&#x65;&#x40;&#x30;&#46;&#48;&#46;&#48;</a><br>npm ERR! Found: <a href="mailto:&#x68;&#101;&#120;&#111;&#x40;&#x36;&#46;&#51;&#x2e;&#x30;">&#x68;&#101;&#120;&#111;&#x40;&#x36;&#46;&#51;&#x2e;&#x30;</a><br>npm ERR! node_modules&#x2F;hexo<br>npm ERR!   hexo@”^6.3.0” from the root project<br>npm ERR!<br>npm ERR! Could not resolve dependency:<br>npm ERR! peer hexo@”^5.2.0” from <a href="mailto:&#x68;&#101;&#x78;&#111;&#x2d;&#x63;&#111;&#118;&#x65;&#114;&#x73;&#x40;&#x32;&#46;&#x30;&#x2e;&#x30;">&#x68;&#101;&#x78;&#111;&#x2d;&#x63;&#111;&#118;&#x65;&#114;&#x73;&#x40;&#x32;&#46;&#x30;&#x2e;&#x30;</a><br>npm ERR! node_modules&#x2F;hexo-covers<br>npm ERR!   hexo-covers@”*” from the root project<br>npm ERR!<br>npm ERR! Fix the upstream dependency conflict, or retry<br>npm ERR! this command with –force or –legacy-peer-deps<br>npm ERR! to accept an incorrect (and potentially broken) dependency resolution.<br>npm ERR!<br>npm ERR!<br>npm ERR! For a full report see:<br>npm ERR! eresolve-report.txt</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm ERR! code ERESOLVE</span><br><span class="line">npm ERR! ERESOLVE unable to resolve dependency tree</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! While resolving: hexo-site@0.0.0</span><br><span class="line">npm ERR! Found: hexo@6.3.0</span><br><span class="line">npm ERR! node_modules/hexo</span><br><span class="line">npm ERR!   hexo@&quot;^6.3.0&quot; from the root project</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Could not resolve dependency:</span><br><span class="line">npm ERR! peer hexo@&quot;^5.2.0&quot; from hexo-covers@2.0.0</span><br><span class="line">npm ERR! node_modules/hexo-covers</span><br><span class="line">npm ERR!   hexo-covers@&quot;*&quot; from the root project</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Fix the upstream dependency conflict, or retry</span><br><span class="line">npm ERR! this command with --force or --legacy-peer-deps</span><br><span class="line">npm ERR! to accept an incorrect (and potentially broken) dependency resolution.</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! For a full report see:</span><br><span class="line">npm ERR! eresolve-report.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="原因及解决方法"><a href="#原因及解决方法" class="headerlink" title="原因及解决方法"></a>原因及解决方法</h2><p>Github项目地址<br><a href="https://github.com/sergeyzwezdin/hexo-covers">https://github.com/sergeyzwezdin/hexo-covers</a></p>
+<p>该错误是由于依赖关系解析问题导致的。在项目中，正在尝试安装<code>hexo-covers</code>包，但它需要的<code>hexo</code>版本范围与你当前安装的<code>hexo</code>版本存在冲突。</p>
+<p>错误消息中提到，项目需要<code>hexo@^5.2.0</code>作为对<code>hexo-covers@2.0.0</code>的对等依赖。然而，当前安装的是<code>hexo@6.3.0</code>，版本不匹配。</p>
+<p>可以尝试以下几种解决方法：</p>
+<ol>
+<li><p>更新<code>hexo-covers</code>以支持<code>hexo@6.3.0</code>：检查是否有<code>hexo-covers</code>的更新版本可用，其中已解决了与<code>hexo@6.3.0</code>的兼容性问题。你可以尝试更新<code>hexo-covers</code>的版本，并再次运行<code>npm install</code>命令。</p>
+</li>
+<li><p>降级<code>hexo</code>至与<code>hexo-covers</code>兼容的版本：如果没有<code>hexo-covers</code>的更新版本可用，你可以尝试将<code>hexo</code>降级到与<code>hexo-covers@2.0.0</code>兼容的版本，即<code>hexo@^5.2.0</code>。可以通过运行以下命令来实现：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo@^5.2.0</span><br></pre></td></tr></table></figure>
+
+<p>这将安装符合<code>hexo-covers</code>依赖的<code>hexo</code>版本。然后你可以再次运行<code>npm install hexo-covers --save</code>命令。</p>
+</li>
+<li><p>使用<code>--force</code>或<code>--legacy-peer-deps</code>选项：在运行<code>npm install hexo-covers --save</code>命令时，你可以尝试使用<code>--force</code>或<code>--legacy-peer-deps</code>选项来绕过依赖解析错误。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-covers --save --force</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-covers --save --legacy-peer-deps</span><br></pre></td></tr></table></figure>
+
+<p>这将强制安装依赖项，但请注意，这可能会引入其他问题，因为它接受不正确和潜在破损的依赖解析。</p>
+</li>
+</ol>
+<p>你可以尝试上述方法之一来解决该错误。如果问题仍然存在，请检查报错信息中提到的日志文件，它们可能会提供更多有关错误的详细信息，以便更好地进行故障排除。</p>
+<p>使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-covers --save --force</span><br></pre></td></tr></table></figure>
+<p>解决安装问题</p>
+<p>2023&#x2F;6&#x2F;29</p>
+<p>版本：hexo@”^6.3.0”</p>
 ]]></content>
       <categories>
         <category>记录</category>
+        <category>教程</category>
       </categories>
       <tags>
         <tag>记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建完成</title>
-    <url>/2023/06/17/bo-ke-da-jian-wan-cheng-la/</url>
-    <content><![CDATA[<h2 id="博客搭建完成"><a href="#博客搭建完成" class="headerlink" title="博客搭建完成"></a>博客搭建完成</h2><pre><code>截至2023 06 17 博客已经完成基础功能搭建
-</code></pre>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>目前已有功能：
-  文章总览
-  网站美化
-  网站托管
-  关于本站
-  聊天系统
-  点击效果
-  友链
-</code></pre>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code> 一个简单的开始呢
- 未来目标：
-  音乐（B格）
-  自定义主题（主题色要粉色）
-  图床迁移（避免不稳定图床影响加载）
-  网站高级功能（想加评论功能，到时候换台服务器）
-  接入Google广告（好像这样算盈利性网站？用于服务器费用呢，到时候了解一下）
-  目录（加入目录进行分类）
-    - 归档
-    - 标签
-    - 分类
-  图库（已有，未完善。用于展示）
-  很酷但没什么用的功能
-</code></pre>
-<h2 id="-2"><a href="#-2" class="headerlink" title=""></a></h2><pre><code> 搭建耗时一整天
- 但是挺有成就感的
- 以后也要加油写文，改站。
-</code></pre>
-<h2 id="-3"><a href="#-3" class="headerlink" title=""></a></h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">网页快照
-    </button><div class="hide-content"><img src="https://img.locyan.cn/i/2023/06/17/648da8e350495.bmp" alt="capture_20230617202702557.bmp" title="capture_20230617202702557.bmp" /></div></div>
-<pre><code> by自由如风                           2023.06.17
-</code></pre>
-]]></content>
-      <categories>
-        <category>碎碎念</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
-        <tag>博客</tag>
+        <tag>教程</tag>
+        <tag>错误</tag>
       </tags>
   </entry>
   <entry>
@@ -774,433 +682,8 @@
 <p>提示</p>
 <h3 id="创建多个ssh-key"><a href="#创建多个ssh-key" class="headerlink" title="创建多个ssh key"></a>创建多个ssh key</h3><p>在创建ssh key时自行输入路径和文件名称，而非使用默认路径和文件名即可。</p>
 <p>或者使用 -f来指定文件名</p>
-<p>ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#117;&#x72;&#101;&#109;&#97;&#105;&#108;&#64;&#x65;&#109;&#97;&#105;&#108;&#46;&#x63;&#111;&#109;">&#x79;&#111;&#117;&#x72;&#101;&#109;&#97;&#105;&#108;&#64;&#x65;&#109;&#97;&#105;&#108;&#46;&#x63;&#111;&#109;</a>“ （-f ~&#x2F;.ssh&#x2F;second-rsa）</p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#117;&#x72;&#101;&#109;&#97;&#x69;&#x6c;&#x40;&#101;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x79;&#111;&#117;&#x72;&#101;&#109;&#97;&#x69;&#x6c;&#x40;&#101;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a>“ （-f ~&#x2F;.ssh&#x2F;second-rsa）</p>
 <h3 id="GitHub-x2F-GitLab-中导入SSH-Key"><a href="#GitHub-x2F-GitLab-中导入SSH-Key" class="headerlink" title="GitHub&#x2F;GitLab 中导入SSH Key"></a>GitHub&#x2F;GitLab 中导入SSH Key</h3><p>SSH Key导入<br>GitHub：<br>点击用户头像<br>Setting<br>SSH and GPG keys<br>New SSH key<br>粘贴你生成的公钥</p>
-]]></content>
-      <categories>
-        <category>记录</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/2023/06/17/guan-yu/</url>
-    <content><![CDATA[<h3 id="关于我："><a href="#关于我：" class="headerlink" title="关于我："></a>关于我：</h3><pre><code>    通过电报联系我
-</code></pre>
-<p>   <a href="https://img.locyan.cn/i/2023/06/17/648d22cabaff9.jpg">点这里</a></p>
-<pre><code>    或者加入群聊（人数较少，希望组建一个互相分享帮助的群聊）
-</code></pre>
-<p>   <a href="https://img.locyan.cn/i/2023/06/17/648d4f9f77390.png">这里</a></p>
-<p>   详细 请进入<a href="https://polar-bear.eu.org/about/">about</a>界面</p>
-]]></content>
-      <categories>
-        <category>碎碎念</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ssh到github出现连接错误问题</title>
-    <url>/2023/06/17/ssh-dao-github-chu-xian-lian-jie-cuo-wu-wen-ti/</url>
-    <content><![CDATA[<p>问题如下</p>
-<p>报错信息</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:\win\polar\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:513:28)</span><br><span class="line">    at cp.emit (D:\win\polar\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br></pre></td></tr></table></figure>
-<img src="https://img.locyan.cn/i/2023/06/17/648d6599f0cf8.png" alt="KLX@W0IX819U2ZWN(]89`NW.png" title="KLX@W0IX819U2ZWN(]89`NW.png" />
-                
-<pre><code>                                      如图
-                                      
-</code></pre>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>国内连接不稳定，多试几次就行（10此左右）
-</code></pre>
-<p>   or</p>
-<pre><code>科学上网
-</code></pre>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code>by自由如风                                                2023.06.17
-</code></pre>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-        <tag>问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为网站添加live2D</title>
-    <url>/2023/06/27/wei-wang-zhan-tian-jia-live2d/</url>
-    <content><![CDATA[<h3 id="为网站添加live2D"><a href="#为网站添加live2D" class="headerlink" title="为网站添加live2D"></a>为网站添加live2D</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>hexo-helper-live2d</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-
-<h4 id="下载模型"><a href="#下载模型" class="headerlink" title="下载模型"></a>下载模型</h4><p>（这里用一个白色的猫猫）</p>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击查看</summary><div class="toggle-content"><p><img src="/img/live2d.png"><br><img src="/img/live2d1.png"></p>
-</div></details>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install live2d-widget-model-tororo</span><br></pre></td></tr></table></figure>
-<p>其他模型（目前该插件可直接安装的）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">live2d-widget-model-chitose</span><br><span class="line">live2d-widget-model-epsilon2_1</span><br><span class="line">live2d-widget-model-gf</span><br><span class="line">live2d-widget-model-haru/01 (use npm install --save live2d-widget-model-haru)</span><br><span class="line">live2d-widget-model-haru/02 (use npm install --save live2d-widget-model-haru)</span><br><span class="line">live2d-widget-model-haruto</span><br><span class="line">live2d-widget-model-hibiki</span><br><span class="line">live2d-widget-model-hijiki</span><br><span class="line">live2d-widget-model-izumi</span><br><span class="line">live2d-widget-model-koharu</span><br><span class="line">live2d-widget-model-miku</span><br><span class="line">live2d-widget-model-ni-j</span><br><span class="line">live2d-widget-model-nico</span><br><span class="line">live2d-widget-model-nietzsche</span><br><span class="line">live2d-widget-model-nipsilon</span><br><span class="line">live2d-widget-model-nito</span><br><span class="line">live2d-widget-model-shizuku</span><br><span class="line">live2d-widget-model-tororo</span><br><span class="line">live2d-widget-model-tsumiki</span><br><span class="line">live2d-widget-model-unitychan</span><br><span class="line">live2d-widget-model-wanko</span><br><span class="line">live2d-widget-model-z16</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p>在hexo的配置文件中添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-tororo #这里改为你模型的名字</span><br><span class="line">  display:</span><br><span class="line">    position: right  #left放左，right放右</span><br><span class="line">    width: 180</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br><span class="line">  react:</span><br><span class="line">    opacity: 0.7</span><br></pre></td></tr></table></figure>
-<p>这段配置是用于设置Live2D插件的参数。让我为您解释每个参数的含义：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">- `enable`：设置为 `true` 表示启用Live2D插件，允许在网站上显示Live2D模型。</span><br><span class="line">- `scriptFrom`：设置为 `local` 表示从本地加载插件的JavaScript文件。</span><br><span class="line">- `pluginRootPath`：Live2D插件根目录的路径。在这个示例中，设置为 `live2dw/`。</span><br><span class="line">- `pluginJsPath`：插件JavaScript文件存放的路径。在这个示例中，设置为 `lib/`。</span><br><span class="line">- `pluginModelPath`：Live2D模型文件存放的路径。在这个示例中，设置为 `assets/`。</span><br><span class="line">- `tagMode`：设置为 `false` 表示不以标签形式展示Live2D模型。</span><br><span class="line">- `debug`：设置为 `false` 表示关闭调试模式。</span><br><span class="line"></span><br><span class="line">接下来是具体的模型相关设置：</span><br><span class="line"></span><br><span class="line">- `model.use`：指定使用的Live2D模型的名称。在这个示例中，模型名字被设置为 `live2d-widget-model-tororo`，您可以更改为您想要使用的模型的名字。</span><br><span class="line">- `display.position`：指定Live2D模型在网页中的位置，可以设置为 `left` 或 `right`。</span><br><span class="line">- `display.width`：指定Live2D模型的宽度。</span><br><span class="line">- `display.height`：指定Live2D模型的高度。</span><br><span class="line"></span><br><span class="line">接下来是移动设备的显示设置：</span><br><span class="line"></span><br><span class="line">- `mobile.show`：设置为 `true` 表示在移动设备上显示Live2D模型。</span><br><span class="line"></span><br><span class="line">最后是交互相关设置：</span><br><span class="line"></span><br><span class="line">- `react.opacity`：指定Live2D模型的透明度。</span><br><span class="line"></span><br><span class="line">请注意，这些参数可以根据您的需求进行调整和修改，以适应您的网站设计和Live2D模型的要求。</span><br><span class="line"></span><br><span class="line">希望这些解释能对您有所帮助！如果您有任何其他问题，请随时提问。</span><br></pre></td></tr></table></figure>
-
-
-<p>尝试导入其他live2d模型</p>
-<p>但是导入不显示模型</p>
-<p>可能是插件不兼容吧</p>
-<p>以后再仔细研究一下</p>
-<h4 id="其他模型（我导入其他模型没有成功过）"><a href="#其他模型（我导入其他模型没有成功过）" class="headerlink" title="其他模型（我导入其他模型没有成功过）"></a>其他模型（我导入其他模型没有成功过）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Cubism Modeler Sample Models（Cubism模型示例）：这是Live2D官方提供的一些免费的模型示例，包括动漫角色、动物和虚拟偶像等。您可以在Live2D官方网站的下载页面找到这些模型：https://www.live2d.com/en/download/sample-data/</span><br><span class="line"></span><br><span class="line">Facerig Live2D模型：Facerig是一个非常受欢迎的虚拟角色扮演软件，它支持Live2D模型。您可以在Facerig官方网站或Steam商店中找到各种各样的Live2D模型：https://facerig.com/</span><br><span class="line"></span><br><span class="line">Booth（BOOTH）：Booth是一个在线创作和交易平台，您可以在这里找到许多独立插画师和模型师创作的Live2D模型。访问Booth网站并搜索“Live2D”或特定的角色名字，您可以找到许多可购买或免费下载的Live2D模型：https://booth.pm/</span><br><span class="line"></span><br><span class="line">DeviantArt：DeviantArt是一个知名的艺术创作社交平台，许多艺术家在这里分享他们的作品，包括Live2D模型。您可以在DeviantArt上搜索“Live2D”或特定的角色名字，找到一些创作者提供的Live2D模型下载：https://www.deviantart.com/</span><br></pre></td></tr></table></figure>
-<h4 id="下面这个方法也没有用"><a href="#下面这个方法也没有用" class="headerlink" title="下面这个方法也没有用"></a>下面这个方法也没有用</h4><p>Hexo框架搭建的网站可以添加Live2D模型，让您的网站更加生动和有趣。Live2D是一种2D图像的实时运动技术，可以将静态的插图或卡通人物赋予动态效果。您可以按照以下步骤在Hexo网站中添加Live2D模型：</p>
-<ol>
-<li><p>在Hexo网站的根目录下，创建一个名为 <code>live2d</code> 的文件夹。</p>
-</li>
-<li><p>将Live2D模型的相关文件（通常包括 <code>.json</code>、<code>.js</code>、<code>.png</code> 等文件）放置在 <code>live2d</code> 文件夹中。您可以从Live2D官方网站或其他资源站点下载Live2D模型。</p>
-</li>
-<li><p>在Hexo网站中添加引用Live2D的代码。您可以在Hexo主题的模板文件中找到适合的位置，一般是在 <code>&lt;body&gt;</code> 标签的结尾处。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d/live2d.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d/live2d_init.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改 <code>live2d_init.js</code> 文件以配置Live2D模型的显示参数。您可以根据Live2D模型的文件名和其他参数进行相应的设置。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">loadlive2d</span>(<span class="string">&quot;live2d&quot;</span>, <span class="string">&quot;/live2d/model.json&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>其中，<code>&quot;live2d&quot;</code> 是存放Live2D模型文件的文件夹名，<code>&quot;/live2d/model.json&quot;</code> 是Live2D模型文件的路径和文件名。</p>
-</li>
-<li><p>保存文件并重新生成Hexo网站。</p>
-</li>
-<li><p>打开您的Hexo网站，就应该能看到Live2D模型已成功添加到网站中了。</p>
-</li>
-</ol>
-<p>请注意，Live2D模型的使用可能需要遵循一些授权和使用规定，请确保您具备合法的使用权或遵守相关规定。</p>
-]]></content>
-      <categories>
-        <category>记录</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Hexo】git上传大文件失败</title>
-    <url>/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/</url>
-    <content><![CDATA[<h3 id="git上传大文件重复失败"><a href="#git上传大文件重复失败" class="headerlink" title="git上传大文件重复失败"></a>git上传大文件重复失败</h3><p> 在public文件夹里面放了一个超过100MB的压缩包<br> 在hexo d 用git上传时<br> 显示上传文件不能超过100MB</p>
-<p> 在删除该文件后<br> 仍然失败<br> 而且仍然是在上传一个较大的文件<br> 但是明明在public里面已经删除</p>
-<p> 原因是<br> 在.deploy_git<br> 缓存目录里<br> 只需要删除.deploy_git即可</p>
-]]></content>
-      <categories>
-        <category>记录</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-        <tag>教程</tag>
-        <tag>错误</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小说</title>
-    <url>/2023/06/18/xiao-shuo/</url>
-    <content><![CDATA[<ul>
-<li>这是一个关于一只小猫和一只小狗的故事，它们住在同一个农场里，每天都一起玩耍。小猫叫做咪咪，它有一双蓝色的眼睛，一身白色的毛，非常可爱。小狗叫做旺旺，它有一条黑色的尾巴，一双棕色的耳朵，非常聪明。</li>
-<li>有一天，咪咪和旺旺在农场里散步，突然发现了一个木头制成的箱子，箱子上有一个锁，但是锁已经生锈了。它们好奇地走过去，用牙齿和爪子把锁打开了。它们打开箱子，发现里面有很多奇怪的东西，比如一个闪亮的皇冠，一个漂亮的项链，还有一个会说话的魔法棒。魔法棒是金色的，上面有很多彩色的珠子和星星。</li>
-<li>小猫和小狗很好奇，就拿出了魔法棒，想试试它的功能。魔法棒说：“你们好，我是一个神奇的魔法棒，我可以帮你们实现任何愿望。你们只要说出你们的愿望，我就可以帮你们实现。不过你们要注意，这个魔法是有时限的，当太阳落山时，你们就会恢复原来的样子。而且你们只能许三个愿望，所以要想好了再说。”</li>
-<li>小猫想了想，说：“我想变成一只美丽的公主，穿上这个皇冠和项链。”魔法棒一挥，小猫就变成了一只穿着粉色裙子的公主猫。它的眼睛变得更加闪亮，它的毛变得更加柔软。它戴上了皇冠和项链，感觉自己像是世界上最幸福的猫。</li>
-<li>小狗看到了，也想试试。它说：“我想变成一只勇敢的骑士，保护我的朋友。”魔法棒又一挥，小狗就变成了一只穿着铠甲的骑士狗。它的尾巴变得更加挺拔，它的耳朵变得更加灵敏。它穿上了铠甲和剑，感觉自己像是世界上最强大的狗。</li>
-<li>小猫和小狗都很开心，就开始在农场里玩起了公主和骑士的游戏。它们遇到了很多有趣的事情，比如救了一只被困在树上的小鸟。小鸟很感激它们，送给它们一朵美丽的花作为礼物。它们还帮助了一群被欺负的羊羔。羊羔很感谢它们，送给它们一块美味的奶酪作为奖励。它们还找到了一个隐藏的花园。花园里有很多鲜花和果树，还有一个小池塘。它们在那里休息了一会儿，享受了一些水果和清水。</li>
-<li>在花园里，它们看到了一个美丽的喷泉，喷泉里有一面镜子。它们走过去看了看自己的样子，发现自己已经不是原来的模样了。它们感到有些惊讶，也有些怀念。它们想起了自己原来的生活，以及自己还没有实现的愿望。</li>
-<li>魔法棒突然说：“你们玩得开心吗？你们知道吗？这个魔法是有时限的，当太阳落山时，你们就会恢复原来的样子。而且你们只能许三个愿望，你们还剩下一个愿望。你们还想继续玩吗？还是想回到原来的生活？还是想许一个新的愿望？”</li>
-<li>小猫和小狗对视了一眼，都看到了对方眼中的温暖和友情。它们笑了笑，说：“我们很感谢你给我们带来了这么多乐趣和奇遇，但是我们更喜欢我们原来的样子和生活。我们不需要皇冠和项链，也不需要铠甲和剑。我们只需要彼此的陪伴和友谊。所以我们的最后一个愿望是，让我们恢复原来的样子，并且永远做好朋友。”</li>
-<li>魔法棒听了，感动地说：“你们真是两个善良和诚实的孩子。我很高兴能认识你们。那么，我就帮你们实现你们的最后一个愿望吧。”</li>
-<li>魔法棒再次挥动，小猫和小狗就变回了自己。它们把魔法棒还给了箱子，并且把箱子放回原来的地方。它们相互拥抱了一下，然后一起回到了自己的家。</li>
-<li>从那以后，咪咪和旺旺仍然是最好的朋友，它们每天都一起玩耍，分享彼此的快乐和悲伤。它们知道，无论发生什么，它们都会永远在一起。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>碎碎念</category>
-        <category>小说</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
-        <tag>小说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>当小鱼碰上小兔</title>
-    <url>/2023/06/18/dang-xiao-yu-peng-shang-xiao-tu-1/</url>
-    <content><![CDATA[<p>从前有一个小鱼，它叫波波。 波波是一个非常好奇的小鱼，总是对周围的世界充满了好奇心。 波波住在一条清澈见底的小溪里，每天游来游去，与小溪中的朋友们一起玩耍。</p>
-<p>有一天，波波决定去探险，看看世界的另一边是什么样子。 于是，它开始向上游游去，一路上遇到了各种各样的鱼类和水生生物。 它们告诉波波，上游有一片神奇的湖泊，湖泊中有一个传说中的宝藏，可以实现每个人的愿望。</p>
-<p>波波听了非常兴奋，决定要去找到那个宝藏。 它游了一整天，终于到达了湖泊。 湖泊的水非常清澈，波波可以看到湖底的一切。 它慢慢游向湖底，寻找宝藏的踪迹。</p>
-<p>就在波波准备放弃的时候，它发现了一个闪闪发光的东西。 波波高兴地游过去，发现那是一个小小的金色魔法球。 波波拿起魔法球，突然间，一个奇迹发生了。</p>
-<p>魔法球中出现了一个小兔子，它叫兔兔。 兔兔是一个机灵可爱的小家伙，它告诉波波，它是湖泊守护者的助手，负责保护宝藏和湖泊的安全。 但是，最近湖泊的水源受到了污染，宝藏也变得无法保护了。 兔兔请求波波的帮助，一起清理湖泊，修复宝藏。</p>
-<p>波波毫不犹豫地答应了兔兔的请求。 它们开始一起工作，收集湖泊中的垃圾，清理污染的水源，让湖泊重新恢复了往日的美丽。 他们发现湖泊的水源被一家工厂的排放物污染了。 他们决定去找工厂的主人，希望他能改变自己的行为，保护环境。</p>
-<p>波波和兔兔一起游到了工厂，他们遇到了主人叫做汤姆的人。汤姆一开始并不理解波波和兔兔的意图，他认为只要工厂能够产生利润，就不需要考虑环境的问题。</p>
-<p>但是，波波和兔兔没有放弃，他们用自己的努力和汤姆进行了长时间的交流。他们向汤姆解释了湖泊的重要性，以及环境保护的必要性。最终，汤姆被波波和兔兔的真诚和坚持打动了，他决定采取措施改善工厂的排放问题，保护湖泊和周边环境。</p>
-<p>工厂改善计划实施后，湖泊逐渐恢复了往日的美丽。水变得清澈见底，湖底的鲜花和水生生物再次绽放出勃勃生机。波波和兔兔高兴地欢呼，他们的努力没有白费。</p>
-<p>在清理的过程中，波波和兔兔成了非常好的朋友。他们一起探索湖泊，游泳，追逐彩虹鱼，度过了一段美好的时光。他们还邀请了其他水生生物一起参与保护湖泊的行动，形成了一个团结友爱的大家庭。</p>
-<p>最终，波波和兔兔来到了宝藏前。兔兔告诉波波，宝藏可以实现每个人的愿望，它会为波波实现一个愿望。波波想了一想，它说：“我希望所有的水域都能变得干净，让所有的生物都能享受到清澈的水。”</p>
-<p>魔法球发出了明亮的光芒，湖泊中的水变得更加清澈纯净，周围的水生生物们都欢快地游来游去。</p>
-<p>波波和兔兔开心地笑着，他们知道他们的努力没有白费。 从那天起，波波和兔兔成了湖泊的守护者，他们一起保护着湖泊和宝藏。</p>
-<p>故事讲述了波波和兔兔的冒险经历，温馨而可爱。它们的友谊和努力向我们传递了珍惜环境、保护自然的重要信息。无论是小鱼还是小兔，每个人都可以为环境做出贡献，让世界变得更加美好。通过与汤姆的交流，故事也强调了环境保护需要每个人的共同努力。</p>
-]]></content>
-      <categories>
-        <category>碎碎念</category>
-        <category>小说</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
-        <tag>小说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>域名申请</title>
-    <url>/2023/06/21/yu-ming-shen-qing/</url>
-    <content><![CDATA[<h1 id="免费域名申请"><a href="#免费域名申请" class="headerlink" title="免费域名申请"></a>免费域名申请</h1><p>说在前面：nic.eu.org申请的为二级域名，已经有域名的友友可以无需申请<br>只为建站可以接受github分配的网址的友友可以不用额外申请域名。<br>不想折腾的友友们可以不用申请</p>
-<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><iframe src="//player.bilibili.com/player.html?bvid=BV1oj411D7FJ&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-    
-<pre><code>可不可以三连支持一下
-做视频和写网站真的好累
-你的三连是我持续更新的动力
-关注一下成为老粉哦
-</code></pre>
-<h1 id="图文"><a href="#图文" class="headerlink" title="图文"></a>图文</h1><h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><pre><code>直接开始
-访问较慢，耐心等待即刷新
-</code></pre>
-<p>   进入<a href="https://nic.eu.org/">EU.org</a><br>   （点这里）</p>
-   <img src="/img/yuming2.png" alt="yuming2.png" title="yuming22.png" />
-    
-
-    
-<pre><code> 点here进入登录界面
- 点注册
-</code></pre>
-   <img src="/img/yuming1.png" alt="yuming1.png" title="yuming1.png" /> 
-   
-<p>   进入下面的网站，选择一个英国人的身份（通过审核更快）</p>
-<p>   <a href="https://www.dizhishengcheng.com/">身份生成网站</a><br>   （这里）</p>
-<pre><code> 按照如图填写
-</code></pre>
-   <img src="/img/yuming3.png" alt="yuming3.png" title="yuming3.png" />
-   
-<pre><code> 之后会发送一封邮件到你邮箱
- 验证之后返回登录
- 操作过程见视频
- 登录后
- 
-</code></pre>
-   <img src="/img/yuming4.png" alt="yuming4.png" title="yuming4.png" />
-   
-<pre><code> 点New Domain创建域名
- 
-</code></pre>
-   <img src="/img/yuming5.png" alt="yuming5.png" title="yuming5.png" />  
-     
-<pre><code> 只需要在箭头出填写完整域名
- 即： 你取的名字+eu.org
- 然后拉到最下面提交即可(submit)
- 
-</code></pre>
-<h2 id="域名申请"><a href="#域名申请" class="headerlink" title="域名申请"></a>域名申请</h2><pre><code> 显示这样说明你成功了
- 
-</code></pre>
-   <img src="/img/yuming6.png" alt="yuming6.png" title="yuming6.png" />
-   
-   
-<pre><code> 提交完成后需要等待1~7个工作日，会发邮件提醒你申请成功
- 填写的英国信息越详细成功概率越大
- 可一次性多申请几个
- 免费可申请4个域名
-</code></pre>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>同时我也建了几个群方便交流，群里可以互相帮助<br>希望这个能够帮助到你</p>
-<p><a href="https://t.me/haihaihuhu/1">电报</a></p>
-<p>QQ：766354968</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>百闻不如一见，</p>
-<p>百见不如一试。</p>
-<p>还是那句话，</p>
-<p>互联网拉平了信息差，</p>
-<p>但是拉不平行动差。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>小猫的冒险</title>
-    <url>/2023/06/18/text/</url>
-    <content><![CDATA[<ul>
-<li>小猫咪是一只可爱的橘色短毛猫，住在一个幸福的家庭里，有一个叫做小明的主人，还有一个叫做小花的好朋友。</li>
-<li>小猫咪每天都很快乐，喜欢和小明一起玩耍，和小花一起睡觉，还喜欢吃小明妈妈做的美味的鱼。</li>
-<li>有一天，小猫咪看到窗外有一只漂亮的白色长毛猫，它有一双蓝色的眼睛，像两颗宝石一样闪亮。小猫咪很好奇，想要出去和它交朋友。</li>
-<li>小猫咪趁小明不注意的时候，溜出了家门，跟着白色长毛猫跑了。他们来到了一个陌生的地方，有很多高楼大厦，很多车辆和人群，还有很多其他的动物。</li>
-<li>小猫咪觉得这里很新奇，很刺激，但也很危险。他们遇到了一只凶恶的大黄狗，差点被它咬伤。他们遇到了一群恶霸的黑猫，差点被它们欺负。他们遇到了一个坏心眼的老太太，差点被她抓走。</li>
-<li>小猫咪开始后悔跟着白色长毛猫出来了，他想念自己的家庭和朋友，他想回家。他对白色长毛猫说：“我不想再玩了，我要回家。”</li>
-<li>白色长毛猫听了，感到很惊讶。它说：“你不喜欢这里吗？这里有很多好玩的东西，你为什么要回去那个无聊的地方？”</li>
-<li>小猫咪说：“那个地方是我的家，那里有我最爱的人和最亲的朋友。他们会担心我，会想念我。我不想让他们难过。”</li>
-<li>白色长毛猫沉默了一会儿，然后说：“我明白了。你是一个很有感情的小猫。我也有一个家庭，但是我失去了他们。我从那以后就没有回去过。我一直在这里流浪，寻找新的刺激和乐趣。但是我也常常感到孤单和空虚。”</li>
-<li>小猫咪听了，感到很同情。他说：“对不起，我不知道你有这样的经历。你为什么不回去找你的家庭呢？也许他们还在等你呢。”</li>
-<li>白色长毛猫摇摇头，说：“不行了。太久了。他们一定已经忘记我了。而且我也不知道他们在哪里。我已经习惯了这里的生活，我不能再改变了。”</li>
-<li>小猫咪说：“你不要这么说。你还年轻，你还有机会。你不要放弃你的希望和梦想。你不要害怕改变。你可以找到你的家庭，也可以找到新的朋友。你可以过上你想要的生活。”</li>
-<li>白色长毛猫看着小猫咪，眼中闪过一丝感动。它说：“谢谢你，你是一个很善良，很勇敢，很聪明的小猫。你让我想起了我曾经的自己。也许你说的对，也许我应该试一试。”</li>
-<li>小猫咪笑了，说：“那就好。那我们现在就一起回家吧。我会带你去见我的家人和朋友，他们一定会喜欢你的。”</li>
-<li>白色长毛猫点点头，说：“好吧。那我们走吧。”</li>
-<li>小猫咪和白色长毛猫一起回到了小明的家，小明和小花都很高兴地迎接了他们。小明妈妈也很喜欢白色长毛猫，决定收养它，给它取了一个名字叫做小雪。</li>
-<li>小猫咪和小雪成了新的好朋友，他们一起分享了美味的鱼，一起玩耍，一起睡觉。他们都很幸福，很感激。</li>
-<li>小猫咪也从这次冒险中学到了很多东西，他知道了外面的世界既有美好，也有危险，他知道了珍惜自己的家庭和朋友，他知道了勇敢地追求自己的梦想。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>碎碎念</category>
-        <category>小说</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
-        <tag>小说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>思维笔记</title>
-    <url>/2023/06/20/si-wei-bi-ji/</url>
-    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?bvid=BV1uh411M7Su&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-
-<img src="/img/siweibiji.jpg" alt="siweibiji.jpg" title="siweibiji.jpg" />]]></content>
-  </entry>
-  <entry>
-    <title>绮良良</title>
-    <url>/2023/06/17/qi-liang-liang/</url>
-    <content><![CDATA[<h2 id="绮良良"><a href="#绮良良" class="headerlink" title="绮良良"></a>绮良良</h2><pre><code>鲁迅：“学习之余也要学会娱乐”
-</code></pre>
-<img src="https://img.locyan.cn/i/2023/06/17/648d5cfd7ce42.jpg" alt="3C6E6700DF1FCEC29404FF4FEA013B3D.jpg" title="3C6E6700DF1FCEC29404FF4FEA013B3D.jpg" />
-<img src="https://img.locyan.cn/i/2023/06/17/648d5cfd073d7.jpg" alt="8C01E29B478934055F6C4AB35891F03A.jpg" title="8C01E29B478934055F6C4AB35891F03A.jpg" />
-<img src="https://img.locyan.cn/i/2023/06/17/648d5cfca5276.jpg" alt="765DEA37349F9D84DCF930796D428EC3.jpg" title="765DEA37349F9D84DCF930796D428EC3.jpg" />
-<img src="https://img.locyan.cn/i/2023/06/17/648d6da51a972.jpg" alt="《啾咪❤》绮良良 きらら Kirara 키라라_107179498.jpg" title="《啾咪❤》绮良良 きらら Kirara 키라라_107179498.jpg" />
-<img src="https://img.locyan.cn/i/2023/06/17/648d6dad5d1ed.png" alt="绮良良 __ 綺良々_107120118_p1.png" title="绮良良 __ 綺良々_107120118_p1.png" />
-
-
-
-<img src="https://img.locyan.cn/i/2023/06/17/648d6dad5d58d.jpg" alt="猫猫_D_108509488.jpg" title="猫猫_D_108509488.jpg" />
-
-<div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">看不到我
-    </button><div class="hide-content"><img src="https://img.locyan.cn/i/2023/06/17/648d6dad5d17c.png" alt="绮良良 __ 綺良々_107120118_p2.png" title="绮良良 __ 綺良々_107120118_p2.png" /></div></div>
-
-
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">看不到我
-    </button><div class="hide-content"><div class="gallery">
-    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">[{"url":"https://img.locyan.cn/i/2023/06/17/648d5cfca5276.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d5cfd073d7.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6dad5d1ed.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6dad5d58d.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6dad5d17c.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6e60bbff5.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6e60bc02e.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6ee0caf49.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6ee9b5058.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6eea82185.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6eece6759.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6efe46a63.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6f1e1cb7d.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6f57015a5.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6f5d9a374.jpg","alt":""}]</span>
-    </div>
-    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
-    </div></div></div>
-
-
-
-
-<pre><code>这只猫又可爱极了，特别是趁她睡着，在她耳边说「快递要超时了」的时候。那跑的，简直比战场上的五郎大将都快呢。                                     ——八重神子
-</code></pre>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code>图片来源于网络 侵权删
-</code></pre>
-]]></content>
-      <categories>
-        <category>好康的</category>
-      </categories>
-      <tags>
-        <tag>鲁迅：“学习之余也要学会娱乐”</tag>
-        <tag>好康的</tag>
-        <tag>图片</tag>
-        <tag>相册</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新型催化剂实现甲烷高效转化</title>
-    <url>/2023/06/18/xin-xing-cui-hua-ji-shi-xian-jia-wan-gao-xiao-zhuan-hua/</url>
-    <content><![CDATA[<p>这是一篇发表在《美国化学会志》上的论文，题目是新型催化剂实现甲烷高效转化<br>文章地址：<a href="https://pubs.acs.org/doi/10.1021/jacs.1c04367">https://pubs.acs.org/doi/10.1021/jacs.1c04367</a></p>
-<p>作者利用一种新型的铜基催化剂，能够在低温下实现甲烷的选择性氧化，生成甲醛和甲酸，为甲烷的高值化利用提供了新途径。</p>
-<p>作者通过原位光谱和理论计算，揭示了催化剂上的铜单原子和铜氧团簇之间的协同作用，以及甲烷氧化反应的机理和动力学。</p>
-<p>作者证明了催化剂的高稳定性和可重复性，以及在连续反应中的高效率和选择性。<br>这篇论文是一篇高水平的化学研究论文，对于甲烷转化领域有重要的意义和影响。👍</p>
-<p>引言：介绍了甲烷转化的背景和意义，以及目前存在的挑战和研究进展，提出了本文的研究目标和主要贡献。</p>
-<p>实验部分：介绍了催化剂的制备、表征、反应和分析的方法和条件</p>
-<p>结果与讨论：分为四个部分，分别展示和讨论了催化剂的形貌、结构、活性和稳定性，以及甲烷氧化反应的机理和动力学。</p>
-<p>结论：总结了本文的主要发现和创新点，指出了催化剂在甲烷高效转化方面的优势和潜力，以及未来的研究方向。</p>
-<p>补充材料：提供了一些额外的实验数据和计算细节，以支持本文的结果和讨论。📝</p>
-<p>催化剂的制备：作者采用了一种湿化学法，将铜盐溶液与碳纳米管混合，然后通过热处理和还原，得到了分散在碳纳米管上的铜单原子和铜氧团簇的混合催化剂。</p>
-<p>催化剂的表征：作者利用了多种表征手段，如透射电子显微镜、X射线光电子能谱、X射线吸收光谱等，对催化剂的形貌、结构、组成和价态进行了详细的分析，证实了催化剂上存在铜单原子和铜氧团簇两种形式的活性位点。</p>
-<p>催化剂的活性和稳定性：作者通过甲烷氧化反应，评价了催化剂的活性和稳定性，发现催化剂在低温下表现出高效率和选择性，能够将甲烷转化为甲醛和甲酸两种有价值的产物。作者还发现催化剂在连续反应中保持了良好的稳定性，没有出现明显的失活或结构变化。</p>
-<p>甲烷氧化反应的机理和动力学：作者通过原位光谱和理论计算，揭示了甲烷氧化反应的机理和动力学。作者发现铜单原子和铜氧团簇之间存在协同作用，能够促进甲烷的活化和氧气的还原。作者还发现甲烷氧化反应是一个双功能过程，其中铜单原子主要负责甲醛的生成，而铜氧团簇主要负责甲酸的生成。作者根据实验数据和计算结果，提出了一套详细的反应路径和中间体，并计算了各个步骤的能垒和速率常数。👩‍🔬</p>
-<p>引言：<br>在引言部分，你需要介绍甲烷转化的背景和意义，解释为什么研究甲烷转化是重要的，并提出当前领域存在的挑战和研究进展。此外，你还应该明确论文的研究目标和主要贡献。这个部分可以帮助读者了解研究的背景和动机，并引导他们对后续内容的理解。</p>
-<p>实验部分：<br>实验部分应该详细描述你在研究中使用的催化剂的制备方法、表征方法、反应条件和分析方法。你可以介绍催化剂的合成路线、使用的催化剂载体、催化剂表面特征的分析方法等。确保提供足够的细节，以便其他研究人员能够复制你的实验并验证结果。</p>
-<p>结果与讨论：<br>这部分通常分为几个子部分，你可以根据具体的实验结果进行划分。每个子部分应该展示和讨论催化剂的形貌、结构、活性和稳定性，以及甲烷氧化反应的机理和动力学。你可以使用实验数据、图表、图像等来支持你的发现，并进行详细的讨论。这个部分是论文的核心，你需要深入分析和解释实验结果，并与之前的研究成果进行比较和讨论。</p>
-<p>结论：<br>结论部分是对整个研究进行总结，重点强调你的主要发现和创新点。你可以总结催化剂在甲烷高效转化方面的优势和潜力，并提出未来的研究方向。确保结论部分简明扼要地概括了你的研究成果，并给出读者进一步思考和研究的方向。</p>
-<p>补充材料：<br>补充材料部分提供了一些额外的实验数据和计算细节，以支持你在论文中提出的结果和讨论。这些附加材料可以包括更详细的实验数据、计算方法、图表等，以帮助读者更好地理解你的研究工作。</p>
-<p>催化剂的制备：作者采用了一种湿化学法，将铜盐溶液与碳纳米管混合，然后通过热处理和还原，得到了分散在碳纳米管上的铜单原子和铜氧团簇的混合催化剂。这种方法的优点是可以控制铜的负载量和分散度，以及碳纳米管的结构和表面性质。碳纳米管作为载体，不仅可以提供大量的表面积和孔隙结构，还可以通过π-π相互作用和电荷转移作用稳定铜单原子和铜氧团簇，防止其迁移和聚集。<br>催化剂的表征：作者利用了多种表征手段，如透射电子显微镜、X射线光电子能谱、X射线吸收光谱等，对催化剂的形貌、结构、组成和价态进行了详细的分析，证实了催化剂上存在铜单原子和铜氧团簇两种形式的活性位点。透射电子显微镜可以直观地观察到催化剂上的铜单原子和铜氧团簇的形貌和分布，以及碳纳米管的结构和缺陷。X射线光电子能谱可以测定催化剂上的元素组成和价态，以及碳纳米管的表面官能团。X射线吸收光谱可以确定催化剂上铜单原子和铜氧团簇的配位环境和几何结构，以及与载体之间的相互作用。<br>催化剂的活性和稳定性：作者通过甲烷氧化反应，评价了催化剂的活性和稳定性，发现催化剂在低温下表现出高效率和选择性，能够将甲烷转化为甲醛和甲酸两种有价值的产物。作者还发现催化剂在连续反应中保持了良好的稳定性，没有出现明显的失活或结构变化。作者通过比较不同负载量、分散度、价态和结构的铜基催化剂，发现铜单原子和铜氧团簇之间存在协同作用，能够提高甲烷氧化反应的活性和选择性。作者还通过比较不同载体、温度、压力、空速等条件下的反应结果，发现碳纳米管作为载体能够提供良好的传质和传热条件，以及适宜的表面性质，有利于甲烷氧化反应的进行。<br>甲烷氧化反应的机理和动力学：作者通过原位光谱和理论计算，揭示了甲烷氧化反应的机理和动力学。作者发现甲烷氧化反应是一个双功能过程，其中铜单原子主要负责甲醛的生成，而铜氧团簇主要负责甲酸的生成。作者根据实验数据和计算结果，提出了一套详细的反应路径和中间体，并计算了各个步骤的能垒和速率常数。作者发现甲烷在铜单原子上的活化是反应的速率控制步骤，而氧气在铜氧团簇上的还原是反应的选择性控制步骤。作者还发现铜单原子和铜氧团簇之间存在协同作用，能够促进甲烷的活化和氧气的还原，从而提高反应的效率和选择性。👩‍🔬</p>
-<p>以下是一些常见的甲烷转化机制和催化剂设计思路：</p>
-<p>活化甲烷：<br>甲烷是一个非常稳定的分子，难以直接反应。因此，催化剂的设计需要引入活性位点来活化甲烷，使其易于反应。常见的策略包括使用金属离子（如铜、铂、镍等）作为活性位点，并利用氧化剂（如氧气、过氧化氢等）提供活化所需的氧。</p>
-<p>表面反应：<br>甲烷在催化剂表面上发生一系列的反应步骤。其中，关键的步骤是甲烷的氧化和活性中间体的形成。氧化反应可能涉及氧分子与甲烷的直接反应或通过氧化剂提供氧原子。形成活性中间体后，进一步的反应可以导致甲烷的转化和产物的形成。</p>
-<p>催化剂设计：<br>新型催化剂的设计可以包括以下几个方面：</p>
-<p>提高活性位点的浓度：增加活性位点的负载量或表面积，以提高反应活性。<br>调控催化剂的形貌和结构：通过合适的制备方法和控制条件，调控催化剂的晶体结构、形貌和孔道结构，以优化反应性能。<br>引入协同效应：将多种功能组分引入催化剂体系，以实现协同效应，提高催化活性和选择性。<br>优化反应条件：反应温度、压力、反应物比例等反应条件的优化可以显著影响甲烷转化的效率和产物选择性。<br>需要注意的是，具体的甲烷转化机理和催化剂设计策略可能因不同的研究领域、催化剂类型和反应条件而有所不同。因此，具体的研究论文和文献综述是了解特定催化剂体系和反应机理的最佳途径。</p>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>超快回收废旧锂离子电池正极</title>
-    <url>/2023/06/18/chao-kuai-hui-shou-fei-jiu-li-chi-zi-dian-chi-zheng-ji/</url>
-    <content><![CDATA[<p>这是一篇发表在《ACS能源快报》上的论文，题目是超快回收废旧锂离子电池正极。这篇论文的主要内容和创新点是：</p>
-<p>作者介绍了一种利用超声波和酸碱溶液快速回收废旧锂离子电池正极材料的方法，提高了回收效率和资源利用率。</p>
-<p>作者通过实验和理论分析，揭示了超声波和酸碱溶液对正极材料的物理和化学作用机制，以及回收过程中的关键参数和影响因素。</p>
-<p>作者证明了回收后的正极材料具有良好的结构和性能，能够再次用于制备锂离子电池，实现了循环利用。</p>
-<p>引言：<br>介绍了废旧锂离子电池的处理和再利用的背景和意义，指出了废旧锂离子电池正极材料的回收和再利用是一种有效的资源节约和环境保护的方法。</p>
-<p>介绍了目前存在的挑战和研究进展，指出了现有的回收方法存在的问题，如低效率、高成本、高污染等，以及研究者对于提高回收效率和资源利用率的努力和尝试。</p>
-<p>提出了本文的研究目标和主要贡献，即利用超声波和酸碱溶液快速回收废旧锂离子电池正极材料，并分析其物理和化学作用机制，以及回收后的正极材料的结构和性能。</p>
-<p>实验部分：<br>介绍了废旧锂离子电池正极的回收方法，即将废旧锂离子电池正极在超声波作用下与酸碱溶液混合，然后通过过滤、洗涤、干燥等步骤得到回收后的正极材料。</p>
-<p>介绍了正极材料的表征方法，包括X射线衍射、扫描电子显微镜、能量色散X射线光谱、傅里叶变换红外光谱等，用于分析正极材料的晶体结构、形貌、组成和官能团。</p>
-<p>介绍了正极材料的再制备方法，即将回收后的正极材料与导电剂和粘结剂按一定比例混合，然后涂布在铝箔上制成电极片。</p>
-<p>介绍了正极材料的测试方法，包括循环伏安法、恒流充放电法、交流阻抗法等，用于评价正极材料的电化学性能和稳定性。<br>结果与讨论：</p>
-<p>展示和讨论了超声波和酸碱溶液对正极材料的物理作用机制，即超声波能够产生空化现象，形成高温高压的微气泡，从而破坏正极材料的结构和粒度，并促进酸碱溶液对正极材料的渗透和浸润。</p>
-<p>展示和讨论了超声波和酸碱溶液对正极材料的化学作用机制，即酸碱溶液能够与正极材料发生酸碱反应，从而溶解出锂盐、镍盐、钴盐等，并改变正极材料的组成和价态。</p>
-<p>展示和讨论了回收过程中的关键参数和影响因素，如超声波功率、时间、频率等，以及酸碱溶液的浓度、温度、pH值等，分析了它们对回收效率和资源利用率的影响，并优化了最佳回收条件。</p>
-<p>展示和讨论了回收后的正极材料的结构和性能，比较了回收前后的正极材料的晶体结构、形貌、组成和官能团，发现回收后的正极材料仍然保持了层状结构，但粒度变小，表面变粗糙，组成变化，价态降低。比较了回收前后的正极材料的电化学性能和稳定性，发现回收后的正极材料仍然具有良好的比容量、倍率性能和循环性能，能够再次用于制备锂离子电池。</p>
-<p>结论：<br>总结了本文的主要发现和创新点，指出了超声波和酸碱溶液回收法在废旧锂离子电池正极处理和再利用方面的优势和潜力，即快速、高效、低成本、低污染、可循环等。</p>
-<p>指出了本文的局限性和不足之处，如回收过程中的能耗、废液处理、金属回收等问题，以及回收后的正极材料的性能下降等问题。</p>
-<p>提出了未来的研究方向，如进一步优化回收过程和条件，提高回收效率和资源利用率，以及进一步改善回收后的正极材料的结构和性能，提高其再利用价值。</p>
-<p>补充材料：<br>提供了一些额外的实验数据和理论计算细节，以支持本文的结果和讨论。包括超声波对正极材料的空化效应的模拟图，酸碱溶液对正极材料的溶解度数据，回收过程中各参数对回收效率和资源利用率的响应曲线图，以及回收后的正极材料在不同倍率下的充放电曲线图等。📝</p>
-<p>实验准备：</p>
-<p>收集废旧锂离子电池正极材料，并将其分解成细小的粉末状。<br>准备酸性和碱性溶液，用于超声波处理和回收过程中的化学反应。<br>超声波处理：</p>
-<p>将废旧锂离子电池正极材料粉末置于酸性或碱性溶液中，并使用超声波处理设备进行处理。<br>超声波的振动作用有助于分散正极材料粉末，使其更易于与酸碱溶液中的反应物接触，从而促进反应的进行。<br>超声波的空化效应可以在液体中产生局部高压和高温的条件，有助于加速反应速率和提高回收效率。<br>酸碱溶液的作用：</p>
-<p>酸性溶液用于溶解金属氧化物成分，使其转化为可溶性的盐或离子。<br>碱性溶液用于中和酸性残留物，调节溶液的pH值，并提取目标物质。<br>酸碱溶液的浓度、温度和处理时间等参数对反应的效率和回收率具有重要影响。<br>物理和化学分析：</p>
-<p>对回收后的正极材料进行物理和化学分析，包括结构表征、成分分析和性能测试。<br>结构表征方法可以包括扫描电子显微镜（SEM）、透射电子显微镜（TEM）和X射线衍射（XRD）等，用于观察材料的形貌和晶体结构。<br>成分分析可以使用能量色散X射线光谱（EDX）或电感耦合等离子体发射光谱（ICP-OES）等方法，确定回收后材料的化学成分。<br>性能测试可以包括电化学测试，例如循环伏安法（CV）、电化学阻抗谱（EIS）和充放电性能测试，以评估回收材料在锂离子电池中的性能。<br>结果和讨论：</p>
-<p>通过实验和理论分析，揭示了超声波和酸碱溶液对正极材料的物理和化学作用机制，以及回收过程中的关键参数和影响因素。<br>论文中可能会提供实验数据、图表和分析，以支持回收方法的有效性和回收材料的优良性能。<br>通过上述实验步骤和分析，论文证明了该超快回收方法的可行性和有效性。回收后的正极材料具有良好的结构和性能，可以再次用于制备锂离子电池，实现了废旧锂离子电池资源的循环利用。该研究对于解决废旧锂离子电池的处理和再利用问题具有重要的意义和影响，为可持续能源发展和环境保护做出了贡献。</p>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自定义侧边栏</title>
-    <url>/2023/07/01/zi-ding-yi-ce-bian-lan/</url>
-    <content><![CDATA[<h2 id="自定义-widget"><a href="#自定义-widget" class="headerlink" title="自定义 widget"></a>自定义 widget</h2><h3 id="创建-widget-yml"><a href="#创建-widget-yml" class="headerlink" title="创建 widget.yml"></a>创建 widget.yml</h3><p>在Hexo博客目录中的（如果没有_data 文件夹，请自行创建），创建一个文件 source&#x2F; _data &#x2F; widget.yml</p>
-<p>格式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">top:</span><br><span class="line">  - class_name:</span><br><span class="line">    id_name:</span><br><span class="line">    name:</span><br><span class="line">    icon:</span><br><span class="line">    html:</span><br><span class="line"></span><br><span class="line">bottom:</span><br><span class="line">  - class_name:</span><br><span class="line">    id_name:</span><br><span class="line">    name:</span><br><span class="line">    icon:</span><br><span class="line">    order:</span><br><span class="line">    html:</span><br></pre></td></tr></table></figure>
-
-<p>top： 创建的 widget 会出现在非 sticky 区域（即所有页面都会显示）</p>
-<p>bottom： 创建的 widget 会出现在 sticky 区域（除了文章页都会显示）</p>
-<p>参数	解释</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class_name	所创建的 widget 父类 class 名 （可选）</span><br><span class="line">id_name	所创建的 widget 父类 id 名（可选）</span><br><span class="line">name	所创建的 widget 标题（会显示出来的）</span><br><span class="line">icon	所创建的 widget 图标 </span><br><span class="line">order	创建的 widget 排序 （可选）</span><br><span class="line">.html	所创建的 widget 相关代码</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p>这里的icon<br>应该是<a href="https://fontawesome.dashgame.com/">Font Awesome</a>这里面已经有的图标。找到合适的图标，复制代码在上面||后直接时候即可。注意不要删掉原有的fa或者fab。</p>
-<p>如：<br>找到一个小图标<br>叫fa-desktop<br>在使用时需要变为fas fa-desktop</p>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -1304,6 +787,523 @@ YAMLException：序列条目的不良缩进 （41：31）
         <tag>记录</tag>
         <tag>教程</tag>
         <tag>错误</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ssh到github出现连接错误问题</title>
+    <url>/2023/06/17/ssh-dao-github-chu-xian-lian-jie-cuo-wu-wen-ti/</url>
+    <content><![CDATA[<p>问题如下</p>
+<p>报错信息</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:\win\polar\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:513:28)</span><br><span class="line">    at cp.emit (D:\win\polar\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br></pre></td></tr></table></figure>
+<img src="https://img.locyan.cn/i/2023/06/17/648d6599f0cf8.png" alt="KLX@W0IX819U2ZWN(]89`NW.png" title="KLX@W0IX819U2ZWN(]89`NW.png" />
+                
+<pre><code>                                      如图
+                                      
+</code></pre>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>国内连接不稳定，多试几次就行（10此左右）
+</code></pre>
+<p>   or</p>
+<pre><code>科学上网
+</code></pre>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code>by自由如风                                                2023.06.17
+</code></pre>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小猫的冒险</title>
+    <url>/2023/06/18/text/</url>
+    <content><![CDATA[<ul>
+<li>小猫咪是一只可爱的橘色短毛猫，住在一个幸福的家庭里，有一个叫做小明的主人，还有一个叫做小花的好朋友。</li>
+<li>小猫咪每天都很快乐，喜欢和小明一起玩耍，和小花一起睡觉，还喜欢吃小明妈妈做的美味的鱼。</li>
+<li>有一天，小猫咪看到窗外有一只漂亮的白色长毛猫，它有一双蓝色的眼睛，像两颗宝石一样闪亮。小猫咪很好奇，想要出去和它交朋友。</li>
+<li>小猫咪趁小明不注意的时候，溜出了家门，跟着白色长毛猫跑了。他们来到了一个陌生的地方，有很多高楼大厦，很多车辆和人群，还有很多其他的动物。</li>
+<li>小猫咪觉得这里很新奇，很刺激，但也很危险。他们遇到了一只凶恶的大黄狗，差点被它咬伤。他们遇到了一群恶霸的黑猫，差点被它们欺负。他们遇到了一个坏心眼的老太太，差点被她抓走。</li>
+<li>小猫咪开始后悔跟着白色长毛猫出来了，他想念自己的家庭和朋友，他想回家。他对白色长毛猫说：“我不想再玩了，我要回家。”</li>
+<li>白色长毛猫听了，感到很惊讶。它说：“你不喜欢这里吗？这里有很多好玩的东西，你为什么要回去那个无聊的地方？”</li>
+<li>小猫咪说：“那个地方是我的家，那里有我最爱的人和最亲的朋友。他们会担心我，会想念我。我不想让他们难过。”</li>
+<li>白色长毛猫沉默了一会儿，然后说：“我明白了。你是一个很有感情的小猫。我也有一个家庭，但是我失去了他们。我从那以后就没有回去过。我一直在这里流浪，寻找新的刺激和乐趣。但是我也常常感到孤单和空虚。”</li>
+<li>小猫咪听了，感到很同情。他说：“对不起，我不知道你有这样的经历。你为什么不回去找你的家庭呢？也许他们还在等你呢。”</li>
+<li>白色长毛猫摇摇头，说：“不行了。太久了。他们一定已经忘记我了。而且我也不知道他们在哪里。我已经习惯了这里的生活，我不能再改变了。”</li>
+<li>小猫咪说：“你不要这么说。你还年轻，你还有机会。你不要放弃你的希望和梦想。你不要害怕改变。你可以找到你的家庭，也可以找到新的朋友。你可以过上你想要的生活。”</li>
+<li>白色长毛猫看着小猫咪，眼中闪过一丝感动。它说：“谢谢你，你是一个很善良，很勇敢，很聪明的小猫。你让我想起了我曾经的自己。也许你说的对，也许我应该试一试。”</li>
+<li>小猫咪笑了，说：“那就好。那我们现在就一起回家吧。我会带你去见我的家人和朋友，他们一定会喜欢你的。”</li>
+<li>白色长毛猫点点头，说：“好吧。那我们走吧。”</li>
+<li>小猫咪和白色长毛猫一起回到了小明的家，小明和小花都很高兴地迎接了他们。小明妈妈也很喜欢白色长毛猫，决定收养它，给它取了一个名字叫做小雪。</li>
+<li>小猫咪和小雪成了新的好朋友，他们一起分享了美味的鱼，一起玩耍，一起睡觉。他们都很幸福，很感激。</li>
+<li>小猫咪也从这次冒险中学到了很多东西，他知道了外面的世界既有美好，也有危险，他知道了珍惜自己的家庭和朋友，他知道了勇敢地追求自己的梦想。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>碎碎念</category>
+        <category>小说</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+        <tag>小说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Hexo】git上传大文件失败</title>
+    <url>/2023/06/28/hexo-git-shang-chuan-da-wen-jian-shi-bai/</url>
+    <content><![CDATA[<h3 id="git上传大文件重复失败"><a href="#git上传大文件重复失败" class="headerlink" title="git上传大文件重复失败"></a>git上传大文件重复失败</h3><p> 在public文件夹里面放了一个超过100MB的压缩包<br> 在hexo d 用git上传时<br> 显示上传文件不能超过100MB</p>
+<p> 在删除该文件后<br> 仍然失败<br> 而且仍然是在上传一个较大的文件<br> 但是明明在public里面已经删除</p>
+<p> 原因是<br> 在.deploy_git<br> 缓存目录里<br> 只需要删除.deploy_git即可</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>教程</tag>
+        <tag>错误</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为网站添加live2D</title>
+    <url>/2023/06/27/wei-wang-zhan-tian-jia-live2d/</url>
+    <content><![CDATA[<h3 id="为网站添加live2D"><a href="#为网站添加live2D" class="headerlink" title="为网站添加live2D"></a>为网站添加live2D</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>hexo-helper-live2d</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载模型"><a href="#下载模型" class="headerlink" title="下载模型"></a>下载模型</h4><p>（这里用一个白色的猫猫）</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击查看</summary><div class="toggle-content"><p><img src="/img/live2d.png"><br><img src="/img/live2d1.png"></p>
+</div></details>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install live2d-widget-model-tororo</span><br></pre></td></tr></table></figure>
+<p>其他模型（目前该插件可直接安装的）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">live2d-widget-model-chitose</span><br><span class="line">live2d-widget-model-epsilon2_1</span><br><span class="line">live2d-widget-model-gf</span><br><span class="line">live2d-widget-model-haru/01 (use npm install --save live2d-widget-model-haru)</span><br><span class="line">live2d-widget-model-haru/02 (use npm install --save live2d-widget-model-haru)</span><br><span class="line">live2d-widget-model-haruto</span><br><span class="line">live2d-widget-model-hibiki</span><br><span class="line">live2d-widget-model-hijiki</span><br><span class="line">live2d-widget-model-izumi</span><br><span class="line">live2d-widget-model-koharu</span><br><span class="line">live2d-widget-model-miku</span><br><span class="line">live2d-widget-model-ni-j</span><br><span class="line">live2d-widget-model-nico</span><br><span class="line">live2d-widget-model-nietzsche</span><br><span class="line">live2d-widget-model-nipsilon</span><br><span class="line">live2d-widget-model-nito</span><br><span class="line">live2d-widget-model-shizuku</span><br><span class="line">live2d-widget-model-tororo</span><br><span class="line">live2d-widget-model-tsumiki</span><br><span class="line">live2d-widget-model-unitychan</span><br><span class="line">live2d-widget-model-wanko</span><br><span class="line">live2d-widget-model-z16</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>在hexo的配置文件中添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-tororo #这里改为你模型的名字</span><br><span class="line">  display:</span><br><span class="line">    position: right  #left放左，right放右</span><br><span class="line">    width: 180</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br><span class="line">  react:</span><br><span class="line">    opacity: 0.7</span><br></pre></td></tr></table></figure>
+<p>这段配置是用于设置Live2D插件的参数。让我为您解释每个参数的含义：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">- `enable`：设置为 `true` 表示启用Live2D插件，允许在网站上显示Live2D模型。</span><br><span class="line">- `scriptFrom`：设置为 `local` 表示从本地加载插件的JavaScript文件。</span><br><span class="line">- `pluginRootPath`：Live2D插件根目录的路径。在这个示例中，设置为 `live2dw/`。</span><br><span class="line">- `pluginJsPath`：插件JavaScript文件存放的路径。在这个示例中，设置为 `lib/`。</span><br><span class="line">- `pluginModelPath`：Live2D模型文件存放的路径。在这个示例中，设置为 `assets/`。</span><br><span class="line">- `tagMode`：设置为 `false` 表示不以标签形式展示Live2D模型。</span><br><span class="line">- `debug`：设置为 `false` 表示关闭调试模式。</span><br><span class="line"></span><br><span class="line">接下来是具体的模型相关设置：</span><br><span class="line"></span><br><span class="line">- `model.use`：指定使用的Live2D模型的名称。在这个示例中，模型名字被设置为 `live2d-widget-model-tororo`，您可以更改为您想要使用的模型的名字。</span><br><span class="line">- `display.position`：指定Live2D模型在网页中的位置，可以设置为 `left` 或 `right`。</span><br><span class="line">- `display.width`：指定Live2D模型的宽度。</span><br><span class="line">- `display.height`：指定Live2D模型的高度。</span><br><span class="line"></span><br><span class="line">接下来是移动设备的显示设置：</span><br><span class="line"></span><br><span class="line">- `mobile.show`：设置为 `true` 表示在移动设备上显示Live2D模型。</span><br><span class="line"></span><br><span class="line">最后是交互相关设置：</span><br><span class="line"></span><br><span class="line">- `react.opacity`：指定Live2D模型的透明度。</span><br><span class="line"></span><br><span class="line">请注意，这些参数可以根据您的需求进行调整和修改，以适应您的网站设计和Live2D模型的要求。</span><br><span class="line"></span><br><span class="line">希望这些解释能对您有所帮助！如果您有任何其他问题，请随时提问。</span><br></pre></td></tr></table></figure>
+
+
+<p>尝试导入其他live2d模型</p>
+<p>但是导入不显示模型</p>
+<p>可能是插件不兼容吧</p>
+<p>以后再仔细研究一下</p>
+<h4 id="其他模型（我导入其他模型没有成功过）"><a href="#其他模型（我导入其他模型没有成功过）" class="headerlink" title="其他模型（我导入其他模型没有成功过）"></a>其他模型（我导入其他模型没有成功过）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Cubism Modeler Sample Models（Cubism模型示例）：这是Live2D官方提供的一些免费的模型示例，包括动漫角色、动物和虚拟偶像等。您可以在Live2D官方网站的下载页面找到这些模型：https://www.live2d.com/en/download/sample-data/</span><br><span class="line"></span><br><span class="line">Facerig Live2D模型：Facerig是一个非常受欢迎的虚拟角色扮演软件，它支持Live2D模型。您可以在Facerig官方网站或Steam商店中找到各种各样的Live2D模型：https://facerig.com/</span><br><span class="line"></span><br><span class="line">Booth（BOOTH）：Booth是一个在线创作和交易平台，您可以在这里找到许多独立插画师和模型师创作的Live2D模型。访问Booth网站并搜索“Live2D”或特定的角色名字，您可以找到许多可购买或免费下载的Live2D模型：https://booth.pm/</span><br><span class="line"></span><br><span class="line">DeviantArt：DeviantArt是一个知名的艺术创作社交平台，许多艺术家在这里分享他们的作品，包括Live2D模型。您可以在DeviantArt上搜索“Live2D”或特定的角色名字，找到一些创作者提供的Live2D模型下载：https://www.deviantart.com/</span><br></pre></td></tr></table></figure>
+<h4 id="下面这个方法也没有用"><a href="#下面这个方法也没有用" class="headerlink" title="下面这个方法也没有用"></a>下面这个方法也没有用</h4><p>Hexo框架搭建的网站可以添加Live2D模型，让您的网站更加生动和有趣。Live2D是一种2D图像的实时运动技术，可以将静态的插图或卡通人物赋予动态效果。您可以按照以下步骤在Hexo网站中添加Live2D模型：</p>
+<ol>
+<li><p>在Hexo网站的根目录下，创建一个名为 <code>live2d</code> 的文件夹。</p>
+</li>
+<li><p>将Live2D模型的相关文件（通常包括 <code>.json</code>、<code>.js</code>、<code>.png</code> 等文件）放置在 <code>live2d</code> 文件夹中。您可以从Live2D官方网站或其他资源站点下载Live2D模型。</p>
+</li>
+<li><p>在Hexo网站中添加引用Live2D的代码。您可以在Hexo主题的模板文件中找到适合的位置，一般是在 <code>&lt;body&gt;</code> 标签的结尾处。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d/live2d.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d/live2d_init.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 <code>live2d_init.js</code> 文件以配置Live2D模型的显示参数。您可以根据Live2D模型的文件名和其他参数进行相应的设置。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">loadlive2d</span>(<span class="string">&quot;live2d&quot;</span>, <span class="string">&quot;/live2d/model.json&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>&quot;live2d&quot;</code> 是存放Live2D模型文件的文件夹名，<code>&quot;/live2d/model.json&quot;</code> 是Live2D模型文件的路径和文件名。</p>
+</li>
+<li><p>保存文件并重新生成Hexo网站。</p>
+</li>
+<li><p>打开您的Hexo网站，就应该能看到Live2D模型已成功添加到网站中了。</p>
+</li>
+</ol>
+<p>请注意，Live2D模型的使用可能需要遵循一些授权和使用规定，请确保您具备合法的使用权或遵守相关规定。</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>cloudflare</title>
+    <url>/2023/06/18/cloudflare/</url>
+    <content><![CDATA[<h3 id="cloudflare"><a href="#cloudflare" class="headerlink" title="cloudflare"></a>cloudflare</h3><pre><code>Cloudflare是一家提供网络性能和安全服务的公司，它拥有一个全球性的网络，可以让你连接到互联网的任何内容都更加安全、私密、快速和可靠。Cloudflare可以帮助你保护你的网站、应用程序和API免受DDoS攻击、恶意机器人和其他威胁，也可以通过将内容和服务部署在离你更近的位置来提高你的访问速度。Cloudflare还提供了一些其他的功能，比如SSL证书、内容分发网络、边缘计算平台等。
+</code></pre>
+<p>   Cloudflare有很多优势，比如：</p>
+<p>它可以免费为基本用户提供服务，而且设置非常简单<br>它可以隐藏你的IP地址，让黑客难以攻击你的服务器<br>它可以保护你的网站免受DDoS攻击、SQL注入、评论垃圾邮件等威胁<br>它可以通过Web应用防火墙（WAF）来阻止常见的网络攻击，比如OWASP TOP 10和CMS漏洞<br>它可以通过压缩和缓存你的网站内容来提高你的网站速度<br>它可以通过支持HTTP&#x2F;2协议和免费的SSL证书来提高你的网站安全性和性能<br>它可以通过DNSSEC来增加你的域名的DNS安全性<br>它可以通过Polish功能来优化你的网站图片，减少图片大小</p>
+<p>你可以访问Cloudflare的官方网站，或者查看Cloudflare的学习中心，那里有很多关于Cloudflare的介绍和教程</p>
+<p>注册一个Cloudflare账户，然后登录。<br>点击“添加网站”，输入你的网站域名，然后点击“扫描DNS记录”。<br>等待扫描完成，然后点击“继续”。<br>选择一个Cloudflare套餐，根据你的需求和预算，你可以选择免费、专业、商业或企业套餐，然后点击“继续”。<br>检查你的DNS记录，确保所有你想通过Cloudflare代理的记录都有一个橙色的云彩图标，如果没有，你可以点击图标来切换状态，然后点击“继续”。<br>更改你的域名服务器，按照Cloudflare给出的指示，将你的域名服务器从原来的提供商更改为Cloudflare提供的域名服务器，这可能需要一些时间才能生效，然后点击“完成”。<br>等待Cloudflare激活你的网站，这可能需要几分钟到几小时不等，你可以在Cloudflare的仪表盘上看到你的网站状态，当它变成绿色时，就表示已经激活了。<br>享受Cloudflare带来的性能和安全优势吧！</p>
+<p>本网站由cloudflare提供DNS服务及代理服务</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to use bing</title>
+    <url>/2023/06/18/test/</url>
+    <content><![CDATA[<p>如果你想在互联网上搜索信息，你可能会想到使用谷歌或百度等常见的搜索引擎。但是你知道吗，还有一个非常强大和智能的搜索引擎，它就是bing。bing是微软开发的一款搜索引擎，它不仅可以提供快速准确的搜索结果，还可以提供各种有趣和实用的功能，让你的搜索体验更加丰富和便捷。在这篇博客中，我将向你介绍如何使用bing，以及它有哪些优势和特色。</p>
+<p>首先，你需要访问bing的网站。当你打开bing的网站时，你会看到一个简洁美观的界面，上面有一个搜索框和一些常用的选项，如新闻、地图、视频等。你还会看到每天更新的一张精美的背景图片，这些图片都是来自世界各地的风景或文化，你可以点击图片下方的小图标，了解更多关于图片的信息。</p>
+<p><img src="https://www.bing.com/th?id=OHR.SnowyOwl_ZH-CN8677499058_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" alt="bing首页"></p>
+<p>要使用bing进行搜索，你只需要在搜索框中输入你想要查找的内容，然后按回车键或点击放大镜图标。bing会根据你的输入，给出相关的搜索结果，包括网页、图片、视频、地图等。你可以点击结果中的链接，直接访问目标网站，或者点击结果下方的预览图标，查看网页的快照。你还可以点击结果上方的选项卡，切换不同类型的结果，如新闻、购物、学术等。</p>
+<p>除了基本的搜索功能外，bing还有很多其他的特色功能，让你的搜索更加高效和有趣。例如：</p>
+<ul>
+<li>语音搜索：如果你不想输入文字，或者想用其他语言进行搜索，你可以点击搜索框旁边的麦克风图标，使用语音搜索功能。bing支持多种语言的语音识别和翻译，让你可以用自己喜欢的语言进行搜索。</li>
+<li>图片搜索：如果你想要找到某张图片的来源或相关信息，或者想要找到类似的图片，你可以点击搜索框旁边的相机图标，使用图片搜索功能。你可以上传一张图片或输入一个图片网址，bing会给出与之匹配或相似的图片结果，并提供相关信息。</li>
+<li>视频搜索：如果你想要找到某个视频或相关视频，或者想要观看最新最热门的视频内容，你可以点击视频选项卡，使用视频搜索功能。bing会给出与你输入相关的视频结果，并提供预览和播放功能。你还可以根据时长、分辨率、来源等条件进行筛选。</li>
+<li>地图搜索：如果你想要查找某个地点或路线，或者想要探索世界各地的风光和文化，你可以点击地图选项卡，使用地图搜索功能。bing会给出与你输入相关的地点结果，并提供详细的地图信息和导航功能。你还可以切换不同的视角和模式，如卫星、街景、3D等。</li>
+<li>聊天模式：如果你想要与bing进行交流和互动，或者想要获取更多的帮助和建议，你可以点击搜索框旁边的聊天图标，使用聊天模式功能。bing会以一个友好和智能的聊天机器人的形式，与你进行对话和回答你的问题。你还可以让bing为你生成一些有趣和创意的内容，如诗歌、故事、代码等。</li>
+</ul>
+<p>你是否经常在网上搜索信息，但是感觉结果不够满意？你是否想要一个更智能、更有趣、更全面的搜索引擎？如果你的答案是肯定的，那么你一定要试试bing。bing是微软开发的一款搜索引擎，它不仅可以帮你快速找到你想要的信息，还可以提供各种有用的功能和服务，让你的搜索体验更加丰富和愉快。在这篇博客中，我将给你介绍几个不同场景下使用bing的例子，希望能让你对bing有一个更深入的了解。</p>
+<p>第一个场景是当你想要学习一门新的语言时，你可以使用bing的翻译功能。bing支持超过70种语言的翻译，无论是文字、语音还是图片，都可以轻松实现。你可以在bing的首页输入你想要翻译的内容，或者直接点击右上角的翻译图标，就可以看到翻译结果。你还可以选择听取原文和译文的发音，或者查看更多的例句和用法。bing的翻译功能不仅准确而且实用，可以帮助你学习和掌握一门新的语言。</p>
+<p>第二个场景是当你想要了解一些新闻或者趣事时，你可以使用bing的新闻功能。bing每天都会为你推荐最新、最热、最有趣的新闻和话题，涵盖了国内外、社会、娱乐、体育、科技等各个领域。你可以在bing的首页点击新闻标签，或者直接输入你感兴趣的关键词，就可以看到各种相关的新闻报道和评论。你还可以根据自己的喜好，定制自己的新闻频道和订阅源。bing的新闻功能不仅及时而且多样，可以让你随时随地了解世界动态和社会趣闻。</p>
+<p>第三个场景是当你想要寻找一些灵感或者创意时，你可以使用bing的图片功能。bing拥有海量的高清图片资源，无论是风景、人物、动物、艺术还是设计，都可以找到你想要的图片。你可以在bing的首页点击图片标签，或者直接输入你想要查找的内容，就可以看到各种精美的图片展示和分类。你还可以使用bing的图像搜索功能，通过上传一张图片或者拍摄一张照片，就可以找到相似或者相关的图片。bing的图片功能不仅美观而且智能，可以帮助你寻找和激发灵感和创意。</p>
+<p>以上就是我给大家介绍的几个不同场景下使用bing的例子，当然这只是冰山一角。bing还有很多其他的功能和服务，比如地图、视频、音乐、购物等等，都值得你去探索和体验。如果你还没有使用过bing，那么赶快去试试吧！如果你已经是bing的用户，那么继续享受它带给你的便利和乐趣吧！</p>
+<p>以上就是我对如何使用bing的简单介绍，希望你能通过这篇博客，了解到bing的强大和魅力。如果你想要体验更多的功能和服务，欢迎你访问bing的网站，或者下载bing的移动应用。bing是一个值得你信赖和喜爱的搜索引擎，它会为你提供最优质和最个性化的搜索体验。谢谢你的阅读，祝你搜索愉快！</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/2023/06/17/guan-yu/</url>
+    <content><![CDATA[<h3 id="关于我："><a href="#关于我：" class="headerlink" title="关于我："></a>关于我：</h3><pre><code>    通过电报联系我
+</code></pre>
+<p>   <a href="https://img.locyan.cn/i/2023/06/17/648d22cabaff9.jpg">点这里</a></p>
+<pre><code>    或者加入群聊（人数较少，希望组建一个互相分享帮助的群聊）
+</code></pre>
+<p>   <a href="https://img.locyan.cn/i/2023/06/17/648d4f9f77390.png">这里</a></p>
+<p>   详细 请进入<a href="https://polar-bear.eu.org/about/">about</a>界面</p>
+]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建完成</title>
+    <url>/2023/06/17/bo-ke-da-jian-wan-cheng-la/</url>
+    <content><![CDATA[<h2 id="博客搭建完成"><a href="#博客搭建完成" class="headerlink" title="博客搭建完成"></a>博客搭建完成</h2><pre><code>截至2023 06 17 博客已经完成基础功能搭建
+</code></pre>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>目前已有功能：
+  文章总览
+  网站美化
+  网站托管
+  关于本站
+  聊天系统
+  点击效果
+  友链
+</code></pre>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code> 一个简单的开始呢
+ 未来目标：
+  音乐（B格）
+  自定义主题（主题色要粉色）
+  图床迁移（避免不稳定图床影响加载）
+  网站高级功能（想加评论功能，到时候换台服务器）
+  接入Google广告（好像这样算盈利性网站？用于服务器费用呢，到时候了解一下）
+  目录（加入目录进行分类）
+    - 归档
+    - 标签
+    - 分类
+  图库（已有，未完善。用于展示）
+  很酷但没什么用的功能
+</code></pre>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a></h2><pre><code> 搭建耗时一整天
+ 但是挺有成就感的
+ 以后也要加油写文，改站。
+</code></pre>
+<h2 id="-3"><a href="#-3" class="headerlink" title=""></a></h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">网页快照
+    </button><div class="hide-content"><img src="https://img.locyan.cn/i/2023/06/17/648da8e350495.bmp" alt="capture_20230617202702557.bmp" title="capture_20230617202702557.bmp" /></div></div>
+<pre><code> by自由如风                           2023.06.17
+</code></pre>
+]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名申请</title>
+    <url>/2023/06/21/yu-ming-shen-qing/</url>
+    <content><![CDATA[<h1 id="免费域名申请"><a href="#免费域名申请" class="headerlink" title="免费域名申请"></a>免费域名申请</h1><p>说在前面：nic.eu.org申请的为二级域名，已经有域名的友友可以无需申请<br>只为建站可以接受github分配的网址的友友可以不用额外申请域名。<br>不想折腾的友友们可以不用申请</p>
+<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><iframe src="//player.bilibili.com/player.html?bvid=BV1oj411D7FJ&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    
+<pre><code>可不可以三连支持一下
+做视频和写网站真的好累
+你的三连是我持续更新的动力
+关注一下成为老粉哦
+</code></pre>
+<h1 id="图文"><a href="#图文" class="headerlink" title="图文"></a>图文</h1><h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><pre><code>直接开始
+访问较慢，耐心等待即刷新
+</code></pre>
+<p>   进入<a href="https://nic.eu.org/">EU.org</a><br>   （点这里）</p>
+   <img src="/img/yuming2.png" alt="yuming2.png" title="yuming22.png" />
+    
+
+    
+<pre><code> 点here进入登录界面
+ 点注册
+</code></pre>
+   <img src="/img/yuming1.png" alt="yuming1.png" title="yuming1.png" /> 
+   
+<p>   进入下面的网站，选择一个英国人的身份（通过审核更快）</p>
+<p>   <a href="https://www.dizhishengcheng.com/">身份生成网站</a><br>   （这里）</p>
+<pre><code> 按照如图填写
+</code></pre>
+   <img src="/img/yuming3.png" alt="yuming3.png" title="yuming3.png" />
+   
+<pre><code> 之后会发送一封邮件到你邮箱
+ 验证之后返回登录
+ 操作过程见视频
+ 登录后
+ 
+</code></pre>
+   <img src="/img/yuming4.png" alt="yuming4.png" title="yuming4.png" />
+   
+<pre><code> 点New Domain创建域名
+ 
+</code></pre>
+   <img src="/img/yuming5.png" alt="yuming5.png" title="yuming5.png" />  
+     
+<pre><code> 只需要在箭头出填写完整域名
+ 即： 你取的名字+eu.org
+ 然后拉到最下面提交即可(submit)
+ 
+</code></pre>
+<h2 id="域名申请"><a href="#域名申请" class="headerlink" title="域名申请"></a>域名申请</h2><pre><code> 显示这样说明你成功了
+ 
+</code></pre>
+   <img src="/img/yuming6.png" alt="yuming6.png" title="yuming6.png" />
+   
+   
+<pre><code> 提交完成后需要等待1~7个工作日，会发邮件提醒你申请成功
+ 填写的英国信息越详细成功概率越大
+ 可一次性多申请几个
+ 免费可申请4个域名
+</code></pre>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>同时我也建了几个群方便交流，群里可以互相帮助<br>希望这个能够帮助到你</p>
+<p><a href="https://t.me/haihaihuhu/1">电报</a></p>
+<p>QQ：766354968</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>百闻不如一见，</p>
+<p>百见不如一试。</p>
+<p>还是那句话，</p>
+<p>互联网拉平了信息差，</p>
+<p>但是拉不平行动差。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>思维笔记</title>
+    <url>/2023/06/20/si-wei-bi-ji/</url>
+    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?bvid=BV1uh411M7Su&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<img src="/img/siweibiji.jpg" alt="siweibiji.jpg" title="siweibiji.jpg" />]]></content>
+  </entry>
+  <entry>
+    <title>当小鱼碰上小兔</title>
+    <url>/2023/06/18/dang-xiao-yu-peng-shang-xiao-tu-1/</url>
+    <content><![CDATA[<p>从前有一个小鱼，它叫波波。 波波是一个非常好奇的小鱼，总是对周围的世界充满了好奇心。 波波住在一条清澈见底的小溪里，每天游来游去，与小溪中的朋友们一起玩耍。</p>
+<p>有一天，波波决定去探险，看看世界的另一边是什么样子。 于是，它开始向上游游去，一路上遇到了各种各样的鱼类和水生生物。 它们告诉波波，上游有一片神奇的湖泊，湖泊中有一个传说中的宝藏，可以实现每个人的愿望。</p>
+<p>波波听了非常兴奋，决定要去找到那个宝藏。 它游了一整天，终于到达了湖泊。 湖泊的水非常清澈，波波可以看到湖底的一切。 它慢慢游向湖底，寻找宝藏的踪迹。</p>
+<p>就在波波准备放弃的时候，它发现了一个闪闪发光的东西。 波波高兴地游过去，发现那是一个小小的金色魔法球。 波波拿起魔法球，突然间，一个奇迹发生了。</p>
+<p>魔法球中出现了一个小兔子，它叫兔兔。 兔兔是一个机灵可爱的小家伙，它告诉波波，它是湖泊守护者的助手，负责保护宝藏和湖泊的安全。 但是，最近湖泊的水源受到了污染，宝藏也变得无法保护了。 兔兔请求波波的帮助，一起清理湖泊，修复宝藏。</p>
+<p>波波毫不犹豫地答应了兔兔的请求。 它们开始一起工作，收集湖泊中的垃圾，清理污染的水源，让湖泊重新恢复了往日的美丽。 他们发现湖泊的水源被一家工厂的排放物污染了。 他们决定去找工厂的主人，希望他能改变自己的行为，保护环境。</p>
+<p>波波和兔兔一起游到了工厂，他们遇到了主人叫做汤姆的人。汤姆一开始并不理解波波和兔兔的意图，他认为只要工厂能够产生利润，就不需要考虑环境的问题。</p>
+<p>但是，波波和兔兔没有放弃，他们用自己的努力和汤姆进行了长时间的交流。他们向汤姆解释了湖泊的重要性，以及环境保护的必要性。最终，汤姆被波波和兔兔的真诚和坚持打动了，他决定采取措施改善工厂的排放问题，保护湖泊和周边环境。</p>
+<p>工厂改善计划实施后，湖泊逐渐恢复了往日的美丽。水变得清澈见底，湖底的鲜花和水生生物再次绽放出勃勃生机。波波和兔兔高兴地欢呼，他们的努力没有白费。</p>
+<p>在清理的过程中，波波和兔兔成了非常好的朋友。他们一起探索湖泊，游泳，追逐彩虹鱼，度过了一段美好的时光。他们还邀请了其他水生生物一起参与保护湖泊的行动，形成了一个团结友爱的大家庭。</p>
+<p>最终，波波和兔兔来到了宝藏前。兔兔告诉波波，宝藏可以实现每个人的愿望，它会为波波实现一个愿望。波波想了一想，它说：“我希望所有的水域都能变得干净，让所有的生物都能享受到清澈的水。”</p>
+<p>魔法球发出了明亮的光芒，湖泊中的水变得更加清澈纯净，周围的水生生物们都欢快地游来游去。</p>
+<p>波波和兔兔开心地笑着，他们知道他们的努力没有白费。 从那天起，波波和兔兔成了湖泊的守护者，他们一起保护着湖泊和宝藏。</p>
+<p>故事讲述了波波和兔兔的冒险经历，温馨而可爱。它们的友谊和努力向我们传递了珍惜环境、保护自然的重要信息。无论是小鱼还是小兔，每个人都可以为环境做出贡献，让世界变得更加美好。通过与汤姆的交流，故事也强调了环境保护需要每个人的共同努力。</p>
+]]></content>
+      <categories>
+        <category>碎碎念</category>
+        <category>小说</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+        <tag>小说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>绮良良</title>
+    <url>/2023/06/17/qi-liang-liang/</url>
+    <content><![CDATA[<h2 id="绮良良"><a href="#绮良良" class="headerlink" title="绮良良"></a>绮良良</h2><pre><code>鲁迅：“学习之余也要学会娱乐”
+</code></pre>
+<img src="https://img.locyan.cn/i/2023/06/17/648d5cfd7ce42.jpg" alt="3C6E6700DF1FCEC29404FF4FEA013B3D.jpg" title="3C6E6700DF1FCEC29404FF4FEA013B3D.jpg" />
+<img src="https://img.locyan.cn/i/2023/06/17/648d5cfd073d7.jpg" alt="8C01E29B478934055F6C4AB35891F03A.jpg" title="8C01E29B478934055F6C4AB35891F03A.jpg" />
+<img src="https://img.locyan.cn/i/2023/06/17/648d5cfca5276.jpg" alt="765DEA37349F9D84DCF930796D428EC3.jpg" title="765DEA37349F9D84DCF930796D428EC3.jpg" />
+<img src="https://img.locyan.cn/i/2023/06/17/648d6da51a972.jpg" alt="《啾咪❤》绮良良 きらら Kirara 키라라_107179498.jpg" title="《啾咪❤》绮良良 きらら Kirara 키라라_107179498.jpg" />
+<img src="https://img.locyan.cn/i/2023/06/17/648d6dad5d1ed.png" alt="绮良良 __ 綺良々_107120118_p1.png" title="绮良良 __ 綺良々_107120118_p1.png" />
+
+
+
+<img src="https://img.locyan.cn/i/2023/06/17/648d6dad5d58d.jpg" alt="猫猫_D_108509488.jpg" title="猫猫_D_108509488.jpg" />
+
+<div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">看不到我
+    </button><div class="hide-content"><img src="https://img.locyan.cn/i/2023/06/17/648d6dad5d17c.png" alt="绮良良 __ 綺良々_107120118_p2.png" title="绮良良 __ 綺良々_107120118_p2.png" /></div></div>
+
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">看不到我
+    </button><div class="hide-content"><div class="gallery">
+    <div class="fj-gallery  data" data-rowHeight="220" data-limit="10">
+    <span class="gallery-data">[{"url":"https://img.locyan.cn/i/2023/06/17/648d5cfca5276.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d5cfd073d7.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6dad5d1ed.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6dad5d58d.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6dad5d17c.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6e60bbff5.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6e60bc02e.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6ee0caf49.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6ee9b5058.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6eea82185.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6eece6759.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6efe46a63.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6f1e1cb7d.jpg","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6f57015a5.png","alt":""},{"url":"https://img.locyan.cn/i/2023/06/17/648d6f5d9a374.jpg","alt":""}]</span>
+    </div>
+    <button class="gallery-load-more"><span>加载更多</span><i class="fa-solid fa-arrow-down"></i></button>
+    </div></div></div>
+
+
+
+
+<pre><code>这只猫又可爱极了，特别是趁她睡着，在她耳边说「快递要超时了」的时候。那跑的，简直比战场上的五郎大将都快呢。                                     ——八重神子
+</code></pre>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code>图片来源于网络 侵权删
+</code></pre>
+]]></content>
+      <categories>
+        <category>好康的</category>
+      </categories>
+      <tags>
+        <tag>鲁迅：“学习之余也要学会娱乐”</tag>
+        <tag>好康的</tag>
+        <tag>图片</tag>
+        <tag>相册</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小说</title>
+    <url>/2023/06/18/xiao-shuo/</url>
+    <content><![CDATA[<ul>
+<li>这是一个关于一只小猫和一只小狗的故事，它们住在同一个农场里，每天都一起玩耍。小猫叫做咪咪，它有一双蓝色的眼睛，一身白色的毛，非常可爱。小狗叫做旺旺，它有一条黑色的尾巴，一双棕色的耳朵，非常聪明。</li>
+<li>有一天，咪咪和旺旺在农场里散步，突然发现了一个木头制成的箱子，箱子上有一个锁，但是锁已经生锈了。它们好奇地走过去，用牙齿和爪子把锁打开了。它们打开箱子，发现里面有很多奇怪的东西，比如一个闪亮的皇冠，一个漂亮的项链，还有一个会说话的魔法棒。魔法棒是金色的，上面有很多彩色的珠子和星星。</li>
+<li>小猫和小狗很好奇，就拿出了魔法棒，想试试它的功能。魔法棒说：“你们好，我是一个神奇的魔法棒，我可以帮你们实现任何愿望。你们只要说出你们的愿望，我就可以帮你们实现。不过你们要注意，这个魔法是有时限的，当太阳落山时，你们就会恢复原来的样子。而且你们只能许三个愿望，所以要想好了再说。”</li>
+<li>小猫想了想，说：“我想变成一只美丽的公主，穿上这个皇冠和项链。”魔法棒一挥，小猫就变成了一只穿着粉色裙子的公主猫。它的眼睛变得更加闪亮，它的毛变得更加柔软。它戴上了皇冠和项链，感觉自己像是世界上最幸福的猫。</li>
+<li>小狗看到了，也想试试。它说：“我想变成一只勇敢的骑士，保护我的朋友。”魔法棒又一挥，小狗就变成了一只穿着铠甲的骑士狗。它的尾巴变得更加挺拔，它的耳朵变得更加灵敏。它穿上了铠甲和剑，感觉自己像是世界上最强大的狗。</li>
+<li>小猫和小狗都很开心，就开始在农场里玩起了公主和骑士的游戏。它们遇到了很多有趣的事情，比如救了一只被困在树上的小鸟。小鸟很感激它们，送给它们一朵美丽的花作为礼物。它们还帮助了一群被欺负的羊羔。羊羔很感谢它们，送给它们一块美味的奶酪作为奖励。它们还找到了一个隐藏的花园。花园里有很多鲜花和果树，还有一个小池塘。它们在那里休息了一会儿，享受了一些水果和清水。</li>
+<li>在花园里，它们看到了一个美丽的喷泉，喷泉里有一面镜子。它们走过去看了看自己的样子，发现自己已经不是原来的模样了。它们感到有些惊讶，也有些怀念。它们想起了自己原来的生活，以及自己还没有实现的愿望。</li>
+<li>魔法棒突然说：“你们玩得开心吗？你们知道吗？这个魔法是有时限的，当太阳落山时，你们就会恢复原来的样子。而且你们只能许三个愿望，你们还剩下一个愿望。你们还想继续玩吗？还是想回到原来的生活？还是想许一个新的愿望？”</li>
+<li>小猫和小狗对视了一眼，都看到了对方眼中的温暖和友情。它们笑了笑，说：“我们很感谢你给我们带来了这么多乐趣和奇遇，但是我们更喜欢我们原来的样子和生活。我们不需要皇冠和项链，也不需要铠甲和剑。我们只需要彼此的陪伴和友谊。所以我们的最后一个愿望是，让我们恢复原来的样子，并且永远做好朋友。”</li>
+<li>魔法棒听了，感动地说：“你们真是两个善良和诚实的孩子。我很高兴能认识你们。那么，我就帮你们实现你们的最后一个愿望吧。”</li>
+<li>魔法棒再次挥动，小猫和小狗就变回了自己。它们把魔法棒还给了箱子，并且把箱子放回原来的地方。它们相互拥抱了一下，然后一起回到了自己的家。</li>
+<li>从那以后，咪咪和旺旺仍然是最好的朋友，它们每天都一起玩耍，分享彼此的快乐和悲伤。它们知道，无论发生什么，它们都会永远在一起。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>碎碎念</category>
+        <category>小说</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+        <tag>小说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新型催化剂实现甲烷高效转化</title>
+    <url>/2023/06/18/xin-xing-cui-hua-ji-shi-xian-jia-wan-gao-xiao-zhuan-hua/</url>
+    <content><![CDATA[<p>这是一篇发表在《美国化学会志》上的论文，题目是新型催化剂实现甲烷高效转化<br>文章地址：<a href="https://pubs.acs.org/doi/10.1021/jacs.1c04367">https://pubs.acs.org/doi/10.1021/jacs.1c04367</a></p>
+<p>作者利用一种新型的铜基催化剂，能够在低温下实现甲烷的选择性氧化，生成甲醛和甲酸，为甲烷的高值化利用提供了新途径。</p>
+<p>作者通过原位光谱和理论计算，揭示了催化剂上的铜单原子和铜氧团簇之间的协同作用，以及甲烷氧化反应的机理和动力学。</p>
+<p>作者证明了催化剂的高稳定性和可重复性，以及在连续反应中的高效率和选择性。<br>这篇论文是一篇高水平的化学研究论文，对于甲烷转化领域有重要的意义和影响。👍</p>
+<p>引言：介绍了甲烷转化的背景和意义，以及目前存在的挑战和研究进展，提出了本文的研究目标和主要贡献。</p>
+<p>实验部分：介绍了催化剂的制备、表征、反应和分析的方法和条件</p>
+<p>结果与讨论：分为四个部分，分别展示和讨论了催化剂的形貌、结构、活性和稳定性，以及甲烷氧化反应的机理和动力学。</p>
+<p>结论：总结了本文的主要发现和创新点，指出了催化剂在甲烷高效转化方面的优势和潜力，以及未来的研究方向。</p>
+<p>补充材料：提供了一些额外的实验数据和计算细节，以支持本文的结果和讨论。📝</p>
+<p>催化剂的制备：作者采用了一种湿化学法，将铜盐溶液与碳纳米管混合，然后通过热处理和还原，得到了分散在碳纳米管上的铜单原子和铜氧团簇的混合催化剂。</p>
+<p>催化剂的表征：作者利用了多种表征手段，如透射电子显微镜、X射线光电子能谱、X射线吸收光谱等，对催化剂的形貌、结构、组成和价态进行了详细的分析，证实了催化剂上存在铜单原子和铜氧团簇两种形式的活性位点。</p>
+<p>催化剂的活性和稳定性：作者通过甲烷氧化反应，评价了催化剂的活性和稳定性，发现催化剂在低温下表现出高效率和选择性，能够将甲烷转化为甲醛和甲酸两种有价值的产物。作者还发现催化剂在连续反应中保持了良好的稳定性，没有出现明显的失活或结构变化。</p>
+<p>甲烷氧化反应的机理和动力学：作者通过原位光谱和理论计算，揭示了甲烷氧化反应的机理和动力学。作者发现铜单原子和铜氧团簇之间存在协同作用，能够促进甲烷的活化和氧气的还原。作者还发现甲烷氧化反应是一个双功能过程，其中铜单原子主要负责甲醛的生成，而铜氧团簇主要负责甲酸的生成。作者根据实验数据和计算结果，提出了一套详细的反应路径和中间体，并计算了各个步骤的能垒和速率常数。👩‍🔬</p>
+<p>引言：<br>在引言部分，你需要介绍甲烷转化的背景和意义，解释为什么研究甲烷转化是重要的，并提出当前领域存在的挑战和研究进展。此外，你还应该明确论文的研究目标和主要贡献。这个部分可以帮助读者了解研究的背景和动机，并引导他们对后续内容的理解。</p>
+<p>实验部分：<br>实验部分应该详细描述你在研究中使用的催化剂的制备方法、表征方法、反应条件和分析方法。你可以介绍催化剂的合成路线、使用的催化剂载体、催化剂表面特征的分析方法等。确保提供足够的细节，以便其他研究人员能够复制你的实验并验证结果。</p>
+<p>结果与讨论：<br>这部分通常分为几个子部分，你可以根据具体的实验结果进行划分。每个子部分应该展示和讨论催化剂的形貌、结构、活性和稳定性，以及甲烷氧化反应的机理和动力学。你可以使用实验数据、图表、图像等来支持你的发现，并进行详细的讨论。这个部分是论文的核心，你需要深入分析和解释实验结果，并与之前的研究成果进行比较和讨论。</p>
+<p>结论：<br>结论部分是对整个研究进行总结，重点强调你的主要发现和创新点。你可以总结催化剂在甲烷高效转化方面的优势和潜力，并提出未来的研究方向。确保结论部分简明扼要地概括了你的研究成果，并给出读者进一步思考和研究的方向。</p>
+<p>补充材料：<br>补充材料部分提供了一些额外的实验数据和计算细节，以支持你在论文中提出的结果和讨论。这些附加材料可以包括更详细的实验数据、计算方法、图表等，以帮助读者更好地理解你的研究工作。</p>
+<p>催化剂的制备：作者采用了一种湿化学法，将铜盐溶液与碳纳米管混合，然后通过热处理和还原，得到了分散在碳纳米管上的铜单原子和铜氧团簇的混合催化剂。这种方法的优点是可以控制铜的负载量和分散度，以及碳纳米管的结构和表面性质。碳纳米管作为载体，不仅可以提供大量的表面积和孔隙结构，还可以通过π-π相互作用和电荷转移作用稳定铜单原子和铜氧团簇，防止其迁移和聚集。<br>催化剂的表征：作者利用了多种表征手段，如透射电子显微镜、X射线光电子能谱、X射线吸收光谱等，对催化剂的形貌、结构、组成和价态进行了详细的分析，证实了催化剂上存在铜单原子和铜氧团簇两种形式的活性位点。透射电子显微镜可以直观地观察到催化剂上的铜单原子和铜氧团簇的形貌和分布，以及碳纳米管的结构和缺陷。X射线光电子能谱可以测定催化剂上的元素组成和价态，以及碳纳米管的表面官能团。X射线吸收光谱可以确定催化剂上铜单原子和铜氧团簇的配位环境和几何结构，以及与载体之间的相互作用。<br>催化剂的活性和稳定性：作者通过甲烷氧化反应，评价了催化剂的活性和稳定性，发现催化剂在低温下表现出高效率和选择性，能够将甲烷转化为甲醛和甲酸两种有价值的产物。作者还发现催化剂在连续反应中保持了良好的稳定性，没有出现明显的失活或结构变化。作者通过比较不同负载量、分散度、价态和结构的铜基催化剂，发现铜单原子和铜氧团簇之间存在协同作用，能够提高甲烷氧化反应的活性和选择性。作者还通过比较不同载体、温度、压力、空速等条件下的反应结果，发现碳纳米管作为载体能够提供良好的传质和传热条件，以及适宜的表面性质，有利于甲烷氧化反应的进行。<br>甲烷氧化反应的机理和动力学：作者通过原位光谱和理论计算，揭示了甲烷氧化反应的机理和动力学。作者发现甲烷氧化反应是一个双功能过程，其中铜单原子主要负责甲醛的生成，而铜氧团簇主要负责甲酸的生成。作者根据实验数据和计算结果，提出了一套详细的反应路径和中间体，并计算了各个步骤的能垒和速率常数。作者发现甲烷在铜单原子上的活化是反应的速率控制步骤，而氧气在铜氧团簇上的还原是反应的选择性控制步骤。作者还发现铜单原子和铜氧团簇之间存在协同作用，能够促进甲烷的活化和氧气的还原，从而提高反应的效率和选择性。👩‍🔬</p>
+<p>以下是一些常见的甲烷转化机制和催化剂设计思路：</p>
+<p>活化甲烷：<br>甲烷是一个非常稳定的分子，难以直接反应。因此，催化剂的设计需要引入活性位点来活化甲烷，使其易于反应。常见的策略包括使用金属离子（如铜、铂、镍等）作为活性位点，并利用氧化剂（如氧气、过氧化氢等）提供活化所需的氧。</p>
+<p>表面反应：<br>甲烷在催化剂表面上发生一系列的反应步骤。其中，关键的步骤是甲烷的氧化和活性中间体的形成。氧化反应可能涉及氧分子与甲烷的直接反应或通过氧化剂提供氧原子。形成活性中间体后，进一步的反应可以导致甲烷的转化和产物的形成。</p>
+<p>催化剂设计：<br>新型催化剂的设计可以包括以下几个方面：</p>
+<p>提高活性位点的浓度：增加活性位点的负载量或表面积，以提高反应活性。<br>调控催化剂的形貌和结构：通过合适的制备方法和控制条件，调控催化剂的晶体结构、形貌和孔道结构，以优化反应性能。<br>引入协同效应：将多种功能组分引入催化剂体系，以实现协同效应，提高催化活性和选择性。<br>优化反应条件：反应温度、压力、反应物比例等反应条件的优化可以显著影响甲烷转化的效率和产物选择性。<br>需要注意的是，具体的甲烷转化机理和催化剂设计策略可能因不同的研究领域、催化剂类型和反应条件而有所不同。因此，具体的研究论文和文献综述是了解特定催化剂体系和反应机理的最佳途径。</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超快回收废旧锂离子电池正极</title>
+    <url>/2023/06/18/chao-kuai-hui-shou-fei-jiu-li-chi-zi-dian-chi-zheng-ji/</url>
+    <content><![CDATA[<p>这是一篇发表在《ACS能源快报》上的论文，题目是超快回收废旧锂离子电池正极。这篇论文的主要内容和创新点是：</p>
+<p>作者介绍了一种利用超声波和酸碱溶液快速回收废旧锂离子电池正极材料的方法，提高了回收效率和资源利用率。</p>
+<p>作者通过实验和理论分析，揭示了超声波和酸碱溶液对正极材料的物理和化学作用机制，以及回收过程中的关键参数和影响因素。</p>
+<p>作者证明了回收后的正极材料具有良好的结构和性能，能够再次用于制备锂离子电池，实现了循环利用。</p>
+<p>引言：<br>介绍了废旧锂离子电池的处理和再利用的背景和意义，指出了废旧锂离子电池正极材料的回收和再利用是一种有效的资源节约和环境保护的方法。</p>
+<p>介绍了目前存在的挑战和研究进展，指出了现有的回收方法存在的问题，如低效率、高成本、高污染等，以及研究者对于提高回收效率和资源利用率的努力和尝试。</p>
+<p>提出了本文的研究目标和主要贡献，即利用超声波和酸碱溶液快速回收废旧锂离子电池正极材料，并分析其物理和化学作用机制，以及回收后的正极材料的结构和性能。</p>
+<p>实验部分：<br>介绍了废旧锂离子电池正极的回收方法，即将废旧锂离子电池正极在超声波作用下与酸碱溶液混合，然后通过过滤、洗涤、干燥等步骤得到回收后的正极材料。</p>
+<p>介绍了正极材料的表征方法，包括X射线衍射、扫描电子显微镜、能量色散X射线光谱、傅里叶变换红外光谱等，用于分析正极材料的晶体结构、形貌、组成和官能团。</p>
+<p>介绍了正极材料的再制备方法，即将回收后的正极材料与导电剂和粘结剂按一定比例混合，然后涂布在铝箔上制成电极片。</p>
+<p>介绍了正极材料的测试方法，包括循环伏安法、恒流充放电法、交流阻抗法等，用于评价正极材料的电化学性能和稳定性。<br>结果与讨论：</p>
+<p>展示和讨论了超声波和酸碱溶液对正极材料的物理作用机制，即超声波能够产生空化现象，形成高温高压的微气泡，从而破坏正极材料的结构和粒度，并促进酸碱溶液对正极材料的渗透和浸润。</p>
+<p>展示和讨论了超声波和酸碱溶液对正极材料的化学作用机制，即酸碱溶液能够与正极材料发生酸碱反应，从而溶解出锂盐、镍盐、钴盐等，并改变正极材料的组成和价态。</p>
+<p>展示和讨论了回收过程中的关键参数和影响因素，如超声波功率、时间、频率等，以及酸碱溶液的浓度、温度、pH值等，分析了它们对回收效率和资源利用率的影响，并优化了最佳回收条件。</p>
+<p>展示和讨论了回收后的正极材料的结构和性能，比较了回收前后的正极材料的晶体结构、形貌、组成和官能团，发现回收后的正极材料仍然保持了层状结构，但粒度变小，表面变粗糙，组成变化，价态降低。比较了回收前后的正极材料的电化学性能和稳定性，发现回收后的正极材料仍然具有良好的比容量、倍率性能和循环性能，能够再次用于制备锂离子电池。</p>
+<p>结论：<br>总结了本文的主要发现和创新点，指出了超声波和酸碱溶液回收法在废旧锂离子电池正极处理和再利用方面的优势和潜力，即快速、高效、低成本、低污染、可循环等。</p>
+<p>指出了本文的局限性和不足之处，如回收过程中的能耗、废液处理、金属回收等问题，以及回收后的正极材料的性能下降等问题。</p>
+<p>提出了未来的研究方向，如进一步优化回收过程和条件，提高回收效率和资源利用率，以及进一步改善回收后的正极材料的结构和性能，提高其再利用价值。</p>
+<p>补充材料：<br>提供了一些额外的实验数据和理论计算细节，以支持本文的结果和讨论。包括超声波对正极材料的空化效应的模拟图，酸碱溶液对正极材料的溶解度数据，回收过程中各参数对回收效率和资源利用率的响应曲线图，以及回收后的正极材料在不同倍率下的充放电曲线图等。📝</p>
+<p>实验准备：</p>
+<p>收集废旧锂离子电池正极材料，并将其分解成细小的粉末状。<br>准备酸性和碱性溶液，用于超声波处理和回收过程中的化学反应。<br>超声波处理：</p>
+<p>将废旧锂离子电池正极材料粉末置于酸性或碱性溶液中，并使用超声波处理设备进行处理。<br>超声波的振动作用有助于分散正极材料粉末，使其更易于与酸碱溶液中的反应物接触，从而促进反应的进行。<br>超声波的空化效应可以在液体中产生局部高压和高温的条件，有助于加速反应速率和提高回收效率。<br>酸碱溶液的作用：</p>
+<p>酸性溶液用于溶解金属氧化物成分，使其转化为可溶性的盐或离子。<br>碱性溶液用于中和酸性残留物，调节溶液的pH值，并提取目标物质。<br>酸碱溶液的浓度、温度和处理时间等参数对反应的效率和回收率具有重要影响。<br>物理和化学分析：</p>
+<p>对回收后的正极材料进行物理和化学分析，包括结构表征、成分分析和性能测试。<br>结构表征方法可以包括扫描电子显微镜（SEM）、透射电子显微镜（TEM）和X射线衍射（XRD）等，用于观察材料的形貌和晶体结构。<br>成分分析可以使用能量色散X射线光谱（EDX）或电感耦合等离子体发射光谱（ICP-OES）等方法，确定回收后材料的化学成分。<br>性能测试可以包括电化学测试，例如循环伏安法（CV）、电化学阻抗谱（EIS）和充放电性能测试，以评估回收材料在锂离子电池中的性能。<br>结果和讨论：</p>
+<p>通过实验和理论分析，揭示了超声波和酸碱溶液对正极材料的物理和化学作用机制，以及回收过程中的关键参数和影响因素。<br>论文中可能会提供实验数据、图表和分析，以支持回收方法的有效性和回收材料的优良性能。<br>通过上述实验步骤和分析，论文证明了该超快回收方法的可行性和有效性。回收后的正极材料具有良好的结构和性能，可以再次用于制备锂离子电池，实现了废旧锂离子电池资源的循环利用。该研究对于解决废旧锂离子电池的处理和再利用问题具有重要的意义和影响，为可持续能源发展和环境保护做出了贡献。</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自定义侧边栏</title>
+    <url>/2023/07/01/zi-ding-yi-ce-bian-lan/</url>
+    <content><![CDATA[<h2 id="自定义-widget"><a href="#自定义-widget" class="headerlink" title="自定义 widget"></a>自定义 widget</h2><h3 id="创建-widget-yml"><a href="#创建-widget-yml" class="headerlink" title="创建 widget.yml"></a>创建 widget.yml</h3><p>在Hexo博客目录中的（如果没有_data 文件夹，请自行创建），创建一个文件 source&#x2F; _data &#x2F; widget.yml</p>
+<p>格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">top:</span><br><span class="line">  - class_name:</span><br><span class="line">    id_name:</span><br><span class="line">    name:</span><br><span class="line">    icon:</span><br><span class="line">    html:</span><br><span class="line"></span><br><span class="line">bottom:</span><br><span class="line">  - class_name:</span><br><span class="line">    id_name:</span><br><span class="line">    name:</span><br><span class="line">    icon:</span><br><span class="line">    order:</span><br><span class="line">    html:</span><br></pre></td></tr></table></figure>
+
+<p>top： 创建的 widget 会出现在非 sticky 区域（即所有页面都会显示）</p>
+<p>bottom： 创建的 widget 会出现在 sticky 区域（除了文章页都会显示）</p>
+<p>参数	解释</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class_name	所创建的 widget 父类 class 名 （可选）</span><br><span class="line">id_name	所创建的 widget 父类 id 名（可选）</span><br><span class="line">name	所创建的 widget 标题（会显示出来的）</span><br><span class="line">icon	所创建的 widget 图标 </span><br><span class="line">order	创建的 widget 排序 （可选）</span><br><span class="line">.html	所创建的 widget 相关代码</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>这里的icon<br>应该是<a href="https://fontawesome.dashgame.com/">Font Awesome</a>这里面已经有的图标。找到合适的图标，复制代码在上面||后直接时候即可。注意不要删掉原有的fa或者fab。</p>
+<p>如：<br>找到一个小图标<br>叫fa-desktop<br>在使用时需要变为fas fa-desktop</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
 </search>
