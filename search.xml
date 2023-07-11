@@ -1306,4 +1306,37 @@ YAMLException：序列条目的不良缩进 （41：31）
         <tag>chatGPT</tag>
       </tags>
   </entry>
+  <entry>
+    <title>链接中文转拼音插件遇到的问题</title>
+    <url>/2023/07/11/lian-jie-zhong-wen-zhuan-pin-yin-cha-jian-yu-dao-de-wen-ti/</url>
+    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>首页文章404</p>
+<p><img src="https://pic3.zhimg.com/80/v2-bf792f9e292aa901cdf669bc1b99bb7e_1440w.webp"></p>
+<p>插件作用是将文章链接中的中文转化为拼音（据说可以提高SEO）</p>
+<p>但是</p>
+<p>这个插件会将所有的大写字母转换为小写</p>
+<p>如果是新写的文章那么在首页的链接也会统一为小写</p>
+<p>但如果你有安装插件前写的文章</p>
+<p>那么就会是这种情况</p>
+<p><img src="https://pic3.zhimg.com/80/v2-bf792f9e292aa901cdf669bc1b99bb7e_1440w.webp"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-cf31b460bcee9e460f32c8e8dd7aad7a_1440w.webp"></p>
+<p>首页的链接为<a href="https://polar-bear.eu.org/chatgpt">https://polar-bear.eu.org/chatgpt</a></p>
+<p>但是原文链接为<a href="https://polar-bear.eu.org/chatGPT">https://polar-bear.eu.org/chatGPT</a></p>
+<p>使用链接中文转拼音插件后</p>
+<p>解决方法<br>重新创建名字中无大写字母的网页把之前的文章md复制过来</p>
+<p><img src="https://pic3.zhimg.com/80/v2-8967f455cfbec2c9e4456e387a62f72e_1440w.webp"></p>
+<p>声明</p>
+<p>知乎@嗯嗯 就是本人</p>
+<p>不想上传图床</p>
+<p>借知乎一用doge</p>
+<p>知乎链接<a href="https://zhuanlan.zhihu.com/p/642814947">https://zhuanlan.zhihu.com/p/642814947</a></p>
+]]></content>
+      <categories>
+        <category>记录</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
 </search>
