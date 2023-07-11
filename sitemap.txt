@@ -1,3 +1,4 @@
+https://polar-bear.eu.org/2023/06/23/wu-xu-mo-fa-guo-nei-bu-shu-ke-zhi-jie-fang-wen-de-chatgpt/
 https://polar-bear.eu.org/News/index.html
 https://polar-bear.eu.org/about/index.html
 https://polar-bear.eu.org/link/index.html
@@ -16,7 +17,6 @@ https://polar-bear.eu.org/2023/06/17/guan-yu/
 https://polar-bear.eu.org/2023/06/17/butterfly-zhu-ti-zhong-wen-zhang-feng-mian/
 https://polar-bear.eu.org/2023/06/18/chatgpt-jiao-wo-zuo-wang-zhan/
 https://polar-bear.eu.org/2023/06/21/yu-ming-shen-qing/
-https://polar-bear.eu.org/2023/06/23/chatgpt/
 https://polar-bear.eu.org/2023/06/17/ssh-dao-github-chu-xian-lian-jie-cuo-wu-wen-ti/
 https://polar-bear.eu.org/2023/06/18/2023mc-lian-ji-jiao-cheng-wu-xu-shi-ming-mian-fei-fang-an/
 https://polar-bear.eu.org/2023/06/26/ssh-key-lian-jie-dao-git/
