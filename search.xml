@@ -326,165 +326,6 @@
       </tags>
   </entry>
   <entry>
-    <title>无需魔法，国内部署可直接访问的chatGPT</title>
-    <url>/2023/06/23/chatgpt/</url>
-    <content><![CDATA[<h2 id="无需魔法，国内部署可直接访问的chatGPT"><a href="#无需魔法，国内部署可直接访问的chatGPT" class="headerlink" title="无需魔法，国内部署可直接访问的chatGPT"></a>无需魔法，国内部署可直接访问的chatGPT</h2><pre><code>需要：
- Github    vercel   cloudflare    chatGPT账号（可以网上找共享的或者自己注册）   域名（子域名）
- 
-</code></pre>
-<p>   <a href="https://chat.polar-bear.eu.org/">我部署的镜像网站</a>(看看效果)</p>
-<h3 id="开始（如果你有chatGPT账号）"><a href="#开始（如果你有chatGPT账号）" class="headerlink" title="开始（如果你有chatGPT账号）"></a>开始（如果你有chatGPT账号）</h3><p>  <a href="https://github.com/pengzhile/pandora-cloud-serverless">pandora-cloud-serverless</a> 是一个简单的仓库，用于Serverless部署Pandora-Cloud。</p>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击展开Github主页</summary><div class="toggle-content"><p><img src="/img/chat1.png"><br><img src="/img/chat2.png"></p>
-</div></details>
-<h4 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h4><p>  推荐的方法：</p>
-<h6 id="Vercel"><a href="#Vercel" class="headerlink" title="Vercel"></a>Vercel</h6>  <p dir="auto"><a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpengzhile%2Fpandora-cloud-serverless" rel="nofollow"><img src="https://camo.githubusercontent.com/5e471e99e8e022cf454693e38ec843036ec6301e27ee1e1fa10325b1cb720584/68747470733a2f2f76657263656c2e636f6d2f627574746f6e" alt="Deploy with Vercel" data-canonical-src="https://vercel.com/button" style="max-width: 100%;"></a></p>
-  
-<h6 id="Railway"><a href="#Railway" class="headerlink" title="Railway"></a>Railway</h6>  <p dir="auto"><a href="https://railway.app/template/AWK0rN" rel="nofollow"><img src="https://camo.githubusercontent.com/081df3dd8cff37aab35044727b02b94a8e948052487a8c6253e190f5940d776d/68747470733a2f2f7261696c7761792e6170702f627574746f6e2e737667" alt="Deploy on Railway" data-canonical-src="https://railway.app/button.svg" style="max-width: 100%;"></a></p>
-  
-  
-<h5 id="Gitpod"><a href="#Gitpod" class="headerlink" title="Gitpod"></a>Gitpod</h5><p dir="auto"><a href="https://gitpod.io/#https://github.com/pengzhile/pandora-cloud-serverless" rel="nofollow"><img src="https://camo.githubusercontent.com/76e60919474807718793857d8eb615e7a50b18b04050577e5a35c19421f260a3/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667" alt="Open in Gitpod" data-canonical-src="https://gitpod.io/button/open-in-gitpod.svg" style="max-width: 100%;"></a></p>
-  
-  
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><pre><code>选择你希望使用的部署方法
-这里使用Vercel举例
-点击上面一键部署的链接
-</code></pre>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击展开图片</summary><div class="toggle-content"><p><img src="/img/chat3.png"></p>
-</div></details>
-
-<pre><code>在一键部署打开的链接中
-选择Github登录方便创建 Git 存储库
-授权登录到github
-</code></pre>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击展开图片</summary><div class="toggle-content"><p><img src="/img/chat4.png"></p>
-</div></details>  
-
-<pre><code>为你的储存库取一个名字
-继续
-</code></pre>
-<h6 id=""><a href="#" class="headerlink" title=""></a></h6><pre><code>只需等待一会儿即可完成部署
-</code></pre>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat5.png"><br><img src="/img/chat6.png"><br><img src="/img/chat7.png"></p>
-</div></details>
-
-<pre><code>点击 继续到仪表盘
-</code></pre>
-<p> <img src="/img/chat22.png"></p>
-<pre><code>点击Domains转到域名设置
-输入域名后点击add （图1）
-选择直接添加  **** （图2）
-</code></pre>
-<p> <img src="/img/chat23.png"><br> <img src="/img/chat24.png"></p>
-<pre><code>然后会显示如下
-</code></pre>
-<p> <img src="/img/chat26.png"></p>
-<pre><code>记录下内容
-等下进入cloudflare将域名解析至此 
-</code></pre>
-<h4 id="子域名"><a href="#子域名" class="headerlink" title="子域名"></a>子域名</h4><pre><code> 简单的很
- 比如我有一个域名polar-bear.eu.org
- 我已经绑定了我的博客
- 选择我不想绑定其他域名
- 而想加入chatGPT功能到这个域名下
- 只需再设置一个子域名chat.polar-bear.eu.org即可
- 所以只需要将上面add的域名换成chat.polar-bear.eu.org
- 再在cloudflare中的polar-bear.eu.org设置中
- 添加一个DNS
- 将chat.polar-bear.eu.org定向到cname.vercel-dns.com（vercel上部署的chatGPT网页）
- 图：
-</code></pre>
-<p>   <img src="/img/chat25.png"> </p>
-<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><pre><code>因为Vercel污染严重
-所以需要自己绑定域名用于访问
-</code></pre>
-<p>   上次已经说过如何免费注册一个二级域名<br>   <a href="https://polar-bear.eu.org/2023/06/21/%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7/">点这里跳转</a></p>
-<pre><code>假设现在已经申请好了域名
-</code></pre>
-<h4 id="打开cloudflare"><a href="#打开cloudflare" class="headerlink" title="打开cloudflare"></a>打开cloudflare</h4><p>   <a href="https://dash.cloudflare.com/">cloudflare</a></p>
-<pre><code>注册或登录后
-在主界面添加域名
-输入你刚刚注册的域名
-选择免费计划
-</code></pre>
-<p>  <img src="/img/chat13.png"><br>  <img src="/img/chat14.png"><br>  <img src="/img/chat15.png"></p>
-<pre><code>DNS设置可以先跳过等下再设置
-</code></pre>
-<p>   <img src="/img/chat16.png"><br>   <img src="/img/chat17.png"></p>
-<pre><code>更改您的名称服务器
-</code></pre>
-<p>   <img src="/img/chat18.png"></p>
-<pre><code>记录下两个名称服务器
-然后
-进入https://nic.eu.org/
-</code></pre>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat9.png"><br><img src="/img/chat10.png"></p>
-</div></details>
-<pre><code>点击域名进入管理
-</code></pre>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat12.png"></p>
-</div></details>
-<pre><code>点击名称服务器
-</code></pre>
-<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat11.png"></p>
-</div></details>
-<pre><code>将cloudflare刚刚给出的名称服务器输入
-保存确定即可
-没有错误就成功了
-</code></pre>
-<p>  <img src="/img/chat19.png"></p>
-<pre><code>然后回到cloudflare
-点击完成检查服务器
-</code></pre>
-<p>  <img src="/img/chat18.png"> </p>
-<pre><code>快速设置save就行
-</code></pre>
-<p>   <img src="/img/chat20.png">  </p>
-<h4 id="最后一步"><a href="#最后一步" class="headerlink" title="最后一步"></a>最后一步</h4><pre><code>等到cloudflare成功解析服务器
-就进入该域名界面
-点击DNS setting（翻译过来的域名解析设置）
-</code></pre>
-<p>   <img src="/img/chat21.png">  </p>
-<pre><code>根据显示
-需要将域名解析到76.76.21.21的IP地址上
-</code></pre>
-<p>   <img src="/img/chat26.png"> </p>
-<pre><code>所以需要在cloudflare上如下设置
-</code></pre>
-<p>   <img src="/img/chat27.png"> </p>
-<pre><code>好啦现在所有的部署工作已经全部完成
-只需要访问你的域名就可以在国内使用chatGPT而不需要魔法
-</code></pre>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>   最后的最后<br>   你可能会遇到以下问题</p>
-<p>  <img src="/img/chat28.png"> </p>
-<p>  解决方法<br>  只需要在cloudflare中的ssl设置中<br>  设置为full第三个和第四个（要求要有证书，没有选第三个）</p>
-<p>  <img src="/img/chat29.png"> </p>
-<h4 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h4><p>  登录账号即可<br>  <img src="/img/chat30.png"><br>  <img src="/img/chat31.png"><br>  <img src="/img/chat32.png">     </p>
-<h4 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h4><p>  <img src="/img/chat33.png"><br>  这个东西真的很难写</p>
-<p>  设置我自己先摸索一遍</p>
-<p>  为了写文章分享给你们</p>
-<p>  还有再来一遍去截图</p>
-<p>  调整</p>
-<p>  一遍遍的尝试</p>
-<p>  所以希望你看到能够给我的B站视频来个三连</p>
-<p>  也可以加入我们的交流群</p>
-<p>  一起解决问题</p>
-<p>  还有，现在关注就是老粉了<br>  你的关注是我更新的动力</p>
-<p>  希望这个教程能够帮助到你</p>
-<p><a href="https://t.me/haihaihuhu/1">电报</a></p>
-<p>QQ：766354968</p>
-<p>视频点个赞吧球球了</p>
-<iframe src="//player.bilibili.com/player.html?bvid=BV1Dg4y1K7bH&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
-      <categories>
-        <category>记录</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>记录</tag>
-        <tag>教程</tag>
-        <tag>chatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>download</title>
     <url>/2023/06/28/download/</url>
     <content><![CDATA[<h2 id="下载页面"><a href="#下载页面" class="headerlink" title="下载页面"></a>下载页面</h2><p>作者主页<a class="btn-beautify green larger" href="https://space.bilibili.com/3493118064200406" 
@@ -1304,6 +1145,165 @@ YAMLException：序列条目的不良缩进 （41：31）
       <tags>
         <tag>记录</tag>
         <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无需魔法，国内部署可直接访问的chatGPT</title>
+    <url>/2023/06/23/chatgpt/</url>
+    <content><![CDATA[<h2 id="无需魔法，国内部署可直接访问的chatGPT"><a href="#无需魔法，国内部署可直接访问的chatGPT" class="headerlink" title="无需魔法，国内部署可直接访问的chatGPT"></a>无需魔法，国内部署可直接访问的chatGPT</h2><pre><code>需要：
+ Github    vercel   cloudflare    chatGPT账号（可以网上找共享的或者自己注册）   域名（子域名）
+ 
+</code></pre>
+<p>   <a href="https://chat.polar-bear.eu.org/">我部署的镜像网站</a>(看看效果)</p>
+<h3 id="开始（如果你有chatGPT账号）"><a href="#开始（如果你有chatGPT账号）" class="headerlink" title="开始（如果你有chatGPT账号）"></a>开始（如果你有chatGPT账号）</h3><p>  <a href="https://github.com/pengzhile/pandora-cloud-serverless">pandora-cloud-serverless</a> 是一个简单的仓库，用于Serverless部署Pandora-Cloud。</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击展开Github主页</summary><div class="toggle-content"><p><img src="/img/chat1.png"><br><img src="/img/chat2.png"></p>
+</div></details>
+<h4 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h4><p>  推荐的方法：</p>
+<h6 id="Vercel"><a href="#Vercel" class="headerlink" title="Vercel"></a>Vercel</h6>  <p dir="auto"><a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpengzhile%2Fpandora-cloud-serverless" rel="nofollow"><img src="https://camo.githubusercontent.com/5e471e99e8e022cf454693e38ec843036ec6301e27ee1e1fa10325b1cb720584/68747470733a2f2f76657263656c2e636f6d2f627574746f6e" alt="Deploy with Vercel" data-canonical-src="https://vercel.com/button" style="max-width: 100%;"></a></p>
+  
+<h6 id="Railway"><a href="#Railway" class="headerlink" title="Railway"></a>Railway</h6>  <p dir="auto"><a href="https://railway.app/template/AWK0rN" rel="nofollow"><img src="https://camo.githubusercontent.com/081df3dd8cff37aab35044727b02b94a8e948052487a8c6253e190f5940d776d/68747470733a2f2f7261696c7761792e6170702f627574746f6e2e737667" alt="Deploy on Railway" data-canonical-src="https://railway.app/button.svg" style="max-width: 100%;"></a></p>
+  
+  
+<h5 id="Gitpod"><a href="#Gitpod" class="headerlink" title="Gitpod"></a>Gitpod</h5><p dir="auto"><a href="https://gitpod.io/#https://github.com/pengzhile/pandora-cloud-serverless" rel="nofollow"><img src="https://camo.githubusercontent.com/76e60919474807718793857d8eb615e7a50b18b04050577e5a35c19421f260a3/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667" alt="Open in Gitpod" data-canonical-src="https://gitpod.io/button/open-in-gitpod.svg" style="max-width: 100%;"></a></p>
+  
+  
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><pre><code>选择你希望使用的部署方法
+这里使用Vercel举例
+点击上面一键部署的链接
+</code></pre>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击展开图片</summary><div class="toggle-content"><p><img src="/img/chat3.png"></p>
+</div></details>
+
+<pre><code>在一键部署打开的链接中
+选择Github登录方便创建 Git 存储库
+授权登录到github
+</code></pre>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击展开图片</summary><div class="toggle-content"><p><img src="/img/chat4.png"></p>
+</div></details>  
+
+<pre><code>为你的储存库取一个名字
+继续
+</code></pre>
+<h6 id=""><a href="#" class="headerlink" title=""></a></h6><pre><code>只需等待一会儿即可完成部署
+</code></pre>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat5.png"><br><img src="/img/chat6.png"><br><img src="/img/chat7.png"></p>
+</div></details>
+
+<pre><code>点击 继续到仪表盘
+</code></pre>
+<p> <img src="/img/chat22.png"></p>
+<pre><code>点击Domains转到域名设置
+输入域名后点击add （图1）
+选择直接添加  **** （图2）
+</code></pre>
+<p> <img src="/img/chat23.png"><br> <img src="/img/chat24.png"></p>
+<pre><code>然后会显示如下
+</code></pre>
+<p> <img src="/img/chat26.png"></p>
+<pre><code>记录下内容
+等下进入cloudflare将域名解析至此 
+</code></pre>
+<h4 id="子域名"><a href="#子域名" class="headerlink" title="子域名"></a>子域名</h4><pre><code> 简单的很
+ 比如我有一个域名polar-bear.eu.org
+ 我已经绑定了我的博客
+ 选择我不想绑定其他域名
+ 而想加入chatGPT功能到这个域名下
+ 只需再设置一个子域名chat.polar-bear.eu.org即可
+ 所以只需要将上面add的域名换成chat.polar-bear.eu.org
+ 再在cloudflare中的polar-bear.eu.org设置中
+ 添加一个DNS
+ 将chat.polar-bear.eu.org定向到cname.vercel-dns.com（vercel上部署的chatGPT网页）
+ 图：
+</code></pre>
+<p>   <img src="/img/chat25.png"> </p>
+<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><pre><code>因为Vercel污染严重
+所以需要自己绑定域名用于访问
+</code></pre>
+<p>   上次已经说过如何免费注册一个二级域名<br>   <a href="https://polar-bear.eu.org/2023/06/21/%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7/">点这里跳转</a></p>
+<pre><code>假设现在已经申请好了域名
+</code></pre>
+<h4 id="打开cloudflare"><a href="#打开cloudflare" class="headerlink" title="打开cloudflare"></a>打开cloudflare</h4><p>   <a href="https://dash.cloudflare.com/">cloudflare</a></p>
+<pre><code>注册或登录后
+在主界面添加域名
+输入你刚刚注册的域名
+选择免费计划
+</code></pre>
+<p>  <img src="/img/chat13.png"><br>  <img src="/img/chat14.png"><br>  <img src="/img/chat15.png"></p>
+<pre><code>DNS设置可以先跳过等下再设置
+</code></pre>
+<p>   <img src="/img/chat16.png"><br>   <img src="/img/chat17.png"></p>
+<pre><code>更改您的名称服务器
+</code></pre>
+<p>   <img src="/img/chat18.png"></p>
+<pre><code>记录下两个名称服务器
+然后
+进入https://nic.eu.org/
+</code></pre>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat9.png"><br><img src="/img/chat10.png"></p>
+</div></details>
+<pre><code>点击域名进入管理
+</code></pre>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat12.png"></p>
+</div></details>
+<pre><code>点击名称服务器
+</code></pre>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">点击张开图片</summary><div class="toggle-content"><p><img src="/img/chat11.png"></p>
+</div></details>
+<pre><code>将cloudflare刚刚给出的名称服务器输入
+保存确定即可
+没有错误就成功了
+</code></pre>
+<p>  <img src="/img/chat19.png"></p>
+<pre><code>然后回到cloudflare
+点击完成检查服务器
+</code></pre>
+<p>  <img src="/img/chat18.png"> </p>
+<pre><code>快速设置save就行
+</code></pre>
+<p>   <img src="/img/chat20.png">  </p>
+<h4 id="最后一步"><a href="#最后一步" class="headerlink" title="最后一步"></a>最后一步</h4><pre><code>等到cloudflare成功解析服务器
+就进入该域名界面
+点击DNS setting（翻译过来的域名解析设置）
+</code></pre>
+<p>   <img src="/img/chat21.png">  </p>
+<pre><code>根据显示
+需要将域名解析到76.76.21.21的IP地址上
+</code></pre>
+<p>   <img src="/img/chat26.png"> </p>
+<pre><code>所以需要在cloudflare上如下设置
+</code></pre>
+<p>   <img src="/img/chat27.png"> </p>
+<pre><code>好啦现在所有的部署工作已经全部完成
+只需要访问你的域名就可以在国内使用chatGPT而不需要魔法
+</code></pre>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>   最后的最后<br>   你可能会遇到以下问题</p>
+<p>  <img src="/img/chat28.png"> </p>
+<p>  解决方法<br>  只需要在cloudflare中的ssl设置中<br>  设置为full第三个和第四个（要求要有证书，没有选第三个）</p>
+<p>  <img src="/img/chat29.png"> </p>
+<h4 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h4><p>  登录账号即可<br>  <img src="/img/chat30.png"><br>  <img src="/img/chat31.png"><br>  <img src="/img/chat32.png">     </p>
+<h4 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h4><p>  <img src="/img/chat33.png"><br>  这个东西真的很难写</p>
+<p>  设置我自己先摸索一遍</p>
+<p>  为了写文章分享给你们</p>
+<p>  还有再来一遍去截图</p>
+<p>  调整</p>
+<p>  一遍遍的尝试</p>
+<p>  所以希望你看到能够给我的B站视频来个三连</p>
+<p>  也可以加入我们的交流群</p>
+<p>  一起解决问题</p>
+<p>  还有，现在关注就是老粉了<br>  你的关注是我更新的动力</p>
+<p>  希望这个教程能够帮助到你</p>
+<p><a href="https://t.me/haihaihuhu/1">电报</a></p>
+<p>QQ：766354968</p>
+<p>视频点个赞吧球球了</p>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Dg4y1K7bH&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+      <categories>
+        <category>记录</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>教程</tag>
+        <tag>chatGPT</tag>
       </tags>
   </entry>
 </search>
