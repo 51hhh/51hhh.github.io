@@ -1345,4 +1345,40 @@ YAMLException：序列条目的不良缩进 （41：31）
     <content><![CDATA[<p><img src="/img/mao1.jpg"><br><img src="/img/mao2.jpg"><br><img src="/img/mao3.jpg"></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>1分钟免魔法直接使用chatgpt</title>
+    <url>/2023/07/13/1-fen-zhong-mian-mo-fa-zhi-jie-shi-yong-chatgpt/</url>
+    <content><![CDATA[<h2 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h2><p>上期讲了如何部署chatGPT国内镜像网站</p>
+<p>教程<a href="https://polar-bear.eu.org/2023/06/23/wu-xu-mo-fa-guo-nei-bu-shu-ke-zhi-jie-fang-wen-de-chatgpt/">戳这里</a></p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>在我的博客主页左上角找到镜像chatGPT进入</p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">如图</summary><div class="toggle-content"><p><img src="/img/top.bmp"></p>
+</div></details>
+
+<p>建议收藏博客，以免token失效</p>
+<p>或者直接访问<a href="https://chat.polar-bear.eu.org/">镜像chatGPT</a></p>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">如图</summary><div class="toggle-content"><p><img src="/img/chat_top.png"></p>
+</div></details>
+
+<h3 id="小小的说明"><a href="#小小的说明" class="headerlink" title="小小的说明"></a>小小的说明</h3><p>镜像网站与openAI官网一致，需要登录账号，在网站或者频道会及时更新。</p>
+<p>若有过期token请告知，吾将尽快修复，如果你有账号投稿，也请告知。</p>
+<p>为了防止密码被修改，使用token登录，分享几个免费的token</p>
+<p>投稿邮箱：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ziyourufeng@duck.com</span><br><span class="line">zzhhh2005@gmail.com</span><br></pre></td></tr></table></figure>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>进入后直接点击最下面的”Continue with Access Token”</p>
+<p><img src="/img/chat_top.png"></p>
+<p><img src="/img/chat_top2.png"></p>
+<pre><code>将下面的token复制进去，直接&quot;ok&quot;就行（注：token在文末）
+</code></pre>
+<p>然后就可以直接开始使用啦。</p>
+<h3 id="多说一句"><a href="#多说一句" class="headerlink" title="多说一句"></a>多说一句</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">低情商：</span><br><span class="line">我打算建设一个小型的社区</span><br><span class="line">起因是我在互联网上找过许多东西，可是以为信息参差不齐，而且众多门槛，</span><br><span class="line">想要学习一门技术变得十分困难</span><br><span class="line">国内的社区，QQ，微信，群有许多都是买课的，</span><br><span class="line">我在B站也是一步步摸索，现在B站的社区环境也不太行了</span><br><span class="line">所以我打算建立一个社区供大家交流信息一些新的技术</span><br><span class="line">也不至于被无良商家给欺骗</span><br><span class="line">无门槛，但是tg群有许多人因为网络原因无法加入</span><br><span class="line">所以我们社区有无门槛进入的各种方式</span><br><span class="line">现在主要是建站教程（说不定哪天我兴趣变了呢）</span><br><span class="line"></span><br><span class="line">高情商：我们无偿分享各种互联网上的新鲜知识和资源，来不来吧。</span><br></pre></td></tr></table></figure>
+<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">快来快来</summary><div class="toggle-content"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">电报：https://t.me/haihaihuhu/1</span><br><span class="line"></span><br><span class="line">QQ：766354968</span><br><span class="line"></span><br><span class="line">QQ频道：</span><br><span class="line">点击链接加入QQ频道【个人博客|站长|建站交流】：https://pd.qq.com/s/adhs1421u</span><br></pre></td></tr></table></figure>
+<p>注频道内有各个分区，注意内容分区发送，频道会慢慢发展起来。<br>广告|博客|技术|闲聊|资源|问题|分享|等等等等<br><a href="https://pd.qq.com/s/adhs1421u">https://pd.qq.com/s/adhs1421u</a></p>
+</div></details>
+
+<h2 id="token"><a href="#token" class="headerlink" title="token"></a>token</h2><pre><code>复制
+</code></pre>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiIyaDlwNHk2Z2x2bDkycnhpYXJAbWFpbDU1MS5pY3UiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJ1c2VyX2lkIjoidXNlci1qSGxEOGNNUTA2aExUR0RFSjVhUGc3OVUifSwiaXNzIjoiaHR0cHM6Ly9hdXRoMC5vcGVuYWkuY29tLyIsInN1YiI6ImF1dGgwfDY0OGJjZWViMDUxOGNlN2E5OWMzY2ViNCIsImF1ZCI6WyJodHRwczovL2FwaS5vcGVuYWkuY29tL3YxIiwiaHR0cHM6Ly9vcGVuYWkub3BlbmFpLmF1dGgwYXBwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2ODkyMjQ3NjMsImV4cCI6MTY5MDQzNDM2MywiYXpwIjoicGRsTElYMlk3Mk1JbDJyaExoVEU5VlY5Yk45MDVrQmgiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIG1vZGVsLnJlYWQgbW9kZWwucmVxdWVzdCBvcmdhbml6YXRpb24ucmVhZCBvZmZsaW5lX2FjY2VzcyJ9.u0F2V4Do2NQxSdw1KEOWTgXyuMk5rqHgp4fvvldgi6iOZnhQ_2kAiDCiZ7Cz2u8r69_oPbXyfuUUysgidCaed-O5vB8qw1CLzOBC4HqE9aYI5cZmg-zv2vgQXyF366_HDlJyiUXUE5quN9AkIq6tMiXoT2N8C2XMlkd4JgtQtYE2paKhIQfbI7wWhawmG_QrjAIQT_eCgShwD_26HmcaWC31lbrPczx1mM7vz_lzb1LSKbvRFs2AVuF9eOj5Mhsz5BwEPnADk83wSLTbPPD-iQenjFsqLemE3Hrs2bAkGGFYYVvUG5wZAtemwcjHjaeajAe4JJLj74Yg1kRwzOIGTA</span><br></pre></td></tr></table></figure>
+<h4 id="-1"><a href="#-1" class="headerlink" title=""></a></h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJsYW5ueXdhaW53cmlnaHQxOTg0QG1haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsidXNlcl9pZCI6InVzZXIteDlIbVNyemhSaHg2eFZhSXhxMHNqa1VBIn0sImlzcyI6Imh0dHBzOi8vYXV0aDAub3BlbmFpLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDg5YTI5MGZiZTc5MTJmMTQ0NDQ5MzQiLCJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSIsImh0dHBzOi8vb3BlbmFpLm9wZW5haS5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjg5MjI0ODkwLCJleHAiOjE2OTA0MzQ0OTAsImF6cCI6InBkbExJWDJZNzJNSWwycmhMaFRFOVZWOWJOOTA1a0JoIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBtb2RlbC5yZWFkIG1vZGVsLnJlcXVlc3Qgb3JnYW5pemF0aW9uLnJlYWQgb2ZmbGluZV9hY2Nlc3MifQ.RCqpAO5bJ3NOa3im_LvS4MCcnU5qaIlV_Z6wsMftAVaV8LTYvkjmNpaoEfY7LsUWMR5yV1bJGpVR6vgXE6w5PVYDCToWCE0hG5Ax23qc2Clq8bVS_lwnqGbho7RZ6_tU_4I9iutujauw4vtwppqjg5g0BYlAqwZbqEWWN-g5Dgf9dgQo7KIRKqaRyvs_fLqYy7jDiX57g57VYBcii1GL8XnHw3ozbsZQZXQzywcxFNbsVtEs9e_XC82TdAoC4g08Owy1XUfTyAn0V3CVKEUft0qK-iyQGT3kAFa2GtTkp6jKl87Hn4UmWQ7DfR9EeGwtSqpafsrRIZUAvd5NWvAt4w</span><br></pre></td></tr></table></figure>
+<h4 id="-2"><a href="#-2" class="headerlink" title=""></a></h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJhZGFoYnJhbmhhbjE5NjBAbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJ1c2VyX2lkIjoidXNlci1tblR6dW9SbUZJZXdsUHp6UmNmR3BGVk8ifSwiaXNzIjoiaHR0cHM6Ly9hdXRoMC5vcGVuYWkuY29tLyIsInN1YiI6ImF1dGgwfDY0ODlhMTg1Mzk1YmFkYWE2YTI1YjhiYyIsImF1ZCI6WyJodHRwczovL2FwaS5vcGVuYWkuY29tL3YxIiwiaHR0cHM6Ly9vcGVuYWkub3BlbmFpLmF1dGgwYXBwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2ODkyMjQ5MzcsImV4cCI6MTY5MDQzNDUzNywiYXpwIjoicGRsTElYMlk3Mk1JbDJyaExoVEU5VlY5Yk45MDVrQmgiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIG1vZGVsLnJlYWQgbW9kZWwucmVxdWVzdCBvcmdhbml6YXRpb24ucmVhZCBvZmZsaW5lX2FjY2VzcyJ9.0QeoL1m6X4LQkoxzrCnP0rLGFogHCdM2lvyQvVrm3jkrPllOL-zrNa2VLsKF3KDeTn97Vgrj8F2mujTIdc042C3OByhOvIcvDx5uBfkuHTF-uq9cx3xvfUC_pSXSaX8baCsLP2W22BncmvX1SutaPFMeqatgJHHQQQRuQ3APC1NFT7BPxnq6MQ37XF3Wytqfp_6aHJjEHWRslYSRrM_WBifuDgCXuRLBJvRRFs24_0PSUgrZkT0sGR4ZQFN477JglifCXdx6C-LuhSoItOSRdyNTojau8XUIIG9psLTGdOxnXYGB4wO0d5YcXOMpN0DTUbUhiJ89OU4WnUIvdraYSA</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
 </search>
