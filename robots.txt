@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://polar-bear.eu.org/sitemap.xml
