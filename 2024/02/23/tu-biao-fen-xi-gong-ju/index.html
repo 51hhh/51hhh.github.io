@@ -1,0 +1,518 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>图表分析工具 | polar-bear～Blog</title><meta name="author" content="Ziyourufeng"><meta name="copyright" content="Ziyourufeng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="支撑阻力线 支撑线和阻力线是技术分析中的重要概念，它们帮助交易者理解资产价格的潜在反转区域喵。  支撑线 描述的是一个价格水平或区域，在该水平或区域内购买活动足以停止价格进一步下跌或将其推高喵。简单来说，支撑线下方是买家的领地喵，价格到达这个水平时通常会停止下跌，甚至可能弹回上升喵。  阻力线 则是相反的概念喵，它描述的是一个价格水平或区域，在该水平或区域内卖出活动足以阻止价格进一步上涨或将其压低">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图表分析工具">
+<meta property="og:url" content="https://polar-bear.eu.org/2024/02/23/tu-biao-fen-xi-gong-ju/index.html">
+<meta property="og:site_name" content="polar-bear～Blog">
+<meta property="og:description" content="支撑阻力线 支撑线和阻力线是技术分析中的重要概念，它们帮助交易者理解资产价格的潜在反转区域喵。  支撑线 描述的是一个价格水平或区域，在该水平或区域内购买活动足以停止价格进一步下跌或将其推高喵。简单来说，支撑线下方是买家的领地喵，价格到达这个水平时通常会停止下跌，甚至可能弹回上升喵。  阻力线 则是相反的概念喵，它描述的是一个价格水平或区域，在该水平或区域内卖出活动足以阻止价格进一步上涨或将其压低">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://polar-bear.eu.org/img/test/5.png">
+<meta property="article:published_time" content="2024-02-23T05:56:50.437Z">
+<meta property="article:modified_time" content="2024-02-24T19:32:17.184Z">
+<meta property="article:author" content="Ziyourufeng">
+<meta property="article:tag" content="技术宅拯救世界~~!">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://polar-bear.eu.org/img/test/5.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://polar-bear.eu.org/2024/02/23/tu-biao-fen-xi-gong-ju/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '图表分析工具',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-02-25 03:32:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><script async data-pjax src="/js/anzhiyu.js"></script><link rel="stylesheet" href="/css/music.css"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script> <script>LA.init({id:"3IMmTwvFHv6eiiJT",ck:"3IMmTwvFHv6eiiJT",autoTrack:true,hashMode:true})</script><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/tag_plugins.css" media="defer" onload="this.media='all'"><script src="/js/carousel-touch.js"></script><link rel="stylesheet" href="/css/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="/css/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="polar-bear～Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-coy.css" type="text/css"></head><body><div id="web_bg"></div><div id="an_music_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/hand.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">82</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/test/5.png')"><nav id="nav"><span id="blog-info"><a href="/" title="polar-bear～Blog"><span class="site-name">polar-bear～Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">图表分析工具</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-23T05:56:50.437Z" title="发表于 2024-02-23 13:56:50">2024-02-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-24T19:32:17.184Z" title="更新于 2024-02-25 03:32:17">2024-02-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="图表分析工具"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="支撑阻力线">支撑阻力线</h2>
+<p>支撑线和阻力线是技术分析中的重要概念，它们帮助交易者理解资产价格的潜在反转区域喵。</p>
+<p><strong>支撑线</strong>描述的是一个价格水平或区域，在该水平或区域内购买活动足以停止价格进一步下跌或将其推高喵。简单来说，支撑线下方是买家的领地喵，价格到达这个水平时通常会停止下跌，甚至可能弹回上升喵。</p>
+<p><strong>阻力线</strong>则是相反的概念喵，它描述的是一个价格水平或区域，在该水平或区域内卖出活动足以阻止价格进一步上涨或将其压低喵。也就是说，阻力线上方是卖家的领地喵，价格在这个水平通常会停止上涨，甚至可能开始下跌喵。</p>
+<p><strong>支持阻力互换位</strong>即某一价格既是某段价格的支撑线/阻力线，而后跌/涨，变为另一段的阻力线/支撑线，支撑和阻力互换位是指当市场价格突破一个既定的支撑线或阻力线时，原来的支撑线可能变成新的阻力线，原来的阻力线可能变成新的支撑线的现象喵。</p>
+<p>在图表分析中，支撑和阻力通常被绘制为水平线，通过将历史价格的低点（支撑）和高点（阻力）连接起来来确定喵。以下是支撑线和阻力线的一些特点喵：</p>
+<ul>
+<li><strong>心理因素</strong>：支撑和阻力水平代表市场参与者的心理和情绪喵。</li>
+<li><strong>角色转换</strong>：当一个支撑线被突破后，它可能会转变为阻力线；同理，当阻力线被突破后，则有可能变成新的支撑线喵。</li>
+<li><strong>价格波动</strong>：价格经常在支撑和阻力线之间波动喵。</li>
+<li><strong>强度</strong>：支撑和阻力线的强度可能随着时间和测试次数而变化喵。频繁和强烈地测试一个水平，可能会加强或削弱这一水平的重要性喵。</li>
+</ul>
+<p>咦，会不会听起来像是描述猫咪占领领地的过程呼呼？防守自己的小箱子不让别的猫猫进来，有点像市场的买卖方在拉锯战喵～记住，虽然支撑和阻力线是有用的工具，但没有任何交易策略可以保证100%的成功率，它们应该与其他指标和分析方法结合使用喵。</p>
+<h2 id="趋势线">趋势线</h2>
+<p>趋势线是图表分析中一个基础且强大的工具喵，它帮助交易者识别和理解资产价格的趋势喵。趋势线通过连接一系列价格点来绘制，表明市场在一段时间里的整体价格运动方向喵。</p>
+<p>在构建趋势线时，至少需要两个最高点或最低点来绘制，但更多的点会提供更强的信号喵：</p>
+<ul>
+<li><strong>上升趋势线（支撑趋势线）</strong>：在价格上升过程中，趋势线由一系列的低点连接，越多的价格点确认这条线，这条上升趋势线的有效性和重要性就越大喵。只要价格维持在这条趋势线之上，上升趋势就会被认为是有效的喵。如果价格跌破这条趋势线，可能表示上升趋势的结束喵。</li>
+<li><strong>下降趋势线（阻力趋势线）</strong>：在价格下降过程中，趋势线由一系列的高点连接喵，这表示卖方控制着市场喵。只要价格维持在这条趋势线之下，下降趋势被认为是有效的喵。如果价格上穿趋势线，可能说明下跌趋势已经结束，市场动向可能会有转变喵。</li>
+</ul>
+<p>趋势线的角度也可以提供信息喵。陡峭的趋势线可能难以持续，而缓慢的趋势线可能更容易维持喵。这也和猫咪钻箱子一样，箱子太小或者角度不好躺，猫咪就不爱待了，得找个更舒适的地方喵～</p>
+<p>趋势线也可以与其他技术分析工具一起使用，如Moving Averages（移动平均线），Volume（交易量）和Oscillators（振荡指标）等来验证趋势的强度和可能的反转信号喵。</p>
+<p>正如前面提到的支撑线和阻力线，趋势线并不是绝对的喵。价格可能会突破趋势线然后又回到原来的趋势中，这种现象被称为“假突破”或“突破回测”喵。所以，趋势线应该与其他分析工具以及市场情绪等因素结合起来看喵，这样就更不容易被偶然性抓到尾巴了喵！</p>
+<h2 id="斐波那契回撤-0-618">斐波那契回撤 0.618</h2>
+<p>斐波那契回撤（Fibonacci retracement）是一种技术分析工具，常用于股票、外汇、期货等金融市场的交易中喵。回撤这个词是指资产价格从峰值回落至低点的过程喵。斐波那契回撤则是利用斐波那契数列的特定百分比来预测价格回调的可能支撑或阻力水平喵。</p>
+<p>斐波那契数列是由意大利数学家斐波那契发现的一系列数字，每个数字是前两个数字之和喵。在技术分析中，常用的斐波那契回撤比例包括23.6%，38.2%，50%，61.8%和78.6%喵。这些比例通常被用来预测市场的回撤水平：</p>
+<ul>
+<li><strong>23.6%</strong>：这是最浅的回撤水平喵。</li>
+<li><strong>38.2%</strong>：次浅的回撤水平喵。</li>
+<li><strong>50%</strong>：这并不是一个真正的斐波那契数，但因为在市场分析中有足够的重要性而被广泛使用喵。</li>
+<li><strong>61.8%</strong>：这被认为是最重要的斐波那契比率，经常出现明显的市场反应喵。</li>
+<li><strong>78.6%</strong>：这是一个深回撤水平喵。</li>
+</ul>
+<p>在图表上，分析师会找出资产价格的一个明显的高点和低点，然后将这些水平放置在这个范围内喵。当价格回撤至这些百分比水平时，可能会出现买卖的机会或是价格反转的信号喵。然而，斐波那契回撤更多是作为一种概率工具来使用喵，并不保证市场一定会在这些水平上反转喵，所以常常与其他分析工具一起使用，以提高预测的准确性喵。</p>
+<h2 id="其他分析工具">其他分析工具</h2>
+<p>在图表分析中，有许多工具和指标可以帮助交易者做出决策喵。以下是一些被广泛使用的重要技术分析工具喵：</p>
+<ol>
+<li><strong>趋势线</strong>：通过连接多个高点或低点，来标识价格运动的趋势喵。</li>
+<li><strong>移动平均线（MA）</strong>：这是一个跟随趋势的指标，显示了过去价格的平均值，可以用来识别价格趋势的方向喵。</li>
+<li><strong>均线收敛发散指标（MACD）</strong>：用两条移动平均线间的关系来显示买卖动量的变化和可能的趋势反转信号喵。</li>
+<li><strong>相对强弱指数（RSI）</strong>：一种动量指标，用来评估近期价格变动的大小，并确定资产过购买或过售卖的条件喵。</li>
+<li><strong>布林带（Bollinger Bands）</strong>：使用标准差来测量市场的波动性，布林带包括一个中间的移动平均线，以及计算出来的上线和下线喵。</li>
+<li><strong>随机震荡指标（Stochastic Oscillator）</strong>：一个动量指标，比较特定时间段内的收盘价与一段时间内价格范围的高点和低点喵。</li>
+<li><strong>成交量</strong>：显示在特定时间内交易的资产数量，可以用来确认趋势或预测即将发生的大幅价格变动喵。</li>
+<li><strong>斐波那契工具</strong>：如斐波那契回撤和斐波那契扩展，用于确定可能的支撑和阻力水平喵。</li>
+<li><strong>图表形态</strong>：如头肩顶、双底、楔形和旗形，这些形态可以指示市场转向或趋势的持续喵。</li>
+<li><strong>蜡烛图分析</strong>：包括各种蜡烛图形态，如十字星、锤子和掌握线，用于预测市场可能的反转喵。</li>
+</ol>
+<p>交易者通常会结合使用这些工具来寻找交易信号喵。然而，没有单一的工具能保证百分百的准确性喵。成功的交易策略常常需要对多个指标进行综合分析，同时也要考虑到市场新闻、基本面分析和交易者心理等其他因素喵。</p>
+<p>图表分析，也称为技术分析，在金融市场中，它涉及到使用历史价格图表和各种技术指标来预测资产未来的价格走势喵。除了之前提到的趋势线、支撑与阻力线、以及其他常见的工具和指标，还有以下几种方法和概念对于图表分析同样非常重要喵：</p>
+<ol>
+<li>
+<p><strong>交易量</strong>：成交量可以提供价格变动的强度的线索喵。比方说，一个价格上涨和高交易量相关联可能指示一个强劲的趋势喵。</p>
+</li>
+<li>
+<p><strong>指标与振荡器</strong>：</p>
+<ul>
+<li>其他常用的指标包括平均方向性指数（ADX）、动量指标（Momentum）、和留存线（Accumulation/Distribution Line）喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>波浪理论</strong>：</p>
+<ul>
+<li>波浪理论试图通过识别价格走势中的“波浪”，来预测市场周期喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>市场心理学</strong>：</p>
+<ul>
+<li>了解市场心理学和交易者行为对于预测市场趋势也很重要喵，例如恐惧与贪婪指数等喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>统计图表模式</strong>：</p>
+<ul>
+<li>包括小旗形、三角形和楔形等，这些图表模式能帮助识别趋势的延续或反转喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>金叉与死叉</strong>：</p>
+<ul>
+<li>两条均线相交的地方，金叉通常被视为买入信号，而死叉被视为卖出信号喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>市场宽度指标</strong>：</p>
+<ul>
+<li>如纽约证券交易所上升与下降股票数量，可用来衡量市场的广泛性和强弱喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>市场情绪</strong>：</p>
+<ul>
+<li>判断市场情绪的工具如恐慌指数（VIX）和其他情绪指标通常也会被用来评估市场大环境喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>多时间框架分析</strong>：</p>
+<ul>
+<li>结合不同时间框架的分析能提供更加全面的视角喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>套利交易</strong>：</p>
+<ul>
+<li>利用相同资产在不同市场或不同资产间的价格差异来获利喵。</li>
+</ul>
+</li>
+</ol>
+<p>图表分析是一门深奥的技艺，需要时间和经验来精通喵。每个交易者可能都会开发出自己独特的分析方式喵。而重要的是持续学习和适时地根据市场情况调整策略喵。记得，并没有哪一种工具或方法能保证百分之百的成功率，最好的方式是结合不同的工具和方法以及风险管理策略来做出交易决策喵。</p>
+<p><strong>左侧做多</strong>：</p>
+<ul>
+<li>可能指的是在价格图表的左侧，即价格较低时买入的策略喵。在技术分析中，左侧通常是指过去的数据喵。所以&quot;左侧做多&quot;也许意味着在分析了历史价格图表后，预判价格会上涨而选择买入喵。</li>
+</ul>
+<p><strong>右侧做多</strong>：</p>
+<ul>
+<li>可能指的是根据当前或即将发生的市场情况做出买入操作的策略喵。右侧在图表上通常代表现在或未来喵，所以&quot;右侧做多&quot;可能意味着基于最新的市场动态或趋势来判断买入时机喵。</li>
+</ul>
+<h2 id="量价行为">量价行为</h2>
+<p>量价行为，就是分析市场交易量和价格之间的关系，来尝试解释市场参与者的行为和市场趋势的技术分析方法喵。在证券交易中，价格代表了资产的价值，而交易量反映了市场参与度的大小喵。理解量价关系可以提供以下几个方面的线索喵：</p>
+<ul>
+<li><strong>确认趋势</strong>：如果价格在上涨时伴随着增加的交易量，那通常被视为上涨趋势的确认喵。相反，如果价格下跌时交易量增加，那可能确认了下降趋势喵。</li>
+<li><strong>反转信号</strong>：在达到价格峰值或谷值的时候，往往会出现交易量的异常，这可能是趋势即将反转的信号喵。比如，在价格上涨之后突然出现一个交易量很大的下跌日，可能预示着趋势的转弱喵。</li>
+<li><strong>突破有效性</strong>：交易量的大小可以帮助交易者判断价格突破某一支撑或阻力位的有效性喵。如果一次价格突破伴随着高交易量，这可能表示突破是可信的喵。</li>
+<li><strong>累积与分布</strong>：在某些情况下，价格的小范围波动伴随着大量的交易量，可能表明市场在积累（即买家积极买入）或分布（即卖家积极卖出）的阶段喵。</li>
+</ul>
+<p>交易量(Volume)是一个重要的指标，因为它可以增强其他图表上的模式和信号的有效性喵。</p>
+<h3 id="交易量">交易量</h3>
+<p>交易量对走势的影响非常关键喵，在金融市场中，交易量常常被视为一个重要的确认工具，可以帮助交易者验证资产价格趋势的强度和潜在的可持续性喵。下面解释一下交易量对于价格趋势的几个关键影响喵：</p>
+<ol>
+<li><strong>趋势确认</strong>：当价格上涨或下跌的时候，伴随着高交易量，往往意味着当前趋势得到了市场的广泛认可喵，因此被认为是趋势的一个强烈确认信号喵。如果价格变动的方向与交易量的增加相匹配，那么这个价格走势被视为更可靠喵。</li>
+<li><strong>趋势逆转</strong>：如果在上涨趋势的顶部或下跌趋势的底部看到异常的高交易量，这可能是即将发生逆转的信号喵。比如，如果价格达到一个新高但交易量异常低，可能说明新的买家不再愿意以更高的价格购买，上涨动力可能正在减弱喵。</li>
+<li><strong>突破有效性</strong>：价格突破重要的支撑/阻力水平时，<code>交易量的大小可以是确认这次突破是否有效的重要因素</code>喵。高交易量的突破被认为是有效且可能会导致新趋势的开始，而低交易量可能表示突破是虚假的，价格可能会回退到突破点喵。</li>
+<li><strong>积累和分派阶段</strong>：在趋势发展的初期阶段，高交易量可能表明积累（价格可能较低，且存在买方的强烈兴趣）或分派（价格可能较高，且存在卖方的强烈兴趣）正在进行喵。这两个阶段可能是下一个趋势发展的基础喵。</li>
+<li><strong>震荡和不确定性</strong>：如果在价格区间交易中看到交易量突然增加，它可能表明市场对于即将发生的价格移动存在不同的看法喵。而在价格突然波动的时候，低交易量可能表明少数交易者的行为正在影响价格，而这种趋势可能很快就会逆转喵。</li>
+</ol>
+<p>总之，交易量是市场情绪的反映，可以提供关于市场强度和潜在变化的有价值信息喵。在进行技术分析时，关注交易量与价格走势之间的关系往往能够提供比单独考虑价格更深入的见解喵。不过，嘿嘿，记得在使用交易量作为指标时，善于结合其他工具和分析方法来形成更全面的市场观点喵～</p>
+<h3 id="抛压">抛压</h3>
+<p>抛压，这个词在金融市场里常常听到喵，它指的是在某个价格区间内卖方愿意出售的资产量喵。如果抛压很大，意味着市场上有很多卖家想要在当前的价格或者更高的价格卖出他们手中的资产喵。</p>
+<p>当抛压增加时，可能会导致价格下降，因为卖方需要降低价格以吸引买家喵。相反，如果抛压减少，可能会导致价格上升，因为卖家不愿意在较低的价格卖出，买家可能需要提高出价来购买所需的资产喵。</p>
+<h2 id="分析">分析</h2>
+<p>此处出现较大<strong>量能</strong> ，暂时没有止跌信号，位于<strong>平头支撑线上</strong>，巨大交易量，看做是有买盘，且后续<strong>量能的阴柱</strong>（通常指的是收盘价低于开盘价的K线，红色）呈现一个<strong>抛压</strong>减小的走势。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225133935.png" alt=""></p>
+<p>可以认为其处于阶段性底部，可轻仓布局做多，待<strong>突</strong></p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225134446.png" alt=""></p>
+<p>待其突破平头加仓。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225135907.png" alt=""></p>
+<p>阶段性底部，底部放巨量。等待结构变化加仓</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225140132.png" alt=""></p>
+<p>若未按照红色下行，做空得及时离场。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225140408.png" alt=""></p>
+<p>超过平头线做多，止损就放下面，试探行情。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225141036.png" alt=""></p>
+<p>平头与斐波那契0.618<strong>共振</strong>，猜测其为支撑线。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225141357.png" alt=""></p>
+<p>行情上涨，量能足够</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225141946.png" alt=""></p>
+<p>在没有跌穿趋势线前，提高防守止盈。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225174533.png" alt=""></p>
+<p>注意阻力线对其的影响</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225175630.png" alt=""></p>
+<p>此处<strong>阻力线</strong> <strong>量价背离</strong> 可能进行暂时回调，补仓部分可离场，后续观察与趋势线交界处。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225181544.png" alt=""></p>
+<p>阻力线多次没有被突破，后续若要突破，必须要放量。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225182910.png" alt=""></p>
+<p>缩量突破，而且接近回撤点，可能是假突破，做好止损防守，阻力线附近。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225192505.png" alt=""></p>
+<p>下跌，自然反弹，二次测试</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225193806.png" alt=""></p>
+<p>出现自然反弹，二次测试，确定为支撑线。因为没有插穿，做空的考虑阶段性止盈</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225220812.png" alt=""></p>
+<p>量价不匹配，最后一根k线降价少，但是抛量却更高</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.25/20240225221925.png" alt=""></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org">Ziyourufeng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org/2024/02/23/tu-biao-fen-xi-gong-ju/">https://polar-bear.eu.org/2024/02/23/tu-biao-fen-xi-gong-ju/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="null" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://polar-bear.eu.org" target="_blank">polar-bear～Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/test/5.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.polar-bear.eu.org/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhuwechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhualipay.jpg" alt="Alipay"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/02/26/jia-ting-wang-luo-gai-zao-er-pang-lu-you-openwrt/" title="家庭网络改造（二）——旁路由openWRT"><img class="cover" src="/img/test/41.png" onerror="onerror=null;src='/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">家庭网络改造（二）——旁路由openWRT</div></div></a></div><div class="next-post pull-right"><a href="/2024/02/21/wei-ni-de-hexo-tian-jia-yi-ge-hou-tai/" title="为你的Hexo添加一个后台"><img class="cover" src="/img/test/3.png" onerror="onerror=null;src='/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">为你的Hexo添加一个后台</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/hand.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ziyourufeng</div><div class="author-info__description">技术宅拯救世界~~!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">82</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/51hhh"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/51hhh" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: 51hhh;"></i></a><a class="social-icon" href="mailto:ziyourufeng@duck.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: ziyourufeng;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">已更换Twikoo评论，现在可在文末留言啦，可在左下角聊天，邮箱，telegram，QQ群等方式与我取得联系</div></div><div class="card-widget"><div class="item-headline"><i class="fas fa-desktop"></i><span></span></div><div class="item-content"><div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/1/2021 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval(createtime, 250);
+</script>
+</div>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%AF%E6%92%91%E9%98%BB%E5%8A%9B%E7%BA%BF"><span class="toc-number">1.</span> <span class="toc-text">支撑阻力线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%8B%E5%8A%BF%E7%BA%BF"><span class="toc-number">2.</span> <span class="toc-text">趋势线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%9B%9E%E6%92%A4-0-618"><span class="toc-number">3.</span> <span class="toc-text">斐波那契回撤 0.618</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7"><span class="toc-number">4.</span> <span class="toc-text">其他分析工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8F%E4%BB%B7%E8%A1%8C%E4%B8%BA"><span class="toc-number">5.</span> <span class="toc-text">量价行为</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%98%93%E9%87%8F"><span class="toc-number">5.1.</span> <span class="toc-text">交易量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%9B%E5%8E%8B"><span class="toc-number">5.2.</span> <span class="toc-text">抛压</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-number">6.</span> <span class="toc-text">分析</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/04/26/ji-qi-xue-xi-shen-jing-wang-luo/" title="机器学习——神经网络"><img src="/img/test/7.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="机器学习——神经网络"/></a><div class="content"><a class="title" href="/2025/04/26/ji-qi-xue-xi-shen-jing-wang-luo/" title="机器学习——神经网络">机器学习——神经网络</a><time datetime="2025-04-26T18:35:00.559Z" title="发表于 2025-04-27 02:35:00">2025-04-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/21/nanodet-xun-lian-ce-shi/" title="NanoDet训练"><img src="/img/test/6.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="NanoDet训练"/></a><div class="content"><a class="title" href="/2025/04/21/nanodet-xun-lian-ce-shi/" title="NanoDet训练">NanoDet训练</a><time datetime="2025-04-21T02:34:54.364Z" title="发表于 2025-04-21 10:34:54">2025-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/10/zai-docker-zhong-an-zhuang-postgresql/" title="在Docker中安装Postgresql"><img src="/img/test/49.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="在Docker中安装Postgresql"/></a><div class="content"><a class="title" href="/2025/04/10/zai-docker-zhong-an-zhuang-postgresql/" title="在Docker中安装Postgresql">在Docker中安装Postgresql</a><time datetime="2025-04-10T00:40:58.210Z" title="发表于 2025-04-10 08:40:58">2025-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/02/22/yong-jiu-mian-fei-linuxone-yun-fu-wu-qi/" title="永久免费LinuxONE云服务器"><img src="/img/test/11.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="永久免费LinuxONE云服务器"/></a><div class="content"><a class="title" href="/2025/02/22/yong-jiu-mian-fei-linuxone-yun-fu-wu-qi/" title="永久免费LinuxONE云服务器">永久免费LinuxONE云服务器</a><time datetime="2025-02-22T22:11:01.284Z" title="发表于 2025-02-23 06:11:01">2025-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/01/22/cloudflare-worker-zi-jian-docker-dai-li-jia-su/" title="Cloudflare Worker自建Docker代理加速"><img src="/img/test/20.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="Cloudflare Worker自建Docker代理加速"/></a><div class="content"><a class="title" href="/2025/01/22/cloudflare-worker-zi-jian-docker-dai-li-jia-su/" title="Cloudflare Worker自建Docker代理加速">Cloudflare Worker自建Docker代理加速</a><time datetime="2025-01-22T04:48:31.815Z" title="发表于 2025-01-22 12:48:31">2025-01-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2025 By Ziyourufeng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.polar-bear.eu.org/fancybox.umd.min.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><meting-js id="8492133976" server="netease" type="playlist" fixed="true" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list"></meting-js><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/canvas-nest.min.js"></script><script id="click-show-text" src="/js/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="/css/APlayer.min.css" media="print" onload="this.media='all'"><script src="/js/APlayer.min.js"></script><script src="/js/Meting2.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script>
+    // 全局变量声明区域
+    var fdata = {
+      apiurl: 'https://friends.polar-bear.eu.org/',
+      initnumber: 30, //【可选】页面初始化展示文章数量
+      stepnumber: 30, //【可选】每次加载增加的篇数
+      error_img: 'https://npm.elemecdn.com/akilar-candyassets/image/404.gif' //【可选，头像图片加载失败时的默认头像】
+    }
+    //存入本地存储
+    localStorage.setItem("fdatalist",JSON.stringify(fdata))
+    </script>
+    <script data-pjax src="/js/fetch.js"></script><script data-pjax src="https://polar-bear.eu.org/js/random-friends-post.js"></script><script async src="/js/ali_font.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="/js/hexo-filter-gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='all'|| 'all' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitapi.polar-bear.eu.org/api?51hhh",['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8ba', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06'],'51hhh')
+    }
+  </script><script data-pjax src="https://npm.elemecdn.com/oh-my-live2d@0.3.0/dist/index.min.js"></script><script>
+OML2D.loadOhMyLive2D({
+  source:"",
+  mobileShow:true,
+  sayHello:false,
+  transitionTime:1000,
+  models:[{"scale":1.2,"path":"/live2d-model-xiaohei/黑崽生日快乐2023.model3.json","x":0,"y":0,"stageStyle":{"backgroundColor":"rgba(0, 0, 0, 0)","width":"auto","height":"auto"}}],
+  tips:{
+    style:{"width":230,"height":120,"offsetX":0,"offsetY":90},
+    
+    
+    idleTips:{
+      
+      
+      interval:15000,
+      
+      remote:function() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      type: 'get',
+      url: 'https://v1.hitokoto.cn?c=i',
+      dataType: 'json',
+      success: res => {
+       // console.log(res);
+        resolve({text: res.hitokoto});
+      }
+    });
+  });
+}
+,
+    }
+  }
+  });
+  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":180,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>
