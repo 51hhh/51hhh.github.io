@@ -1,0 +1,668 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>自建网络代理 | polar-bear～Blog</title><meta name="author" content="Ziyourufeng"><meta name="copyright" content="Ziyourufeng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="日常生活中经常遇到无法连接到网络的情况🤣，所以我们可以自己搭建一个代理。  这样就可以上网了  [&#x2F;img&#x2F;2024.1.31&#x2F;2.webp]  开始  * 可以连接到网络的服务器  * 域名（可无）用于流量伪装  有域名 域名是用于伪装域名，进行连接的，可无，作用伪装，防止之后无法连接到网络。  域名DNS解析到可以连接到网络的服务器的IP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自建网络代理">
+<meta property="og:url" content="https://polar-bear.eu.org/2024/01/31/zi-jian-wang-luo-dai-li/index.html">
+<meta property="og:site_name" content="polar-bear～Blog">
+<meta property="og:description" content="日常生活中经常遇到无法连接到网络的情况🤣，所以我们可以自己搭建一个代理。  这样就可以上网了  [&#x2F;img&#x2F;2024.1.31&#x2F;2.webp]  开始  * 可以连接到网络的服务器  * 域名（可无）用于流量伪装  有域名 域名是用于伪装域名，进行连接的，可无，作用伪装，防止之后无法连接到网络。  域名DNS解析到可以连接到网络的服务器的IP">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://polar-bear.eu.org/img/test/39.png">
+<meta property="article:published_time" content="2024-01-31T05:14:47.000Z">
+<meta property="article:modified_time" content="2024-03-29T04:52:02.414Z">
+<meta property="article:author" content="Ziyourufeng">
+<meta property="article:tag" content="技术宅拯救世界~~!">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://polar-bear.eu.org/img/test/39.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://polar-bear.eu.org/2024/01/31/zi-jian-wang-luo-dai-li/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '自建网络代理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-29 12:52:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><script async data-pjax src="/js/anzhiyu.js"></script><link rel="stylesheet" href="/css/music.css"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script> <script>LA.init({id:"3IMmTwvFHv6eiiJT",ck:"3IMmTwvFHv6eiiJT",autoTrack:true,hashMode:true})</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9820372911946431" crossorigin="anonymous"></script><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/tag_plugins.css" media="defer" onload="this.media='all'"><script src="/js/carousel-touch.js"></script><link rel="stylesheet" href="/css/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="/css/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="polar-bear～Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-coy.css" type="text/css"></head><body><div id="web_bg"></div><div id="an_music_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/hand.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/test/39.png')"><nav id="nav"><span id="blog-info"><a href="/" title="polar-bear～Blog"><span class="site-name">polar-bear～Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">自建网络代理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-01-31T05:14:47.000Z" title="发表于 2024-01-31 13:14:47">2024-01-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-29T04:52:02.414Z" title="更新于 2024-03-29 12:52:02">2024-03-29</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="自建网络代理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>日常生活中经常遇到无法连接到网络的情况🤣，所以我们可以自己搭建一个代理。</p>
+<p>这样就可以上网了</p>
+<p><img src="/img/2024.1.31/2.webp" alt=""></p>
+<h2 id="开始">开始</h2>
+<ul>
+<li>可以连接到网络的服务器</li>
+<li>域名（可无）用于流量伪装</li>
+</ul>
+<h3 id="有域名">有域名</h3>
+<p>域名是用于伪装域名，进行连接的，可无，作用伪装，防止之后无法连接到网络。</p>
+<p>域名DNS解析到可以连接到网络的服务器的IP</p>
+<table>
+<thead>
+<tr>
+<th>解析类型</th>
+<th>名称</th>
+<th>目标（IPv4 address）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>随便</td>
+<td>服务器的IP</td>
+</tr>
+</tbody>
+</table>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://xn--abcd-uh5fn22au1g0rdox1a7jw710a.com">比如我的域名为abcd.com</a>，那么为其添加一个记录</p>
+<table>
+<thead>
+<tr>
+<th>解析类型</th>
+<th>名称</th>
+<th>目标（IPv4 address）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>vpn</td>
+<td>服务器的IP</td>
+</tr>
+</tbody>
+</table>
+<p>这样vpn.abcd.com就解析至服务器IP，vpn.abcd.com解析的结果就会是服务器的IP地址。</p>
+<p>建议使用cloudflare，后面好配置证书。<strong>cloudflare解析不要开代理，仅DNS模式</strong></p>
+<p><img src="/img/2024.1.31/3.webp" alt=""></p>
+<h4 id="修改SSL-TLS-mode">修改SSL/TLS mode</h4>
+<p>例如cloudflare的SSL/TLS加密模式改为完全，即端对端加密，使用服务器上的证书。</p>
+<h4 id="配置证书-安装代理">配置证书/安装代理</h4>
+<p>整个可以上网的服务器。</p>
+<p>进入root，后面注册证书要端口权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su  #Ubuntu</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt update -y # Debian/Ubuntu 命令</span><br><span class="line">apt install -y curl #Debian/Ubuntu 命令</span><br><span class="line">apt install -y socat #Debian/Ubuntu 命令</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum update -y #CentOS 命令</span><br><span class="line">yum install -y curl #CentOS 命令</span><br><span class="line">yum install -y socat #CentOS 命令</span><br></pre></td></tr></table></figure>
+<p>安装 Acme 脚本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://get.acme.sh | sh</span><br></pre></td></tr></table></figure>
+<p>80 端口空闲的证书申请方式</p>
+<p>注意80端口要空闲，关闭占用80端口的程序，我之前就因为端口被nps占用注册失败。</p>
+<p>自行更换代码中的域名、邮箱为你解析的域名及邮箱。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --register-account -m xxxx@xxxx.com</span><br><span class="line">~/.acme.sh/acme.sh --issue -d 申请的域名 --standalone</span><br></pre></td></tr></table></figure>
+<p>安装证书到指定文件夹。注意：更换代码中的域名为你解析的域名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --installcert -d mydomain.com --key-file /root/private.key --fullchain-file /root/cert.crt</span><br></pre></td></tr></table></figure>
+<p>安装 &amp; 升级 X-ui 面板</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/03_29/image_e6c0a11604b9b2098c0b88da53a2b4be.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/03_29/image_e6c0a11604b9b2098c0b88da53a2b4be.png"></p>
+<p>按照中文提示输入用户名，密码，端口（注意在服务器面板开启对应端口）</p>
+<p>访问web，IP:端口</p>
+<p><img src="/img/2024.1.31/4.webp" alt=""></p>
+<h3 id="无域名">无域名</h3>
+<p>若现在暂时没有域名，也可以使用协议，注意流量伪装。</p>
+<h2 id="代理配置">代理配置</h2>
+<h3 id="各种协议以及设置解释">各种协议以及设置解释</h3>
+<p>多种协议代理面板，像是Shadowsocks、V2Ray和Xray，每种都有自己的特点和适用场景喵～</p>
+<p><strong>Shadowsocks</strong>：<br>
+优点：</p>
+<ul>
+<li>轻量级，资源占用少喵。</li>
+<li>设置简单，用户友好喵。</li>
+<li>较好的抗封锁性能喵。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>协议特征较为明显，可能会被某些网络审查技术检测到喵。</li>
+<li>不支持真正的全流量混淆喵。</li>
+</ul>
+<p><strong>V2Ray</strong>：<br>
+优点：</p>
+<ul>
+<li>支持多种协议，灵活配置喵。</li>
+<li>较强的抗封锁能力，隐蔽性高喵。</li>
+<li>支持流量混淆，可模拟正常流量，难以被检测喵。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>设置相对复杂，新手上手较难喵。</li>
+<li>资源消耗相对较大喵。</li>
+</ul>
+<p><strong>Xray</strong>（相当于V2Ray的进阶版）：<br>
+优点：</p>
+<ul>
+<li>汇集了V2Ray的所有优点，且进行了优化喵。</li>
+<li>提供更多的协议，比如XTLS等，效率更高喵。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>和V2Ray类似，配置较为复杂喵。</li>
+<li>需要用户有一定的技术背景喵。</li>
+</ul>
+<p>在选择使用这些代理的时候，要考虑到自己的需求、网络环境、技术能力喵。不同环境和需求下，最合适的选择也可能不同喵。另外，使用代理服务，要确保合法合规喵～</p>
+<ol>
+<li>
+<p><strong>Host</strong>：</p>
+<ul>
+<li>在网络中，<code>Host</code>通常指你的服务或网站的域名喵。</li>
+<li>在代理设置中，修改<code>Host</code>头可以帮助你绕过一些网络限制喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>TLS</strong>：</p>
+<ul>
+<li>TLS（传输层安全协议）是一种加密协议，用来保护客户端和服务器之间的通信安全喵。</li>
+<li>启用TLS可以确保你的数据在传输过程中不会被窃听或篡改喵。</li>
+</ul>
+</li>
+<li>
+<p><strong>证书</strong>：</p>
+<ul>
+<li>数字证书用来验证网站或服务器的身份，保证交流双方是可信的喵。</li>
+<li>证书通常由证书颁发机构（CA）签发，包含公钥、身份信息等喵。</li>
+</ul>
+</li>
+</ol>
+<p>在面板中进行设置时，你可能需要填写或上传相关信息，比如：</p>
+<ul>
+<li>证书（Cert）文件路径：TLS加密所需的公钥证书文件位置喵。</li>
+<li>私钥（Key）文件路径：配合证书使用的私钥文件位置喵。</li>
+<li>证书颁发机构链（CA Chain）文件路径：一串证书路径，为了提供证书的信任链喵。</li>
+</ul>
+<p>启用TLS和使用合适的证书，可以大大提升您使用代理服务时的安全性喵。不过，设置这些参数时要小心喵，不正确的设置可能导致服务不能正常工作喵。一定要确保你拥有合法的证书并且按照正确的方法配置喵～如果你在设置中遇到任何问题，记得查阅官方文档或者向专业人士寻求帮助喵。</p>
+<h3 id="具体操作举例">具体操作举例</h3>
+<p>进入web面板</p>
+<p>左侧入站列表</p>
+<p>添加</p>
+<p><strong>配置很多种情况，可自行探究。</strong></p>
+<p>推荐一种：（按照web添加填入顺序）</p>
+<table>
+<thead>
+<tr>
+<th>备注</th>
+<th>启用</th>
+<th>协议</th>
+<th>监听IP</th>
+<th>端口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>随便</td>
+<td>打开</td>
+<td>shadowsocks</td>
+<td>留空</td>
+<td>随便</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>总流量</th>
+<th>到期时间</th>
+<th>加密</th>
+<th>密码</th>
+<th>网络</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>随便</td>
+<td>随便</td>
+<td>chacha20-poly1305</td>
+<td>填个</td>
+<td>tcp+udp</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>传输</th>
+<th>路径</th>
+<th>请求头 :Host</th>
+<th>tls</th>
+<th>域名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ws</td>
+<td>/path</td>
+<td>你的域名</td>
+<td>开</td>
+<td>你的域名</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>证书</th>
+<th>公钥文件路径</th>
+<th>密钥文件路径</th>
+<th>sniffin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>certificate file path</td>
+<td>/root/cert.crt</td>
+<td>/root/private.key</td>
+<td>开</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/img/2024.1.31/1.webp" alt=""></p>
+<h2 id="使用代理">使用代理</h2>
+<p>使用v2rayN</p>
+<p>添加【Shadowsocks】服务器</p>
+<p><img src="/img/2024.1.31/5.webp" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>别名</th>
+<th>地址</th>
+<th>端口</th>
+<th>密码</th>
+<th>加密方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>随便</td>
+<td>IP地址</td>
+<td>和上面一样</td>
+<td>和上面一样</td>
+<td>和上面一样</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>传输协议</th>
+<th>伪装类型</th>
+<th>伪装域名</th>
+<th>路径</th>
+<th>TLS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>和上面一样</td>
+<td>none</td>
+<td>和上面一样你的域名</td>
+<td>/path</td>
+<td>开</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>SNI</th>
+<th>跳过证书验证</th>
+<th>Fingerprint</th>
+<th>Alpn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>域名</td>
+<td>打开</td>
+<td>随便</td>
+<td>http/1.1</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">x-ui 管理脚本使用方法: </span><br><span class="line">----------------------------------------------</span><br><span class="line">x-ui              - 显示管理菜单 (功能更多)</span><br><span class="line">x-ui start        - 启动 x-ui 面板</span><br><span class="line">x-ui stop         - 停止 x-ui 面板</span><br><span class="line">x-ui restart      - 重启 x-ui 面板</span><br><span class="line">x-ui status       - 查看 x-ui 状态</span><br><span class="line">x-ui enable       - 设置 x-ui 开机自启</span><br><span class="line">x-ui disable      - 取消 x-ui 开机自启</span><br><span class="line">x-ui log          - 查看 x-ui 日志</span><br><span class="line">x-ui v2-ui        - 迁移本机器的 v2-ui 账号数据至 x-ui</span><br><span class="line">x-ui update       - 更新 x-ui 面板</span><br><span class="line">x-ui install      - 安装 x-ui 面板</span><br><span class="line">x-ui uninstall    - 卸载 x-ui 面板</span><br><span class="line">----------------------------------------------</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org">Ziyourufeng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org/2024/01/31/zi-jian-wang-luo-dai-li/">https://polar-bear.eu.org/2024/01/31/zi-jian-wang-luo-dai-li/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="null" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://polar-bear.eu.org" target="_blank">polar-bear～Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/test/39.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.polar-bear.eu.org/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhuwechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhualipay.jpg" alt="Alipay"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/01/31/nps/" title="nps"><img class="cover" src="/img/test/37.png" onerror="onerror=null;src='/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">nps</div></div></a></div><div class="next-post pull-right"><a href="/2024/01/27/an-zhuang-magisk-lsposed-root-bing-guo-momo-jian-ce/" title="安装Magisk LSPosed root并过momo检测"><img class="cover" src="/img/test/3.png" onerror="onerror=null;src='/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">安装Magisk LSPosed root并过momo检测</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/hand.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ziyourufeng</div><div class="author-info__description">技术宅拯救世界~~!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/51hhh"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/51hhh" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: 51hhh;"></i></a><a class="social-icon" href="mailto:ziyourufeng@duck.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: ziyourufeng;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">已更换Twikoo评论，现在可在文末留言啦，可在左下角聊天，邮箱，telegram，QQ群等方式与我取得联系</div></div><div class="card-widget"><div class="item-headline"><i class="fas fa-desktop"></i><span></span></div><div class="item-content"><div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/1/2021 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval(createtime, 250);
+</script>
+</div>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B"><span class="toc-number">1.</span> <span class="toc-text">开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%9F%9F%E5%90%8D"><span class="toc-number">1.1.</span> <span class="toc-text">有域名</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9SSL-TLS-mode"><span class="toc-number">1.1.1.</span> <span class="toc-text">修改SSL&#x2F;TLS mode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%AF%81%E4%B9%A6-%E5%AE%89%E8%A3%85%E4%BB%A3%E7%90%86"><span class="toc-number">1.1.2.</span> <span class="toc-text">配置证书&#x2F;安装代理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%9F%9F%E5%90%8D"><span class="toc-number">1.2.</span> <span class="toc-text">无域名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">代理配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%84%E7%A7%8D%E5%8D%8F%E8%AE%AE%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E8%A7%A3%E9%87%8A"><span class="toc-number">2.1.</span> <span class="toc-text">各种协议以及设置解释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E6%93%8D%E4%BD%9C%E4%B8%BE%E4%BE%8B"><span class="toc-number">2.2.</span> <span class="toc-text">具体操作举例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">使用代理</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/24/orin-nx-de-chong-chong/" title="Orin NX 的种种"><img src="/img/test/21.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="Orin NX 的种种"/></a><div class="content"><a class="title" href="/2026/01/24/orin-nx-de-chong-chong/" title="Orin NX 的种种">Orin NX 的种种</a><time datetime="2026-01-24T00:22:31.356Z" title="发表于 2026-01-24 08:22:31">2026-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/27/cloudflare-jia-su-onedrive-wen-jian-xia-zai/" title="cloudflare加速onedrive文件下载"><img src="/img/test/13.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="cloudflare加速onedrive文件下载"/></a><div class="content"><a class="title" href="/2025/12/27/cloudflare-jia-su-onedrive-wen-jian-xia-zai/" title="cloudflare加速onedrive文件下载">cloudflare加速onedrive文件下载</a><time datetime="2025-12-27T05:52:03.010Z" title="发表于 2025-12-27 13:52:03">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/27/rdk-s100p-de-chong-chong/" title="RDK S100P的种种"><img src="/img/test/49.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="RDK S100P的种种"/></a><div class="content"><a class="title" href="/2025/12/27/rdk-s100p-de-chong-chong/" title="RDK S100P的种种">RDK S100P的种种</a><time datetime="2025-12-27T00:27:09.891Z" title="发表于 2025-12-27 08:27:09">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/12/wsl-an-zhuang-isaac-gym/" title="wsl安装isaac gym"><img src="/img/test/35.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="wsl安装isaac gym"/></a><div class="content"><a class="title" href="/2025/11/12/wsl-an-zhuang-isaac-gym/" title="wsl安装isaac gym">wsl安装isaac gym</a><time datetime="2025-11-12T03:04:44.842Z" title="发表于 2025-11-12 11:04:44">2025-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/08/26/exo/" title="exo"><img src="/img/test/47.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="exo"/></a><div class="content"><a class="title" href="/2025/08/26/exo/" title="exo">exo</a><time datetime="2025-08-26T23:08:40.988Z" title="发表于 2025-08-27 07:08:40">2025-08-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2026 By Ziyourufeng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.polar-bear.eu.org/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><meting-js id="8492133976" server="netease" type="playlist" fixed="true" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list"></meting-js><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/canvas-nest.min.js"></script><link rel="stylesheet" href="/css/APlayer.min.css" media="print" onload="this.media='all'"><script src="/js/APlayer.min.js"></script><script src="/js/Meting2.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script>
+    // 全局变量声明区域
+    var fdata = {
+      apiurl: 'https://friends.polar-bear.eu.org/',
+      initnumber: 30, //【可选】页面初始化展示文章数量
+      stepnumber: 30, //【可选】每次加载增加的篇数
+      error_img: 'https://npm.elemecdn.com/akilar-candyassets/image/404.gif' //【可选，头像图片加载失败时的默认头像】
+    }
+    //存入本地存储
+    localStorage.setItem("fdatalist",JSON.stringify(fdata))
+    </script>
+    <script data-pjax src="/js/fetch.js"></script><script data-pjax src="https://polar-bear.eu.org/js/random-friends-post.js"></script><script async src="/js/ali_font.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="/js/hexo-filter-gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='all'|| 'all' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitapi.polar-bear.eu.org/api?51hhh",['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8ba', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06'],'51hhh')
+    }
+  </script><script data-pjax src="https://npm.elemecdn.com/oh-my-live2d@0.3.0/dist/index.min.js"></script><script>
+OML2D.loadOhMyLive2D({
+  source:"",
+  mobileShow:true,
+  sayHello:false,
+  transitionTime:1000,
+  models:[{"scale":1.2,"path":"/live2d-model-xiaohei/黑崽生日快乐2023.model3.json","x":0,"y":0,"stageStyle":{"backgroundColor":"rgba(0, 0, 0, 0)","width":"auto","height":"auto"}}],
+  tips:{
+    style:{"width":230,"height":120,"offsetX":0,"offsetY":90},
+    
+    
+    idleTips:{
+      
+      
+      interval:15000,
+      
+      remote:function() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      type: 'get',
+      url: 'https://v1.hitokoto.cn?c=i',
+      dataType: 'json',
+      success: res => {
+       // console.log(res);
+        resolve({text: res.hitokoto});
+      }
+    });
+  });
+}
+,
+    }
+  }
+  });
+  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":180,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>

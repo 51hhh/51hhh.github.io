@@ -1,0 +1,624 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>机器学习——深度学习 | polar-bear～Blog</title><meta name="author" content="Ziyourufeng"><meta name="copyright" content="Ziyourufeng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="机器学习 机器学习是一个专门研究和开发能够学习的机器的领域，目标是获得通用人工智能。  机器学习是人工智能的核心领域，目标是让计算机通过数据学习规律并做出预测或决策。其核心逻辑是：从数据中提取特征，通过算法训练模型，实现对未知数据的推断。   * 分类：包括监督学习（如回归、分类算法）、无监督学习（如聚类、降维）、半监督学习和强化学习等。  * 关键特征：依赖人工设计的特征工程，例如在图像识别中，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习——深度学习">
+<meta property="og:url" content="https://polar-bear.eu.org/2025/07/03/ji-qi-xue-xi-shen-du-xue-xi/index.html">
+<meta property="og:site_name" content="polar-bear～Blog">
+<meta property="og:description" content="机器学习 机器学习是一个专门研究和开发能够学习的机器的领域，目标是获得通用人工智能。  机器学习是人工智能的核心领域，目标是让计算机通过数据学习规律并做出预测或决策。其核心逻辑是：从数据中提取特征，通过算法训练模型，实现对未知数据的推断。   * 分类：包括监督学习（如回归、分类算法）、无监督学习（如聚类、降维）、半监督学习和强化学习等。  * 关键特征：依赖人工设计的特征工程，例如在图像识别中，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://polar-bear.eu.org/img/test/25.png">
+<meta property="article:published_time" content="2025-07-03T05:51:52.154Z">
+<meta property="article:modified_time" content="2025-07-04T09:07:30.665Z">
+<meta property="article:author" content="Ziyourufeng">
+<meta property="article:tag" content="技术宅拯救世界~~!">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://polar-bear.eu.org/img/test/25.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://polar-bear.eu.org/2025/07/03/ji-qi-xue-xi-shen-du-xue-xi/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '机器学习——深度学习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-04 17:07:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><script async data-pjax src="/js/anzhiyu.js"></script><link rel="stylesheet" href="/css/music.css"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script> <script>LA.init({id:"3IMmTwvFHv6eiiJT",ck:"3IMmTwvFHv6eiiJT",autoTrack:true,hashMode:true})</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9820372911946431" crossorigin="anonymous"></script><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/tag_plugins.css" media="defer" onload="this.media='all'"><script src="/js/carousel-touch.js"></script><link rel="stylesheet" href="/css/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="/css/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="polar-bear～Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-coy.css" type="text/css"></head><body><div id="web_bg"></div><div id="an_music_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/hand.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/test/25.png')"><nav id="nav"><span id="blog-info"><a href="/" title="polar-bear～Blog"><span class="site-name">polar-bear～Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">机器学习——深度学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-03T05:51:52.154Z" title="发表于 2025-07-03 13:51:52">2025-07-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-04T09:07:30.665Z" title="更新于 2025-07-04 17:07:30">2025-07-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="机器学习——深度学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="机器学习">机器学习</h2>
+<p>机器学习是一个专门研究和开发能够学习的机器的领域，目标是获得通用人工智能。</p>
+<p>机器学习是人工智能的核心领域，目标是让计算机通过数据学习规律并做出预测或决策。其核心逻辑是：从数据中提取特征，通过算法训练模型，实现对未知数据的推断。</p>
+<ul>
+<li>分类：包括监督学习（如回归、分类算法）、无监督学习（如聚类、降维）、半监督学习和强化学习等。</li>
+<li>关键特征：依赖人工设计的特征工程，例如在图像识别中，需要手动提取边缘、颜色等特征。</li>
+</ul>
+<blockquote>
+<p>本篇是对之前文章的扩展，补充与深化，本人深感过去文章水平有限，仅是为完成工程任务调参了解的，极为片面，浅薄的记录，本文试图作为学习笔记系统性记录✍️本人的学习过程。(ﾉ∇︎〃 )</p>
+<p>添加了很多<s>骚话</s>个人理解(´つヮ⊂︎)</p>
+</blockquote>
+<blockquote>
+<p>前面大多为车轱辘话(╯‵□′)╯︵┻━┻，只需要大致了解概念。可直接跳至算法原理。(ฅ&gt;ω&lt;*ฅ)</p>
+</blockquote>
+<h2 id="序言">序言</h2>
+<p><s>一些很漂亮很浪漫很有人类探索精神的屁话</s>╮(╯▽╰)╭</p>
+<p>千百年来，人类试图了解智能的机制，并将它复制到思维机器上。</p>
+<p>人类从不满足于让机械或电子设备帮助做一些简单的任务，例如，使<br>
+用燧石打火，使用滑轮吊起沉重的岩石，使用计算器做算术。</p>
+<p>相反，我们希望能够自动化执行更具有挑战性、相对复杂的任务，如<br>
+对相似的照片进行分组、从健康细胞中识别出病变细胞，甚至是来一盘优雅的国际象棋博弈。这些任务似乎需要人类的智能才能完成，或至少需要人类思维中的某种更深层次、更神秘的能力来完成，而在诸如计算器这样简单的机器中是找不到这种能力的。<br>
+具有类似人类智能的机器是一个如此诱人且强大的想法，我们的文化<br>
+对它充满了幻想和恐惧，如斯坦利·库布里克导演的《2001: A Space<br>
+Odyssey》中的HAL 9000（拥有巨大的能力却最终给人类带来了威胁）、动作片中疯狂的“终结者（Terminator）”机器人以及电视剧《Knight Rider》中具有冷静个性的话匣子KITT汽车。</p>
+<p>1997年，国际象棋卫冕世界冠军、国际象棋特级大师加里·卡斯帕罗夫<br>
+被IBM“深蓝”计算机击败，我们在庆祝这一历史性成就的同时，也担心机<br>
+器智能的潜力。</p>
+<h3 id="神经网络">神经网络</h3>
+<p><a href="https://polar-bear.eu.org/2025/04/26/ji-qi-xue-xi-shen-jing-wang-luo/">机器学习－－神经网络</a></p>
+<blockquote>
+<p>之前在学习Nanodet模型时，对于神经网络非常浅显的记录</p>
+</blockquote>
+<p>计算机可以以相当快的速度在短时间内执行数亿次数学运算，能够高效的数量海量数据，但是在很长一段时间内，计算机却无法做到人类能够轻易完成的任务，仅通过视觉以极快的速度识别身边的物体，无意识间控制四肢协调平衡运动，等等。</p>
+<p>而我们却能够仅仅为大脑提供大概20w的功耗轻易做到复杂的计算机无法完成的任务。不禁让很多人试图再次利用仿生学在计算机上实习以上功能。</p>
+<p><s>依旧骚话</s>✧(◍˃̶ᗜ˂̶◍)✩</p>
+<h4 id="最早的神经网络模型–感知机">最早的神经网络模型–感知机</h4>
+<p>那就回到1957年，找到美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt），一个神经生物学和行为学副教授，提出一种单层神经网络模型，旨在模拟生物神经元工作原理，由输入层，隐藏层，和输出层组成。</p>
+<p>其非常简单，输入问题，进行计算，得到结果，如果存在差异则更新内部权重，这即是训练过程。</p>
+<p>你可能会想“这也没什么了不起的吧！”，<s>这确实没什么了不起</s>╮(╯▽╰)╭，你是这样想的，我也是。但这是由于当时技术的局限和理论的不完善，其确实是神经网络历史上最早提出的模型之一，也是现代深度学习的先驱，为后来的多层感知机和深度学习模型提供了理论支持，开创了人工神经网络的研究。</p>
+<h4 id="神经网络-v2">神经网络</h4>
+<p>虽然神经元有各种形式，但是所有的神经元都是将电信号从一端传输到另一端，沿着轴突，将电信号从树突传到树突。然后，这些信号从一个神经元传递到另一个神经元。这就是身体感知光、声、触压、热等信号的机制。来自专门的感觉神经元的信号沿着神经系统，传输到大脑，而大脑本身主要也是由神经元构成的。</p>
+<p>我们需要多少个神经元才能执行相对复杂的有趣任务呢？</p>
+<p>一般说来，能力非常强的人类大脑有大约1000亿个神经元！一只果蝇<br>
+拥有约10万个神经元，能够飞翔、觅食、躲避危险、寻找食物以及执行许多相当复杂的任务。10万个神经元，这个数字恰好落在了现代计算机试图复制的范围内。一只线虫仅仅具有302个神经元，与今天的数字计算机资源相比，简直就是微乎其微！但是一只线虫能够完成一些相当有用的任务，而这任务对于尺寸大得多的传统计算机程序而言却难以完成。</p>
+<h5 id="激活函数">激活函数</h5>
+<p>观察表明，神经元不会立即反应，而是会抑制输入，直到输入增强，<br>
+强大到可以触发输出。你可以这样认为，在产生输出之前，输入必须到达一个阈值。就像水在杯中——直到水装满了杯子，才可能溢出。直观上，这是有道理的——神经元不希望传递微小的噪声信号，而只是传递有意识的明显信号。下图说明了这种思想，只有输入超过了阈值（threshold），足够接通电路，才会产生输出信号。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_04/image_83060f9cc4f294b96510ee7e0dc85da6.png" alt=""></p>
+<p>我们可以改进阶跃函数。下图所示的S形函数称为S函数（sigmoid function）。这个函数，比起冷冰冰、硬邦邦的阶跃函数要相对平滑，这使 得这个函数更自然、更接近现实。</p>
+<p>$$<br>
+f(x) = \frac{1}{1 + e^{-x}}<br>
+$$</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_04/image_77a269ab10c97e5e03b50f44ac2bcdaf.png" alt=""></p>
+<p>随着输入 <code>x</code> 的增加，sigmoid 函数的输出会接近 <code>1</code>，但永远不会达到 <code>1</code>。同样，当输入值减小时，S 型函数值 函数的输出接近，但永远不会达到 <code>0</code>。</p>
+<blockquote>
+<p><em>sigmoid</em> 一词通常更广泛地用于指代任何 S 形函数。从技术层面来看，对特定函数$f(x) = \frac{1}{1 + e^{-x}}$来说，更准确的术语是<em>逻辑函数</em>。</p>
+</blockquote>
+<p>sigmoid function是机器学习中重要的激活函数</p>
+<ul>
+<li>Sigmoid函数的输出范围是0到1。由于输出值限定在0到1，因此它对每个神经元的输出进行了归一化。</li>
+<li>用于将预测概率作为输出的模型。由于概率的取值范围是0到1，因此Sigmoid函数非常合适</li>
+<li>梯度平滑，避免跳跃的输出值</li>
+<li>函数是可微的。这意味着可以找到任意两个点的Sigmoid曲线的斜率</li>
+<li>结果明确，即非常接近1或0。</li>
+<li>函数输出不是以0为中心的，这会降低权重更新的效率</li>
+<li>Sigmoid函数执行指数运算，计算机运行得较慢。</li>
+</ul>
+<p>sigmoid激活函数在神经网络中起到的作用：</p>
+<blockquote>
+<p>引入非线性特性，神经网络基本单元是线性组合（加权求和），部分情况需要映射到非线性解决复杂情况$f(x) = \frac{1}{1 + e^{-x}}$</p>
+<p>sigmoid通常用于二分类最后一层，输出结果在0-1之间，将结果解释为“某一类的概率”</p>
+<p>反向传播便利性 ，因为sigmoid函数可导，复合求导可得$\sigma’(x) = \frac{1}{1+e^{-x}} \cdot \frac{e<sup>{-x}}{1+e</sup>{-x}} = \sigma(x)(1-\sigma(x))$便于反向传播中梯度计算</p>
+</blockquote>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_8d0788e8b70ca0dc3d327da12de64c2b.png" alt="sigmoid函数及其导数"></p>
+<p>其他激活函数</p>
+<p>双曲正切激活函数</p>
+<p>$$<br>
+F(x)=tanh(x)<br>
+$$</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_15ebed5b8b66fe209a796b9f3812dcd1.png" alt=""></p>
+<blockquote>
+<p>请注意，S 型函数的范围为 0 到 1，tanh 函数的范围为 -1 到 1</p>
+</blockquote>
+<p><strong>修正线性单元</strong>激活函数（简称 <strong>ReLU</strong>）</p>
+<p>$$<br>
+F(x)=max(0,x)<br>
+$$</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_7831be009afad4fe283f3ca6b59b6823.png" alt=""></p>
+<p>ReLU 作为激活函数的效果通常优于 S 型函数或 tanh 等平滑函数，因为它在神经网络训练期间不易受到梯度消失问题的影响。与这些函数相比，ReLU 的计算也更容易。</p>
+<h5 id="矩阵">矩阵</h5>
+<p>下面是一个简单的全连接层</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_04/image_9940b3560723f490c7c501a1fdf3f4db.png" alt=""></p>
+<p>对于第二层，二层一同时接受一层一和一层二的输出，对于此处简单的计算，我们可以得到$X=(input1<em>w_{1,1})+(input2</em>w_{2,1})$,但是实际上的全连接层需要计算的连接个数众多，使用这种计算方法即不直观，而且串行运算在计算机中运行时消耗许多内存交换以及等待时间，显然，我们需要矩阵运算。</p>
+<p>对于第二层神经元接受到的信号强度可以使用$X=W•I$计算，W是权重矩阵，I是输入矩阵，X	是输入到第二层的结果矩阵。</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>X</mi><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">[</mo><mtable columnspacing="1em" rowspacing="4pt"><mtr><mtd><msub><mi>w</mi><mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>w</mi><mrow><mn>2</mn><mo>,</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>w</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub></mtd><mtd><msub><mi>w</mi><mrow><mn>2</mn><mo>,</mo><mn>2</mn></mrow></msub></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">]</mo></mrow><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">[</mo><mtable columnspacing="1em" rowspacing="4pt"><mtr><mtd><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi><mn>1</mn></mtd></mtr><mtr><mtd><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi><mn>2</mn></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">]</mo></mrow><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">[</mo><mtable columnspacing="1em" rowspacing="4pt"><mtr><mtd><mo stretchy="false">(</mo><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi><mn>1</mn><mo>∗</mo><msub><mi>w</mi><mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi><mn>2</mn><mo>∗</mo><msub><mi>w</mi><mrow><mn>2</mn><mo>,</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi><mn>1</mn><mo>∗</mo><msub><mi>w</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo>+</mo><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi><mn>2</mn><mo>∗</mo><msub><mi>w</mi><mrow><mn>2</mn><mo>,</mo><mn>2</mn></mrow></msub><mo stretchy="false">)</mo></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">]</mo></mrow></math></p>
+<p>使用矩阵可以清晰描述，并且能够直接计算一层权重。</p>
+<h5 id="隐藏层">隐藏层</h5>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_04/image_f47720cbed3322838fea0b2631bcd57c.png" alt=""></p>
+<p>隐藏层，位于神经网络中间层，即既不作为输入也不作为输出，在中间起连接，传递作用的。</p>
+<p>$W_{input_hidden}$是输入层和隐藏层之间的权重,$W_{hidden_output}$是隐藏层和输出层之间的权重</p>
+<p>$$<br>
+X_{hidden}=W_{input_hidden}•Input<br>
+$$</p>
+<p>隐藏层的输出可以再使用激活函数。</p>
+<p>$$<br>
+Output_{hidden} = sigmoid(X_{hidden})<br>
+$$</p>
+<p>计算输出层权重</p>
+<p>$$<br>
+X_{output}=W_{hidden_output}•Output_{hidden}<br>
+$$</p>
+<p>使用激活函数</p>
+<p>$$<br>
+Output_{output}=sigmoid(X_{output})<br>
+$$</p>
+<p>神经单元线性关系</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_c7a26918679ff78c5441c9d18d72390b.png" alt=""></p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_aa861ddd5da4aa99f775217f620253ad.png" alt=""></p>
+<p>神经单元使用激活函数非线性关系</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_4d37337ca60fed8f53a3dd8e00c9b1b3.png" alt=""></p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2025/07_05/image_53f24caeab48abdfc30685bff11b0fc0.png" alt=""></p>
+<p>神经网络（Neural Network，NN）是机器学习中的一种算法框架，灵感源于生物神经元，通过多层节点（神经元）连接传递信息，实现复杂映射。</p>
+<ul>
+<li>结构：由输入层、隐藏层、输出层组成，层间神经元通过权重连接，通过反向传播算法优化权重。</li>
+<li>典型模型：早期的感知机、多层感知机（MLP），但受限于计算能力和数据量，应用范围较窄。</li>
+</ul>
+<h3 id="深度学习">深度学习</h3>
+<p>深度学习（Deep Learning）本质上是多层神经网络的深化，通过增加网络层数（如几十层到上千层）和复杂结构，实现对数据的自动特征提取和表示学习。</p>
+<p>深度学习是神经网络的延伸与升级，计算能力的提升解决了传统神经网络训练算力问题，使得深度学习具有更为复杂的结构，能够实现更为复杂的功能。</p>
+<ul>
+<li>自动特征工程：无需人工设计特征，例如CNN可自动提取图像的边缘、纹理等高层特征，RNN可处理序列数据的时序关系。</li>
+</ul>
+<p>卷积神经网络（CNN）、循环神经网络（RNN）、Transformer、生成对抗网络（GAN）等，广泛应用于图像识别、自然语言处理、语音识别等领域。</p>
+<h2 id="什么是机器学习">什么是机器学习</h2>
+<blockquote>
+<p>使计算机不需要显式编程就能拥有学习能力的研究</p>
+</blockquote>
+<p>机器通过观察某项任务存在的模式，并且试图以某种直接或间接方式模仿。</p>
+<p>而直接或间接的区别即分为监督学习和非监督学习</p>
+<p>监督学习</p>
+<ul>
+<li>数据特点：输入数据（特征）配有明确的标签（Label），即“有标准答案”。</li>
+<li>示例：图像分类任务中，每张图片标注“猫”“狗”等类别；房价预测中，房屋特征（面积、位置）对应具体价格。</li>
+<li>如线性回归，决策树，SVM，CNN</li>
+</ul>
+<p>非监督学习</p>
+<ul>
+<li>数据特点：输入数据无标签，仅包含特征，需算法自行发现数据内在结构。</li>
+<li>示例：用户行为数据（浏览记录、购买偏好）未标注类别，需通过聚类算法将相似用户分组。</li>
+<li>如k-means，PCA，AE</li>
+</ul>
+<h4 id="监督学习">监督学习</h4>
+<ul>
+<li>本质：通过“输入特征+标签”的标注数据，学习从特征到标签的映射关系（函数），再用训练好的模型对新数据预测。</li>
+<li>类比理解：类似学生通过“例题（标注数据）”学习解题规则，再用规则解答新题目。</li>
+</ul>
+<p>1.数据要求</p>
+<ul>
+<li>必须包含特征（Features） 和标签（Labels），如：</li>
+<li>图像分类：像素值是特征，“猫/狗”是标签；</li>
+<li>房价预测：房屋面积、位置是特征，价格是标签。</li>
+</ul>
+<p>2.学习目标</p>
+<ul>
+<li>最小化预测值与真实标签的误差，例如：</li>
+<li>用线性回归预测房价时，让模型输出的价格与实际价格尽可能接近。</li>
+</ul>
+<p>3. 训练流程：</p>
+<ul>
+<li>划分训练集、验证集和测试集 → 模型拟合训练数据 → 通过验证集调参 → 用测试集评估泛化能力。</li>
+</ul>
+<h4 id="无监督学习">无监督学习</h4>
+<ul>
+<li>本质：仅通过输入特征（无标签），让模型自主发现数据的内在规律（如相似性、聚类结构、分布模式）。</li>
+<li>类比理解：类似人类在没有老师指导的情况下，通过观察事物特征（如颜色、形状）自主将其分组（如将水果按大小、甜度分类）。</li>
+</ul>
+<p>主要是聚类和降维</p>
+<p>聚类（Clustering）：数据分组</p>
+<ul>
+<li>目标：将相似的数据点归为同一簇（Cluster），不同簇间差异明显。</li>
+<li>示例：</li>
+<li>电商平台根据用户购买行为（浏览记录、消费金额）将用户分群，针对性推送商品；</li>
+<li>生物学中按基因表达数据对物种分类。</li>
+</ul>
+<p>降维（Dimensionality Reduction）：特征压缩</p>
+<ul>
+<li>目标：将高维数据（如上万维特征）映射到低维空间，保留关键信息，减少计算复杂度。</li>
+</ul>
+<h4 id="参数学习和非参数学习">参数学习和非参数学习</h4>
+<p>机器学习可以分为有无监督，也可分为有无参数</p>
+<p>参数学习，即数据服从某种固定分布，通过训练数据学习一组固定数量的参数，用固定参数直接描述数据模型。</p>
+<p>非参数学习，即不预设参数数量，依赖数据本身，模型复杂度会随之动态变化。</p>
+<p>参数学习：典型算法与原理</p>
+<ol>
+<li>线性回归（Linear Regression）</li>
+</ol>
+<ul>
+<li>核心：假设输出与输入是线性关系，用参数  \theta  表示权重，通过最小化均方误差（MSE）求解  \theta 。</li>
+<li>公式： $y = \theta_0 + \theta_1x_1 + \dots + \theta_nx_n $，参数数量为特征维度+1（固定）。</li>
+</ul>
+<ol start="2">
+<li>逻辑回归（Logistic Regression）</li>
+</ol>
+<ul>
+<li>核心：在线性回归基础上用Sigmoid函数将输出映射到[0,1]区间，用于二分类，参数含义与线性回归类似。</li>
+<li>应用：垃圾邮件分类、疾病预测（是否患病）。</li>
+</ul>
+<ol start="3">
+<li>朴素贝叶斯（Naive Bayes）</li>
+</ol>
+<ul>
+<li>核心：假设特征条件独立，学习先验概率  P(Y)  和条件概率  P(X|Y) （如高斯朴素贝叶斯假设  P(X|Y)  服从高斯分布）。</li>
+<li>参数：存储各类别概率和特征分布参数（如均值、方差），数量固定。</li>
+</ul>
+<p>非参数学习：典型算法与原理</p>
+<ol>
+<li>K近邻（K-Nearest Neighbors, KNN）</li>
+</ol>
+<ul>
+<li>核心：不学习参数，直接存储所有训练样本。预测时找新样本的K个最近邻，根据邻居类别投票（分类）或取均值（回归）。</li>
+<li>特点：</li>
+<li>无固定参数，K是超参数（需手动调优），模型复杂度随样本量增加而提高；</li>
+<li>适合处理图像像素级分类（如MNIST手写数字识别）。</li>
+</ul>
+<ol start="2">
+<li>决策树（Decision Tree）</li>
+</ol>
+<ul>
+<li>核心：通过递归划分特征空间（如按“年龄&gt;30岁”“收入&gt;5000元”等条件分裂节点），树的深度和节点数由数据决定（非固定参数）。</li>
+<li>变种：随机森林（集成多棵决策树，非参数特性更强）。</li>
+</ul>
+<ol start="3">
+<li>核密度估计（Kernel Density Estimation, KDE）</li>
+</ol>
+<ul>
+<li>核心：不假设数据分布，用核函数（如高斯核）平滑每个数据点的概率密度，整体密度由所有点叠加而成。</li>
+<li>应用：估计数据的概率分布（如金融市场收益率的分布预测）。</li>
+</ul>
+<ol start="4">
+<li>支持向量机（SVM，非参数视角）</li>
+</ol>
+<ul>
+<li>核心：当使用非线性核函数（如RBF核）时，SVM通过将数据映射到高维空间求解分隔超平面，模型复杂度与支持向量数量相关（数据量越大，支持向量可能越多）。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org">Ziyourufeng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org/2025/07/03/ji-qi-xue-xi-shen-du-xue-xi/">https://polar-bear.eu.org/2025/07/03/ji-qi-xue-xi-shen-du-xue-xi/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="null" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://polar-bear.eu.org" target="_blank">polar-bear～Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/test/25.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.polar-bear.eu.org/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhuwechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhualipay.jpg" alt="Alipay"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/08/14/esp-csi-dong-zuo-fen-lei/" title="ESP CSI 动作分类"><img class="cover" src="/img/test/40.png" onerror="onerror=null;src='/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">ESP CSI 动作分类</div></div></a></div><div class="next-post pull-right"><a href="/2025/04/26/ji-qi-xue-xi-shen-jing-wang-luo/" title="机器学习——神经网络"><img class="cover" src="/img/test/23.png" onerror="onerror=null;src='/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">机器学习——神经网络</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/hand.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ziyourufeng</div><div class="author-info__description">技术宅拯救世界~~!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/51hhh"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/51hhh" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: 51hhh;"></i></a><a class="social-icon" href="mailto:ziyourufeng@duck.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: ziyourufeng;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">已更换Twikoo评论，现在可在文末留言啦，可在左下角聊天，邮箱，telegram，QQ群等方式与我取得联系</div></div><div class="card-widget"><div class="item-headline"><i class="fas fa-desktop"></i><span></span></div><div class="item-content"><div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/1/2021 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval(createtime, 250);
+</script>
+</div>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text">机器学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%8F%E8%A8%80"><span class="toc-number">2.</span> <span class="toc-text">序言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="toc-number">2.1.</span> <span class="toc-text">神经网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E6%97%A9%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E2%80%93%E6%84%9F%E7%9F%A5%E6%9C%BA"><span class="toc-number">2.1.1.</span> <span class="toc-text">最早的神经网络模型–感知机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-v2"><span class="toc-number">2.1.2.</span> <span class="toc-text">神经网络</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">激活函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">矩阵</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E5%B1%82"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">隐藏层</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.2.</span> <span class="toc-text">深度学习</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-number">3.</span> <span class="toc-text">什么是机器学习</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-number">3.0.1.</span> <span class="toc-text">监督学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-number">3.0.2.</span> <span class="toc-text">无监督学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%9D%9E%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0"><span class="toc-number">3.0.3.</span> <span class="toc-text">参数学习和非参数学习</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/24/orin-nx-de-chong-chong/" title="Orin NX 的种种"><img src="/img/test/21.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="Orin NX 的种种"/></a><div class="content"><a class="title" href="/2026/01/24/orin-nx-de-chong-chong/" title="Orin NX 的种种">Orin NX 的种种</a><time datetime="2026-01-24T00:22:31.356Z" title="发表于 2026-01-24 08:22:31">2026-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/27/cloudflare-jia-su-onedrive-wen-jian-xia-zai/" title="cloudflare加速onedrive文件下载"><img src="/img/test/13.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="cloudflare加速onedrive文件下载"/></a><div class="content"><a class="title" href="/2025/12/27/cloudflare-jia-su-onedrive-wen-jian-xia-zai/" title="cloudflare加速onedrive文件下载">cloudflare加速onedrive文件下载</a><time datetime="2025-12-27T05:52:03.010Z" title="发表于 2025-12-27 13:52:03">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/27/rdk-s100p-de-chong-chong/" title="RDK S100P的种种"><img src="/img/test/49.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="RDK S100P的种种"/></a><div class="content"><a class="title" href="/2025/12/27/rdk-s100p-de-chong-chong/" title="RDK S100P的种种">RDK S100P的种种</a><time datetime="2025-12-27T00:27:09.891Z" title="发表于 2025-12-27 08:27:09">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/12/wsl-an-zhuang-isaac-gym/" title="wsl安装isaac gym"><img src="/img/test/35.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="wsl安装isaac gym"/></a><div class="content"><a class="title" href="/2025/11/12/wsl-an-zhuang-isaac-gym/" title="wsl安装isaac gym">wsl安装isaac gym</a><time datetime="2025-11-12T03:04:44.842Z" title="发表于 2025-11-12 11:04:44">2025-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/08/26/exo/" title="exo"><img src="/img/test/47.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="exo"/></a><div class="content"><a class="title" href="/2025/08/26/exo/" title="exo">exo</a><time datetime="2025-08-26T23:08:40.988Z" title="发表于 2025-08-27 07:08:40">2025-08-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2026 By Ziyourufeng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.polar-bear.eu.org/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><meting-js id="8492133976" server="netease" type="playlist" fixed="true" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list"></meting-js><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/canvas-nest.min.js"></script><link rel="stylesheet" href="/css/APlayer.min.css" media="print" onload="this.media='all'"><script src="/js/APlayer.min.js"></script><script src="/js/Meting2.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script>
+    // 全局变量声明区域
+    var fdata = {
+      apiurl: 'https://friends.polar-bear.eu.org/',
+      initnumber: 30, //【可选】页面初始化展示文章数量
+      stepnumber: 30, //【可选】每次加载增加的篇数
+      error_img: 'https://npm.elemecdn.com/akilar-candyassets/image/404.gif' //【可选，头像图片加载失败时的默认头像】
+    }
+    //存入本地存储
+    localStorage.setItem("fdatalist",JSON.stringify(fdata))
+    </script>
+    <script data-pjax src="/js/fetch.js"></script><script data-pjax src="https://polar-bear.eu.org/js/random-friends-post.js"></script><script async src="/js/ali_font.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="/js/hexo-filter-gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='all'|| 'all' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitapi.polar-bear.eu.org/api?51hhh",['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8ba', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06'],'51hhh')
+    }
+  </script><script data-pjax src="https://npm.elemecdn.com/oh-my-live2d@0.3.0/dist/index.min.js"></script><script>
+OML2D.loadOhMyLive2D({
+  source:"",
+  mobileShow:true,
+  sayHello:false,
+  transitionTime:1000,
+  models:[{"scale":1.2,"path":"/live2d-model-xiaohei/黑崽生日快乐2023.model3.json","x":0,"y":0,"stageStyle":{"backgroundColor":"rgba(0, 0, 0, 0)","width":"auto","height":"auto"}}],
+  tips:{
+    style:{"width":230,"height":120,"offsetX":0,"offsetY":90},
+    
+    
+    idleTips:{
+      
+      
+      interval:15000,
+      
+      remote:function() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      type: 'get',
+      url: 'https://v1.hitokoto.cn?c=i',
+      dataType: 'json',
+      success: res => {
+       // console.log(res);
+        resolve({text: res.hitokoto});
+      }
+    });
+  });
+}
+,
+    }
+  }
+  });
+  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":180,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>

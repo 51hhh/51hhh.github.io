@@ -1,0 +1,835 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>家庭网络改造（二）——旁路由openWRT | polar-bear～Blog</title><meta name="author" content="Ziyourufeng"><meta name="copyright" content="Ziyourufeng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="旁路由OPENWRT 使用玩客云盒子刷入openWRT。  [https:&#x2F;&#x2F;cdn.ziyourufeng.eu.org&#x2F;51hhh&#x2F;img_bed&#x2F;main&#x2F;img&#x2F;2024.2.26&#x2F;7ffcd9eb0c5724403634e17525d8502a.jpg]  背板加热后可打开">
+<meta property="og:type" content="article">
+<meta property="og:title" content="家庭网络改造（二）——旁路由openWRT">
+<meta property="og:url" content="https://polar-bear.eu.org/2024/02/26/jia-ting-wang-luo-gai-zao-er-pang-lu-you-openwrt/index.html">
+<meta property="og:site_name" content="polar-bear～Blog">
+<meta property="og:description" content="旁路由OPENWRT 使用玩客云盒子刷入openWRT。  [https:&#x2F;&#x2F;cdn.ziyourufeng.eu.org&#x2F;51hhh&#x2F;img_bed&#x2F;main&#x2F;img&#x2F;2024.2.26&#x2F;7ffcd9eb0c5724403634e17525d8502a.jpg]  背板加热后可打开">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://polar-bear.eu.org/img/test/34.png">
+<meta property="article:published_time" content="2024-02-26T02:14:36.194Z">
+<meta property="article:modified_time" content="2025-10-08T23:27:16.194Z">
+<meta property="article:author" content="Ziyourufeng">
+<meta property="article:tag" content="技术宅拯救世界~~!">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://polar-bear.eu.org/img/test/34.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://polar-bear.eu.org/2024/02/26/jia-ting-wang-luo-gai-zao-er-pang-lu-you-openwrt/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '家庭网络改造（二）——旁路由openWRT',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-10-09 07:27:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><script async data-pjax src="/js/anzhiyu.js"></script><link rel="stylesheet" href="/css/music.css"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script> <script>LA.init({id:"3IMmTwvFHv6eiiJT",ck:"3IMmTwvFHv6eiiJT",autoTrack:true,hashMode:true})</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9820372911946431" crossorigin="anonymous"></script><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/tag_plugins.css" media="defer" onload="this.media='all'"><script src="/js/carousel-touch.js"></script><link rel="stylesheet" href="/css/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="/css/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="polar-bear～Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-coy.css" type="text/css"></head><body><div id="web_bg"></div><div id="an_music_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/hand.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/test/34.png')"><nav id="nav"><span id="blog-info"><a href="/" title="polar-bear～Blog"><span class="site-name">polar-bear～Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 回家</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-archive"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-gift"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/maomao/"><i class="fa-fw fas fa-paw"></i><span> 来只猫猫</span></a></li><li><a class="site-page child" href="/News/"><i class="fa-fw fas fa-book"></i><span> 每日新闻</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/random.html"><i class="fa-fw fas fa-rocket"></i><span> 随机传送(可能出错)</span></a></li><li><a class="site-page child" href="/mao/"><i class="fa-fw fas fa-gamepad"></i><span> 抓住逃跑的猫咪</span></a></li><li><a class="site-page child" href="/interesting/"><i class="fa-fw fas fa-gift"></i><span> 其他</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-users"></i><span> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas fa-link"></i><span> 友链朋友圈</span></a></li><li><a class="site-page child" href="/sponsor/"><i class="fa-fw fas fa-star"></i><span> 赞助墙</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-envelope"></i><span> 留言版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-cog"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://status.polar-bear.eu.org/"><i class="fa-fw fas fa-cog"></i><span> 站点监控</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chat.polar-bear.eu.org/"><i class="fa-fw fas fa-link"></i><span> 镜像chatGPT</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://chouxiang.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 抽象话生成器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://lipstick.polar-bear.eu.org/"><i class="fa-fw fas fa-asterisk"></i><span> 口红颜色可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">家庭网络改造（二）——旁路由openWRT</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-26T02:14:36.194Z" title="发表于 2024-02-26 10:14:36">2024-02-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-08T23:27:16.194Z" title="更新于 2025-10-09 07:27:16">2025-10-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="家庭网络改造（二）——旁路由openWRT"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="旁路由openWRT">旁路由openWRT</h2>
+<p>使用玩客云盒子刷入openWRT。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/7ffcd9eb0c5724403634e17525d8502a.jpg" alt=""></p>
+<p>背板加热后可打开</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/a26bd6c6997205e656af3d0e0571ea34.jpg" alt=""></p>
+<p>抽出主板，按照型号短接触点刷入即可</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240307141447.png" alt=""></p>
+<p>新版玩客云短接储存旁边，RX口左上方空电阻位即可，先USB连接至电脑，螺丝刀短接同时上电，软件识别即可。</p>
+<ul>
+<li>打开USB_Burning_Tool软件</li>
+<li>左上角文件&gt;导入烧录包，选择下载的固件，点击开始</li>
+<li>双公头USB数据线，一头插靠近HDMI接口USB，一头电脑USB</li>
+<li>短接刷机点通电到3%再松手，直到刷机完成</li>
+<li>刷机完成后立马点击停止后断电，拔下数据线。（不点击停止很可能又会自动再刷一遍）</li>
+</ul>
+<p>烧录过一次再进刷机模式可插入USB，按住reset键再通电，烧录到3%松开即可。</p>
+<p>刷写软件使用<strong>USB_Burning_Tool</strong></p>
+<p>软件包使用<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.right.com.cn/forum/thread-8275843-1-1.html">更新 2023.07.08 OPENWRT高内核直刷 玩客云ws1608/赚钱宝三代和赚钱宝2代WS1508-迅雷玩客云、京东云等各种云设备-恩山无线论坛 (right.com.cn)</a>的OPENWRT高内核直刷包，直接刷入openWRT系统。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240307142445.png" alt=""></p>
+<p>选择清楚所有，点击<strong>开始</strong>，等待完成即可。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240226181657.png" alt=""></p>
+<p>烧录完后要点击停止，然后断开电源和usb。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240226182529.png" alt=""></p>
+<p>刷完，第一次使用先连接电脑进后台配置ip，网卡灯亮一个是正常的，正常会给电脑分配一个ip，默认旁路由模式，后台IP是192.168.1.250 密码lanlan<br>
+如果你的路由网段是192.168.1.XXX的，直接连到你的内网也可以，网口默认设置的静态IP，不是动态获取的，有些路由器后台是看不到的，后台IP是192.168.1.250 密码lanlan。</p>
+<h3 id="设备连接">设备连接</h3>
+<p>光纤入户-----&gt;光猫（光电信号转换）-----&gt;路由器（PPPoe拨号上网，以及无线网络）&lt; ----- &gt;旁路由</p>
+<h3 id="手动指定方案">手动指定方案</h3>
+<ol>
+<li>为旁路由配置和主路由同网段的静态 IP 地址，同时将旁路由的网关和 DNS 指向主路由，子网掩码与主路由保持一致。</li>
+<li>旁路由关闭 DHCP 服务。</li>
+<li>在主路由防火墙开启 SYN-flood 防御的情况下，关闭旁路由防火墙的 SYN-flood 防御（可选）。</li>
+<li>在需要接入旁路由的终端设备中，将网关和 DNS 配置为旁路由 IP 地址，配置同网段的 IP 地址和与主路由相同的子网掩码。</li>
+</ol>
+<p><strong>配置LAN口</strong>：</p>
+<ul>
+<li>在OpenWrt后台，进入“网络” -&gt; “接口”。</li>
+<li>找到“LAN”接口，点击“编辑”。</li>
+<li>设置“协议”为“静态地址”，并输入一个静态IP地址<code>192.168.2.1</code>。</li>
+<li>关闭“DHCP 服务器”选项，因为我们将使用主路由器的DHCP服务。</li>
+</ul>
+<p>传输协议：修改为 静态地址</p>
+<p>IPv4地址：修改为 你的主路由同IP段内任意一个未使用的地址 （如你的主路由地址为192.168.2.1，那这里的地址就可以修改为除了192.168.2.1以外的任意一个未在局域网内被使用的192.168.2.X的地址，比如192.168.2.30）（重点提示：这里修改的地址必须要与你的主路由地址在同一网段！并且在局域网内没有其他设备正在使用的地址，这个地址将作为N1的地址，也是登录N1后台的唯一地址）</p>
+<p>IPv4子网掩码：无特殊需求保持默认的255.255.255.0即可</p>
+<p>IPv4网关：修改为 你的主路由IP地址 （这个地址一定要设置，否则无法上网！）</p>
+<p>IPv4广播：默认留空即可 （小白不懂的话不要修改）</p>
+<p>使用自定义的DNS服务器：修改为你的主路由IP地址，然后点击右边的加号！一定要点后面的加号，否则无效，切记！ 如下图所示</p>
+<p>（重点提示：修改这里的DNS地址之后一定要点旁边的加号，这里的地址建议修改为你的主路由IP即可，填其他公共DNS地址可能会导致异常，小白切记~）</p>
+<p>IPv6分配长度：如无特殊需求选择默认的64即可，如果你没有IPv6地址请选择禁用IPv6分配提示和IPv6后缀：默认留空即可</p>
+<p><strong>配置WAN口</strong>：</p>
+<ul>
+<li>配置同LAN口</li>
+</ul>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_4504c537911b92eb132323da0ac75965.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_4504c537911b92eb132323da0ac75965.png"></p>
+<p>设置接口LAN如下</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_526c4ea8ba85d98c713abb5afb4f394a.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_526c4ea8ba85d98c713abb5afb4f394a.png"></p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_24/image_5106334409acbe1349b8a09d8342ec4f.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_24/image_5106334409acbe1349b8a09d8342ec4f.png"></p>
+<p>LAN和WAN绑定，具体操作是取消桥接，再设置 WAN 和 LAN 共用同一个网卡（如 eth0 ）。这个操作其实和 MASQUERADE 规则的效果类似，因为绑定后经过 WAN 的流量必然会被 SNAT 。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_e5bfc92753f7a14608a8b0c933d7416b.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_e5bfc92753f7a14608a8b0c933d7416b.png"></p>
+<h3 id="远程管理页面">远程管理页面</h3>
+<p>为了能够在远程管理到软路由，我们需要将其开放到公网上（<strong>危险操作</strong>），在主路由上设置旁路由为DMZ主机，使其暴露在公网上的IP指向旁路由。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_9d28a8a16b352d095574416645db98b7.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_9d28a8a16b352d095574416645db98b7.png"></p>
+<p>在软路由中更改控制页面的端口为8000，公网访问时候运营商会拦截80端口。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_136483f18f20571bc66faac057600ef3.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_136483f18f20571bc66faac057600ef3.png"></p>
+<p>然后在防火墙中添加来自wan口目标为<code>设备</code> 端口为<code>8000</code>的规则</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_4844874f47879511907eabf9c338739a.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_4844874f47879511907eabf9c338739a.png"></p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_b342b6a4bfddc6cd394fb4910f2c1215.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_b342b6a4bfddc6cd394fb4910f2c1215.png"></p>
+<p>这样就能够通过公网ip+端口连接至软路由了,公网ip会变所以,可以后续实现DDNS绑定域名。</p>
+<p>不过当在内网中试图访问域名时，会遇到无法访问的问题，原因如下：当向路由器DNS查询域名对应的ip时（软路由的DNS服务指向主路由），①以主路由为DNS查询时，其路由表记录的公网ip就是它本身所有返回192.168.2.1，但是是通过设置软路由为DMZ主机暴露在公网，服务也在软路由上（192.168.2.30），故这种情况下无法访问。<strong>正常情况，为8000端口设置端口转发至软路由即可解决，因为此问题就出现在DMZ主机使外网流量（公网IP）流向了软路由，而其本身认为此域名表示的IP就是它本身，而在内网返回了自身的IP地址，导致找不到服务</strong>②以软路由为DNS查询域名，不在其结构内，返回为其公网IP。③可开启手机流量，可正常访问服务(此处无对应图)。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_612f416d1b923bce7e03fbe28280410b.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_612f416d1b923bce7e03fbe28280410b.png"></p>
+<h3 id="防火墙">防火墙</h3>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_26f9ed72f6f1d701242701e14071bbb5.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_25/image_26f9ed72f6f1d701242701e14071bbb5.png"></p>
+<ol>
+<li><strong>入站 IPv4, 协议 UDP - Allow-DHCP-Renew</strong>
+<ul>
+<li>允许从WAN接收UDP协议的数据包，目的端口为68，这是DHCP（动态主机配置协议）服务器使用的端口，用于IP地址的自动分配和更新。</li>
+</ul>
+</li>
+<li><strong>入站 IPv4, 协议 ICMP - Allow-Ping</strong>
+<ul>
+<li>允许从WAN接收ICMP（互联网控制报文协议）数据包，通常用于ping命令，检查网络连通性。</li>
+</ul>
+</li>
+<li><strong>入站 IPv4, 协议 IGMP - Allow-IGMP</strong>
+<ul>
+<li>允许从WAN接收IGMP（互联网组管理协议）数据包，用于多播流量的管理。</li>
+</ul>
+</li>
+<li><strong>入站 IPv6, 协议 UDP - Allow-DHCPV6</strong>
+<ul>
+<li>允许从WAN接收IPv6的UDP数据包，目的端口为546，这是DHCPv6（IPv6的动态主机配置协议）使用的端口。</li>
+</ul>
+</li>
+<li><strong>入站 IPv6, 协议 ICMP - Allow-MLD</strong>
+<ul>
+<li>允许从WAN接收IPv6的ICMP数据包，MLD（多播侦听发现）用于IPv6网络中的多播成员管理。</li>
+</ul>
+</li>
+<li><strong>入站 IPv6, 协议 ICMP - Allow-ICMPv6-Input</strong>
+<ul>
+<li>允许从WAN接收IPv6的ICMP数据包，用于IPv6网络的诊断和控制。</li>
+</ul>
+</li>
+<li><strong>转发 IPv6, 协议 ICMP - Allow-ICMPv6-Forward</strong>
+<ul>
+<li>允许转发从WAN接收的IPv6 ICMP数据包到所有区域，这通常用于路由器之间的通信。</li>
+</ul>
+</li>
+<li><strong>转发 IPv4 and IPv6, 协议 IPSEC-ESP - Allow-IPSec-ESP</strong>
+<ul>
+<li>允许转发通过WAN接收的IPSEC（互联网协议安全）ESP（封装安全有效载荷）数据包到LAN，用于VPN连接。</li>
+</ul>
+</li>
+<li><strong>转发 IPv4 and IPv6, 协议 UDP - Allow-ISAKMP</strong>
+<ul>
+<li>允许转发从WAN接收的UDP数据包，端口500，这是ISAKMP（互联网安全协议/密钥交换）使用的端口，用于设置VPN连接的安全参数。</li>
+</ul>
+</li>
+</ol>
+<p>将软路由设置为DMZ主机并暴露在公网时，需要格外注意安全性。</p>
+<ul>
+<li>考虑部署入侵检测系统来监控可疑活动并及时响应。</li>
+<li>关闭所有不需要的网络服务，例如远程登录服务（如SSH），除非你需要从公网远程登录。</li>
+<li>配置防火墙规则以限制访问特定服务和端口，只允许信任的IP地址或网络访问敏感服务。</li>
+<li>确保所有账户使用强密码，并定期更换密码。</li>
+</ul>
+<h3 id="SSH连接">SSH连接</h3>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_24/image_4bc23593135e3ebe533cb0807babe8d4.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_24/image_4bc23593135e3ebe533cb0807babe8d4.png"></p>
+<p>自定义端口并设置较强密码，因为如果旁路由被入侵，内网安全将不复存在。</p>
+<h3 id="DDNS">DDNS</h3>
+<p>因为现在运营商分配的都是动态公网，为了保证我们能够时刻通过外网访问，我们需要绑定域名。不同系统所带软件包可能不同。故此次采用脚本实现DDNS公网IP到域名。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Cloudflare设置</span></span><br><span class="line">CF_ZONE_ID=<span class="string">&quot;&quot;</span></span><br><span class="line">CF_RECORD_ID=<span class="string">&quot;&quot;</span></span><br><span class="line">CF_EMAIL=<span class="string">&quot;&quot;</span></span><br><span class="line">CF_API_KEY=<span class="string">&quot;&quot;</span></span><br><span class="line">CF_DOMAIN=<span class="string">&quot;&quot;</span> <span class="comment"># 你解析在cloudflare上的域名 DOMAIN.com</span></span><br><span class="line">CF_SUBDOMAIN=<span class="string">&quot;ip.&quot;</span> <span class="comment"># 如果你要解析到ip.DOMAIN.com则填写“ip.”解析到DOMAIN.com则留空</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前的IP地址</span></span><br><span class="line">current_ip=$(curl -s http://ipv4.icanhazip.com)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Cloudflare的API URL</span></span><br><span class="line">update_url=<span class="string">&quot;https://api.cloudflare.com/client/v4/zones/<span class="variable">$CF_ZONE_ID</span>/dns_records/<span class="variable">$CF_RECORD_ID</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新DNS记录的JSON数据</span></span><br><span class="line">update_data=<span class="string">&quot;&#123;\&quot;type\&quot;:\&quot;A\&quot;,\&quot;name\&quot;:\&quot;$CF_SUBDOMAIN<span class="variable">$CF_DOMAIN</span>\&quot;,\&quot;content\&quot;:\&quot;<span class="variable">$current_ip</span>\&quot;&#125;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#  使用CURL更新DNS记录</span></span><br><span class="line">response=$(curl -s -X PUT <span class="string">&quot;<span class="variable">$update_url</span>&quot;</span> \</span><br><span class="line">     -H <span class="string">&quot;Content-Type: application/json&quot;</span> \</span><br><span class="line">     -H <span class="string">&quot;X-Auth-Email: <span class="variable">$CF_EMAIL</span>&quot;</span> \</span><br><span class="line">     -H <span class="string">&quot;X-Auth-Key: <span class="variable">$CF_API_KEY</span>&quot;</span> \</span><br><span class="line">     -d <span class="string">&quot;<span class="variable">$update_data</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出响应数据用于调试</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$response</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>要获取 Cloudflare API所需的 &lt;zone_id&gt;, &lt;record_id&gt;, &lt;api_key&gt;, <email> 和 &lt;your_domain&gt;，你需要按照以下步骤操作：</p>
+<ol>
+<li>
+<p>登录Cloudflare账户：</p>
+<ul>
+<li>首先，登录到Cloudflare账户。</li>
+</ul>
+</li>
+<li>
+<p>获取&lt;your_domain&gt;：</p>
+<ul>
+<li>这个是你在Cloudflare上已经注册的域名。只需查看Cloudflare dashboard即可找到。</li>
+</ul>
+</li>
+<li>
+<p>获取&lt;api_key&gt;：</p>
+<ul>
+<li>在Cloudflare dashboard中，导航到 “My Profile” 或 “账户配置文件” 页面。</li>
+<li>在 “API Tokens” 栏目下找到 “Global API Key”。</li>
+<li>点击 “View” 来查看你的API Key喵，可能需要输入密码。</li>
+<li>复制这个API Key，这就是你需要用的&lt;api_key&gt;。</li>
+</ul>
+</li>
+<li>
+<p>获取&lt;zone_id&gt;域名标识符：</p>
+<ul>
+<li>&lt;zone_id&gt;是你的域名在Cloudflare上的一个唯一标识符。</li>
+<li>在Cloudflare dashboard中选择你的域名。</li>
+<li>在域名概览页面的右下角，你应该能看到Zone ID。</li>
+<li>复制这个Zone ID，这就是&lt;zone_id&gt;。</li>
+</ul>
+</li>
+<li>
+<p>获取&lt;record_id&gt;解析记录标识符：</p>
+<ul>
+<li>&lt;record_id&gt;是特定DNS记录的唯一标识符。</li>
+<li>在Cloudflare dashboard中，导航到你的域名的&quot;DNS&quot;页面。</li>
+<li>如果你已经有了你想更新的A记录，点击对应记录的&quot;编辑&quot;按钮。</li>
+<li>通常，记录ID不会直接显示，你可能需要通过API调用来获取。</li>
+<li>使用 Cloudflare API 以GET方式请求所有DNS记录，然后从中找到对应的记录和它的ID，API调用的形式如下：<br>
+curl -X GET “<a target="_blank" rel="noopener external nofollow noreferrer" href="https://api.cloudflare.com/client/v4/zones/">https://api.cloudflare.com/client/v4/zones/</a>&lt;zone_id&gt;/dns_records?type=A&amp;name=&lt;your_subdomain.your_domain&gt;”<br>
+-H “Content-Type:application/json”<br>
+-H “X-Auth-Email:<email>”<br>
+-H “X-Auth-Key:&lt;api_key&gt;”</li>
+<li>在返回的数据中找到所需A记录的&lt;record_id&gt;。</li>
+</ul>
+<p>例如要获取&lt;record_id&gt;，则可以新建一个解析。</p>
+</li>
+</ol>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240307143951.png" alt=""></p>
+<p>可以使用Apifox或Postman获取 &lt;record_id&gt;</p>
+<ol>
+<li>
+<p>打开Apifox或Postman：</p>
+</li>
+<li>
+<p>创建一个新请求：</p>
+<ul>
+<li>
+<p>设置请求类型为GET。</p>
+</li>
+<li>
+<p>请求地址(URL)设置为Cloudflare API的DNS记录列出接口，格式如下：<br>
+<a target="_blank" rel="noopener external nofollow noreferrer" href="https://api.cloudflare.com/client/v4/zones/">https://api.cloudflare.com/client/v4/zones/</a>&lt;zone_id&gt;/dns_records</p>
+<p>确保将 &lt;zone_id&gt; 替换为你域名的Zone ID。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>添加请求头：</p>
+<ul>
+<li>需要两个头（Headers）字段：
+<ul>
+<li>X-Auth-Email: 填入你的Cloudflare账户的邮箱地址。</li>
+<li>X-Auth-Key: 填入你的Cloudflare Global API Key。</li>
+<li>Content-Type 头为 application/json</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>发送请求：</p>
+<ul>
+<li>点击“发送”（Send）按钮发送请求。</li>
+<li>这会获取到你在Cloudflare Zone下所有的DNS记录。</li>
+</ul>
+</li>
+<li>
+<p>查找特定DNS记录：</p>
+<ul>
+<li>新建的记录即为第一个。</li>
+<li>查看返回的数据（响应体）。</li>
+<li>在JSON响应中找到你想更新的记录的条目。这通常是一个A记录，具体取决于你想要更新的子域（例如example.your_domain.com）。</li>
+<li>在这个记录的具体条目中找到 <code>id</code> 字段。这个 <code>id</code> 就是你要找的DNS记录的 &lt;record_id&gt; 。</li>
+</ul>
+</li>
+<li>
+<p>记录 &lt;record_id&gt;：</p>
+<ul>
+<li>复制这个 <code>id</code> 值，并且在你的DDNS脚本或相关设置中使用它来更新DNS记录。</li>
+</ul>
+</li>
+</ol>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240307144720.png" alt=""></p>
+<p>将脚本对应内容填好后可测试一下是否正常。然后就可以上传至openWRT并设置定时任务。</p>
+<p>上传或者写入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc</span><br><span class="line"><span class="comment"># 进入到目录/etc</span></span><br><span class="line"><span class="built_in">mkdir</span> DDNS</span><br><span class="line"><span class="comment"># 创建DDNS文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 上传或者直接写入</span></span><br><span class="line">vim ddns.sh</span><br><span class="line"><span class="comment"># vim编辑器创建，输入脚本内容，Esc 然后输入`:wq!`退出</span></span><br><span class="line"><span class="built_in">chmod</span> +x ddns.sh</span><br><span class="line"><span class="comment"># 添加执行权限给所有用户</span></span><br><span class="line">./ddns.sh</span><br><span class="line"><span class="comment"># 运行脚本</span></span><br></pre></td></tr></table></figure>
+<p>进入openWRT设置计划任务</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240307150303.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*/5 * * * * sh /etc/ddns/ddns.sh</span><br></pre></td></tr></table></figure>
+<p>这个计划任务（cron job）的设置意味着每5分钟执行一次指定的脚本 /etc/ddns/ddns.sh</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logread | grep cron</span><br></pre></td></tr></table></figure>
+<p>最后检测有关cron计划任务的日志,即可看到是否成功运行。</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024.2.26/20240307150728.png" alt=""></p>
+<h3 id="名词解释">名词解释</h3>
+<ol>
+<li><strong>路由</strong>：将数据从源地址传输到目的地址的行为。可以看出，这个行为抽象涵盖了两个动作，一是找到地址、二是转发数据。可以类比为网购时快递公司将商品从卖家发送给买家的过程。</li>
+<li><strong>路由表</strong>：可以简单理解为路由过程中的地址关联信息的合集，也就是现实中发货地址和收货地址的映射关系。</li>
+<li><strong>路由器</strong>：本文中指家用的、具备路由功能的实体网络设备，其本身并不一定需要真的承担或只承担路由功能，可以抽象理解为就是一台普通的电脑或服务器。当然，它也可以是一个容器实例、一个虚拟机。对应到现实中就是快递公司。</li>
+<li><strong>接口</strong>：这里特指网络接口，指两个网络设备或协议层的连接点。现实中连接路由器时，wan/lan 不同的网线插槽其实就可以理解为接口。只不过接口并不一定是物理实体，所以我们才会在 OpenWrt 的接口设置里看到甚至新增许多物理设备上所没有的接口。</li>
+<li><strong>网关</strong>：这里特指网络中的网关，负责执行数据转发的某个抽象设备。这里可能容易与路由器的功能混淆，毕竟路由器如果用来做路由似乎也是在做转发的工作。实际上这是由于术语的历史使用缺少规范导致的边界不够清晰，可以粗略理解为承担路由功能的路由器就是网关，但网关不一定是只能由路由器担任。</li>
+<li><strong>IP</strong>：本身指 IP 协议，本文为方便也可能将其作为 IP 地址的简称，且默认为 IPv4 。本节所有的名词其实都是基于 IP 协议运作的，而 IP 地址即上文各类「地址」的实际值。可以理解为你用于发送和接收快递的门牌号。</li>
+<li><strong>DHCP</strong>：IP 地址的管理和分配协议，本文中不单单指协议本身，还指负责执行该协议的设备。可以理解为给你分配门牌号的物业，只不过这个门牌号是动态变化的。</li>
+<li><strong>DNS</strong>：上文说到数据的传输需要源地址和目的地址，而这个地址就是 IP 地址。但由于 IP 地址难以记忆，所以才会有了可以作为 IP 地址别名的域名，而 DNS 就是负责进行域名和 IP 地址映射转换的系统。本文中 DNS 也指代负责运行该系统的设备。</li>
+<li><strong>NAT</strong>：出于各种考虑，局域网与因特网的 IP 地址是隔离的，NAT 可以理解为内外网 IP 地址转换的流程。类比网购，相当于快递公司把快递送到附近快递站，快递站的快递员再把货物送到你家门口的流程。</li>
+<li><strong>SNAT</strong>：NAT 的一种，本质上是在修改网络包的源地址，目的是可以强制网络包返回时经过期望的地址。可以理解为支付宝的作用，即钱虽然表面上是点对点转账的，但经过支付宝后，支付宝就要求相关转账信息的回执必须由它中转一次再告知转账发起人。</li>
+</ol>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_24/ee0724cd54a8e17f32a0971e2f4969fc-20231017155659529-2023-10-17-FjrDYN_3073d7f375ab43fdcf9a56333d3af58f.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_24/ee0724cd54a8e17f32a0971e2f4969fc-20231017155659529-2023-10-17-FjrDYN_3073d7f375ab43fdcf9a56333d3af58f.png"></p>
+<p>图来自<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.hi-linux.com/posts/38236.html">一文带你搞懂旁路由的原理与配置 - 奇妙的 Linux 世界 (hi-linux.com)</a>侵权删。</p>
+<h3 id="插件">插件</h3>
+<ol>
+<li>使用交叉编译环境</li>
+</ol>
+<p>你可以在一台性能更强的计算机上为你的路由器交叉编译软件。以下是基本步骤：</p>
+<ol>
+<li>
+<p><strong>安装交叉编译工具链</strong>：</p>
+<ul>
+<li>在你的计算机上安装 OpenWRT 的交叉编译工具链。这通常包括一个针对你路由器架构的 GCC 编译器。</li>
+</ul>
+</li>
+<li>
+<p><strong>获取源代码</strong>：将 <code>luci-app-pushbot</code> 的源代码克隆到你的计算机上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zzsj0928/luci-app-pushbot.git</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>配置编译环境</strong>：进入源代码目录，并使用交叉编译工具链配置编译环境：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> luci-app-pushbot</span><br><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>编译软件</strong>：使用交叉编译工具链编译软件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>传输文件</strong>：</p>
+<ul>
+<li>将编译生成的文件（通常是 <code>.ipk</code> 文件）传输到你的路由器上。</li>
+</ul>
+</li>
+<li>
+<p><strong>安装软件</strong>：在路由器上使用 <code>opkg</code> 命令安装传输过来的 <code>.ipk</code> 文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">opkg update</span><br><span class="line">opkg install /path/to/your/compiled/package.ipk</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="Armbian">Armbian</h3>
+<p>烧录过程相同</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_29/image_edb18f3514b84fa12bc492eda8a7b53d.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_29/image_edb18f3514b84fa12bc492eda8a7b53d.png"></p>
+<p>armbian的固件可以从下面的仓库下载<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/hzyitc/armbian-onecloud">hzyitc/armbian-onecloud: Armbian for onecloud. 玩客云用armbian (github.com)</a></p>
+<ul>
+<li>一定要选择后面带burn的固件</li>
+<li>使用的固件Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_current_6.6.21.burn</li>
+<li>不要使用简化包，会缺少macvlan内核</li>
+<li>烧录要选择<strong>擦除所有</strong></li>
+<li><strong>用户名root，密码1234</strong></li>
+</ul>
+<h4 id="更改时区：由于当前固件默认时区非东八区，需要修改。">更改时区：由于当前固件默认时区非东八区，需要修改。</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示时区</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span><br><span class="line"></span><br><span class="line"><span class="comment">#更改时区</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">date</span> -R</span><br></pre></td></tr></table></figure>
+<h4 id="更换国内软件源-如果能正常更新软件，可不必换">更换国内软件源(如果能正常更新软件，可不必换)</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#换Debian源</span><br><span class="line"> </span><br><span class="line">nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#清华</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.ustc.edu.cn/debian/ bullseye main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/debian/ bullseye main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main</span><br><span class="line"> </span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.ustc.edu.cn/debian/ bullseye-updates main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-updates main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.ustc.edu.cn/debian/ bullseye-backports main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main non-free contrib</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">#阿里源</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian/ bullseye main non-free contrib</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian/ bullseye main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian-security/ bullseye-security main</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian-security/ bullseye-security main</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">#中科大源</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian/ bullseye main non-free contrib</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian/ bullseye main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian-security/ bullseye-security main</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian-security/ bullseye-security main</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib</span><br><span class="line"> </span><br><span class="line">deb https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib</span><br><span class="line"> </span><br><span class="line">#deb-src https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib</span><br></pre></td></tr></table></figure>
+<h4 id="安装1panel">安装1panel</h4>
+<p>由于1panel运维面板可以自动安装docker，无需额外安装。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh &amp;&amp; sudo bash quick_start.sh</span><br></pre></td></tr></table></figure>
+<p>安装docker（没有成功可直接安装docker）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install docker.io</span><br></pre></td></tr></table></figure>
+<h4 id="2-安装CasaOS">2.安装CasaOS</h4>
+<p>注意当剩余空间小于4gb时，他会询问是否安装，选1 yes</p>
+<p>默认端口是80</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://get.casaos.io | sudo bash</span><br></pre></td></tr></table></figure>
+<p>安装过程大概要半个小时，具体速度取决于网络情况，等安装好了之后，你就可以在浏览器里输入之前的ip地址，然后创建casaos的账号和密码，创建好了之后，你就进入到了casaos了</p>
+<p>可以在应用商店里添加额外软件源</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#树莓派2、玩客云等 armv7 设备专用源</span></span><br><span class="line"></span><br><span class="line">https://play.cuse.eu.org/Cp0204-AppStore-Play-arm.zip</span><br></pre></td></tr></table></figure>
+<h4 id="OpenWrt">OpenWrt</h4>
+<p>安装openwrt大多教程都是直接拉去现成的镜像，那些镜像大多要么无法更新软件包，要么插件版本很低或者无法运行什么的。</p>
+<p>不过这里还是推荐几个镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">jyhking/onecloud:1.1</span><br><span class="line"></span><br><span class="line">sulinggg/openwrt:arm_cortex-a5_vfpv4</span><br><span class="line"></span><br><span class="line">xuanaimai/onecloud:21-05-29</span><br></pre></td></tr></table></figure>
+<p>正式开始的教程</p>
+<h5 id="1）打开网卡混杂模式">1）打开网卡混杂模式</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip <span class="built_in">link</span> <span class="built_in">set</span> eth0 promisc on</span><br></pre></td></tr></table></figure>
+<p><code>ip link set eth0 promisc on</code> 命令将 <code>eth0</code> 网络接口设置为混杂模式（promiscuous mode）。在混杂模式下，网络接口会接收所有经过它的网络流量，而不仅仅是发往它的流量。这通常用于网络监控和分析工具，例如网络嗅探器。</p>
+<h5 id="2）创建OpenWrt网络-自行替换网段，网关">2）创建OpenWrt网络(自行替换网段，网关)</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=eth0 macnet</span><br></pre></td></tr></table></figure>
+<p><code>docker network create</code> 命令创建了一个新的 Docker 网络，使用了 <code>macvlan</code> 驱动。<code>macvlan</code> 网络允许您将容器连接到物理网络，就像它们是网络上的独立主机一样。您为这个网络指定了以下参数：</p>
+<ul>
+<li><code>-d macvlan</code>：指定网络驱动为 <code>macvlan</code>。</li>
+<li><code>--subnet=192.168.1.0/24</code>：指定网络的子网掩码为 <code>192.168.1.0/24</code>。</li>
+<li><code>--gateway=192.168.1.1</code>：指定网络的网关地址为 <code>192.168.1.1</code>。</li>
+<li><code>-o parent=eth0</code>：指定父接口为 <code>eth0</code>，这是混杂模式下配置的物理网络接口。</li>
+<li><code>macnet</code>：是新创建的 Docker 网络的名称。</li>
+<li><strong>确保您选择的子网地址没有被路由器、交换机或其他网络设备使用。如果网关地址已被占用，容器将无法正常通信。</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">当您创建一个用于 OpenWrt 的 Docker 网络时，您实际上是在为 OpenWrt 容器创建一个虚拟子网。这个虚拟子网允许 OpenWrt 容器像一个独立的网络设备一样工作，拥有自己的 IP 地址和网络配置。</span><br><span class="line"></span><br><span class="line">在这个场景中，您创建的 macnet 网络是一个使用 macvlan 驱动的 Docker 网络。macvlan 驱动允许 Docker 容器直接使用宿主机的物理网络接口（在这个例子中是 eth0）并获得自己的 MAC 地址。这使得容器能够直接接入物理网络，而不是通过 Docker 的桥接网络间接接入。</span><br><span class="line"></span><br><span class="line">关于子网和网关</span><br><span class="line">子网：</span><br><span class="line">子网是指您定义的一个 IP 地址范围，通常包括一个 IP 地址段（例如 192.168.1.0/24），这个范围内的 IP 地址可用于分配给网络中的设备。</span><br><span class="line">在您的例子中，您创建了一个子网 192.168.1.0/24，这意味着 IP 地址范围是从 192.168.1.1 到 192.168.1.254（除去网络地址 192.168.1.0 和广播地址 192.168.1.255）。</span><br><span class="line">网关：</span><br><span class="line">网关是指子网内的设备用于发送到外部网络的数据包的目的地。</span><br><span class="line">在您的例子中，您定义了网关为 192.168.1.1。这意味着 OpenWrt 容器将使用 192.168.1.1 作为其默认网关来发送数据包到其他网络。</span><br><span class="line">通常情况下，网关应该是您现有网络中的路由器或另一个网络设备的 IP 地址，这个设备负责转发到其他子网或互联网的数据包。</span><br><span class="line">总结</span><br><span class="line">您创建了一个新的虚拟子网 192.168.1.0/24，并且指定了网关为 192.168.1.1。</span><br><span class="line">网关 192.168.1.1 应该是一个现有的网络设备（如路由器）的 IP 地址，这个设备负责处理子网内的设备与外部网络之间的通信。</span><br><span class="line">如果您希望 OpenWrt 能够访问互联网或与其他子网通信，那么 192.168.1.1 必须指向一个可以进行路由的设备。</span><br><span class="line">OpenWrt 容器将会被分配一个在这个子网范围内的 IP 地址，并使用 192.168.1.1 作为网关来连接到其他网络。</span><br></pre></td></tr></table></figure>
+<p>执行这些命令后，Docker 会返回一个网络 ID（例如 <code>92d33e4340e7acfb38b78009ac98100b9847a98a7744fd33bea3873bc22738ae</code>），您可以使用这个 ID 来引用这个网络或进一步配置。</p>
+<hr>
+<blockquote>
+<p>注意：</p>
+<p>在 Macvlan 网络模式下，容器（OpenWrt/<code>192.168.1.30</code>）拥有独立的 MAC 地址，看起来就像是直接连接在宿主机所连接的物理网络上。</p>
+<p>当宿主机 (<code>192.168.1.45</code>) <code>ping</code> 容器 (<code>192.168.1.30</code>) 时，出现 <code>Destination Host Unreachable</code>，<strong>最直接的原因几乎一定是 Macvlan 网络的一个固有特性</strong>：<strong>宿主机隔离规则 (The Macvlan Hairpin Problem)</strong></p>
+<p>Docker 的 Macvlan 网络驱动程序通常会<strong>阻止宿主机与它自己创建的 Macvlan 容器直接通信</strong>。</p>
+<p>这是因为 Macvlan 接口（虚拟的）连接到物理网卡（主接口），物理网卡和宿主机内核在处理来自自身端口的数据包时，常常会忽略这些数据包（即 “发夹环路” 或 Hairpinning 问题）。</p>
+<p><strong>因此，宿主机 (<code>192.168.1.45</code>) 无法直接通过 IP 地址 <code>192.168.1.30</code> 访问它自己的 Macvlan 容器。</strong> 当宿主机尝试 <code>ping</code> 时，它发送 ARP 请求，但容器的 ARP 响应不会回到宿主机，导致宿主机认为目标主机不可达。</p>
+</blockquote>
+<p>创建 Macvlan 桥接网络</p>
+<ul>
+<li><strong>宿主机 IP：</strong><code>192.168.1.45</code></li>
+<li><strong>Macvlan 容器 IP (OpenWrt)：</strong><code>192.168.1.30</code></li>
+<li><strong>新的宿主机通信 IP：</strong> 我们将使用一个同一网段的新 IP，例如 <strong><code>192.168.1.46</code></strong>，作为宿主机访问容器的“跳板”。</li>
+</ul>
+<p><strong>创建新的 Macvlan 接口</strong></p>
+<p>使用 <code>ip link</code> 命令在宿主机的主网卡上创建一个新的 Macvlan 接口。这个新接口将继承主网卡的 MAC 地址。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 假设你的主网卡是 eth0，新接口命名为 macvlan0</span><br><span class="line"># 注意：你需要将 eth0 替换成你实际的网卡名称</span><br><span class="line">sudo ip link add link eth0 name macvlan0 type macvlan mode bridge</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>link eth0</code>: 指定将 <code>macvlan0</code> 附加到哪个物理接口上。</li>
+<li><code>type macvlan</code>: 定义接口类型。</li>
+<li><code>mode bridge</code>: 指定 Macvlan 的操作模式（这是 Docker 默认使用的模式，适用于大多数情况）。</li>
+</ul>
+<p><strong>为新接口分配 IP 地址</strong></p>
+<p>为新创建的 <code>macvlan0</code> 接口分配一个新的、未被占用的 IP 地址（例如 <code>192.168.1.46</code>）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 为 macvlan0 分配一个新的 IP 地址，例如 192.168.1.46</span><br><span class="line">sudo ip addr add 192.168.1.46/24 dev macvlan0</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>/24</code> 是标准的子网掩码（即 <code>255.255.255.0</code>）。</li>
+</ul>
+<p><strong>启用新接口</strong></p>
+<p>将 <code>macvlan0</code> 接口设置为“UP”状态，使其开始工作。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 启用 macvlan0 接口</span><br><span class="line">sudo ip link set macvlan0 up</span><br></pre></td></tr></table></figure>
+<p>在测试连通性，正常后即可持久化操作。</p>
+<p><strong>创建 <code>macvlan.service</code> 文件</strong></p>
+<p>在 <code>/etc/systemd/system/</code> 目录下创建一个新的服务文件，例如 <code>macvlan-setup.service</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/macvlan-setup.service</span><br></pre></td></tr></table></figure>
+<p><strong>文件内容如下：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Setup Macvlan Interface for Docker Host Communication</span><br><span class="line"># 确保在网络服务和 Docker 服务启动后执行</span><br><span class="line">After=network-online.target docker.service</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=oneshot</span><br><span class="line">RemainAfterExit=yes</span><br><span class="line"># 确保 eth0 已 UP</span><br><span class="line">ExecStartPre=/sbin/ip link set dev eth0 up</span><br><span class="line"># 创建 macvlan0 接口并依附到 eth0</span><br><span class="line">ExecStart=/sbin/ip link add link eth0 name macvlan0 type macvlan mode bridge</span><br><span class="line"># 分配 IP 地址</span><br><span class="line">ExecStartPost=/sbin/ip addr add 192.168.1.46/24 dev macvlan0</span><br><span class="line"># 启用接口</span><br><span class="line">ExecStartPost=/sbin/ip link set dev macvlan0 up</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+<p><strong>启用并启动新服务</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 重新加载 systemd 配置</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 启用服务，确保系统启动时运行</span><br><span class="line">sudo systemctl enable macvlan-setup.service</span><br><span class="line"></span><br><span class="line"># 立即启动服务</span><br><span class="line">sudo systemctl start macvlan-setup.service</span><br></pre></td></tr></table></figure>
+<p><strong>最终验证和测试</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 检查服务状态</span><br><span class="line">sudo systemctl status macvlan-setup.service</span><br><span class="line"></span><br><span class="line"># 检查 macvlan0 接口是否成功创建</span><br><span class="line">ip a show macvlan0</span><br><span class="line"></span><br><span class="line"># 最终通信测试</span><br><span class="line">ping 192.168.1.30</span><br></pre></td></tr></table></figure>
+<h5 id="3）下载镜像包至root">3）下载镜像包至root</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://dl.openwrt.ai/releases/targets/meson/meson8b/openwrt-02.01.2024-meson-meson8b-thunder-onecloud-rootfs.tar.gz</span><br></pre></td></tr></table></figure>
+<p>(这是使用<a target="_blank" rel="noopener external nofollow noreferrer" href="https://dl.openwrt.ai/" title="openwrt.ai">openwrt.ai</a>的固件，如果想用最新版，可以自行替换链接，截止到今日为止，最新版本是2024年3月30号的，也可以自行在官网上下载好上传到root目录)</p>
+<p>(提示，如果想直接定制固件，可以赞助作者，当然，下载默认固件也可以自己通过软件包安装)</p>
+<p>［注意，2024年3月30号的固件使用之后，会导致宿主机无限重启，只能重新刷机，原因未知］</p>
+<h5 id="4）生成镜像">4）生成镜像</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker import openwrt-02.01.2024-meson-meson8b-thunder-onecloud-rootfs.tar.gz onecloud/openwrt</span><br></pre></td></tr></table></figure>
+<h5 id="5）安装并启动容器">5）安装并启动容器</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --restart always --name openwrt -d --network macnet --privileged onecloud/openwrt /sbin/init</span><br></pre></td></tr></table></figure>
+<p>启动后可能遇到docker卡住的问题，断电重启即可。</p>
+<p>ip冲突可重设容器ip</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker stop openwrt &amp;&amp;docker <span class="built_in">rm</span> openwrt &amp;&amp;docker run --restart always --name openwrt -d --network macnet --ip 192.168.1.30 --privileged openwrtback:20240902 /sbin/init</span><br><span class="line"></span><br><span class="line">停止openwrt容器&amp;&amp;删除openwrt容器&amp;&amp;初始化一个策略为 始终保存启动 的名字叫 openwrt 的网络策略使用叫 macnet 策略组的指定ip为 192.168.1.30 的镜像使用 openwrtback:20240902 的保存路径为 /sbin/init 的容器</span><br></pre></td></tr></table></figure>
+<h5 id="6）修改默认IP">6）修改默认IP</h5>
+<p>①直接通过终端修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进入容器</span></span><br><span class="line"></span><br><span class="line">docker <span class="built_in">exec</span> -it openwrt bash</span><br><span class="line"></span><br><span class="line"><span class="comment">#打开网络配置文件</span></span><br><span class="line"></span><br><span class="line">vim /etc/config/network</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">修改部分选项</span><br><span class="line"></span><br><span class="line">config interface <span class="string">&#x27;lan&#x27;</span></span><br><span class="line">        option ifname <span class="string">&#x27;eth0&#x27;</span></span><br><span class="line">        option proto <span class="string">&#x27;static&#x27;</span></span><br><span class="line">        option ipaddr <span class="string">&#x27;192.168.1.30&#x27;</span>（改为自己想设定的opwrt地址）</span><br><span class="line">        option netmask <span class="string">&#x27;255.255.255.0&#x27;</span>(子网掩码)</span><br><span class="line">        option ip6assign <span class="string">&#x27;60&#x27;</span></span><br><span class="line">        option gateway <span class="string">&#x27;192.168.1.1&#x27;</span>(网关设置为主路由ip)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#重启网络</span></span><br><span class="line"></span><br><span class="line">/etc/init.d/network restart</span><br></pre></td></tr></table></figure>
+<p>［此固件默认IP为10.0.0.1 ］</p>
+<ul>
+<li>若设置为与当前网络同一网段，可直接访问设置的ipaddr，若不同网段可更改电脑网段再访问</li>
+<li>默认为设置的openwrt ip地址+80端口</li>
+<li>账号密码都为root</li>
+</ul>
+<p>初始配置：</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_29/image_ef7eaef1261df65412afe22b67e03d72.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_29/image_ef7eaef1261df65412afe22b67e03d72.png"></p>
+<p>完成配置：</p>
+<p><img src="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_29/image_ec61496349d6420df15ec0c01a486fc1.png" alt="https://cdn.ziyourufeng.eu.org/51hhh/img_bed/main/img/2024/07_29/image_ec61496349d6420df15ec0c01a486fc1.png"></p>
+<p>检查网络接口的状态：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifstatus lan</span><br></pre></td></tr></table></figure>
+<p>查看路由表，确保网关和DNS正确配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">route</span><br></pre></td></tr></table></figure>
+<p>使用<code>ping</code>命令测试网络连接：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping -c 4 8.8.8.8  <span class="comment"># 测试到Google DNS的连接</span></span><br></pre></td></tr></table></figure>
+<p>以下是dokcer 修改的一些命令   以防参数设置错误<br>
+查看所有容器<br>
+docker ps -a<br>
+设置不自动启动<br>
+docker container update --restart=no [容器ID]   <br>
+停止容器<br>
+docker stop [容器ID]<br>
+删除容器<br>
+docker rm [容器ID]查看所有镜像<br>
+docker images<br>
+镜像docker rmi [镜像ID]</p>
+<p>重要操作前备份：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker commit openwrt openwrt_back:tag</span><br><span class="line">docker commit &lt;容器名&gt; &lt;保存为的镜像名&gt;:&lt;标签&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="配置UFW防火墙">配置UFW防火墙</h3>
+<p><strong>1、更新软件包</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+<p><strong>2、安装 UFW</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install ufw</span><br></pre></td></tr></table></figure>
+<p><strong>3、如果你在远程位置连接你的服务器，在启用 UFW 防火墙之前，你必须显式允许进来的 SSH 连接。否则，你将永远都无法连接到机器上。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow 22/tcp</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。</p>
+</blockquote>
+<p><strong>4、放开 1Panel 系统端口。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow ****/tcp</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上述命令中的 **** 端口需要替换为安装 1Panel 系统时自定义的端口。</p>
+</blockquote>
+<p><strong>5、启动 UFW</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw enable</span><br></pre></td></tr></table></figure>
+<p>之后便可以用1panel可视化管理防火墙。</p>
+<h2 id="参考文章">参考文章</h2>
+<ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/p/ab86fd279942">玩客云/网心云刷OpenWrt当旁路由教程 - 简书 (jianshu.com)</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.right.com.cn/forum/thread-8275843-1-1.html">更新 2024.04.15 OPENWRT高内核直刷 玩客云ws1608 恩山无线论坛 (right.com.cn)</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.hi-linux.com/posts/38236.html">一文带你搞懂旁路由的原理与配置 - 奇妙的 Linux 世界 (hi-linux.com)</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org">Ziyourufeng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://polar-bear.eu.org/2024/02/26/jia-ting-wang-luo-gai-zao-er-pang-lu-you-openwrt/">https://polar-bear.eu.org/2024/02/26/jia-ting-wang-luo-gai-zao-er-pang-lu-you-openwrt/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="null" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://polar-bear.eu.org" target="_blank">polar-bear～Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/test/34.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.polar-bear.eu.org/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.polar-bear.eu.org/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhuwechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://polar-bear.eu.org/" target="_blank"><img class="post-qr-code-img" src="/img/zanzhualipay.jpg" alt="Alipay"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/03/10/css-bi-ji/" title="css笔记"><img class="cover" src="/img/test/38.png" onerror="onerror=null;src='/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">css笔记</div></div></a></div><div class="next-post pull-right"><a href="/2024/02/21/wei-ni-de-hexo-tian-jia-yi-ge-hou-tai/" title="为你的Hexo添加一个后台"><img class="cover" src="/img/test/36.png" onerror="onerror=null;src='/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">为你的Hexo添加一个后台</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/hand.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ziyourufeng</div><div class="author-info__description">技术宅拯救世界~~!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/51hhh"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/51hhh" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: 51hhh;"></i></a><a class="social-icon" href="mailto:ziyourufeng@duck.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: ziyourufeng;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">已更换Twikoo评论，现在可在文末留言啦，可在左下角聊天，邮箱，telegram，QQ群等方式与我取得联系</div></div><div class="card-widget"><div class="item-headline"><i class="fas fa-desktop"></i><span></span></div><div class="item-content"><div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("12/1/2021 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval(createtime, 250);
+</script>
+</div>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%81%E8%B7%AF%E7%94%B1openWRT"><span class="toc-number">1.</span> <span class="toc-text">旁路由openWRT</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.</span> <span class="toc-text">设备连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E6%8C%87%E5%AE%9A%E6%96%B9%E6%A1%88"><span class="toc-number">1.2.</span> <span class="toc-text">手动指定方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.3.</span> <span class="toc-text">远程管理页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-number">1.4.</span> <span class="toc-text">防火墙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.5.</span> <span class="toc-text">SSH连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DDNS"><span class="toc-number">1.6.</span> <span class="toc-text">DDNS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"><span class="toc-number">1.7.</span> <span class="toc-text">名词解释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6"><span class="toc-number">1.8.</span> <span class="toc-text">插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Armbian"><span class="toc-number">1.9.</span> <span class="toc-text">Armbian</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%97%B6%E5%8C%BA%EF%BC%9A%E7%94%B1%E4%BA%8E%E5%BD%93%E5%89%8D%E5%9B%BA%E4%BB%B6%E9%BB%98%E8%AE%A4%E6%97%B6%E5%8C%BA%E9%9D%9E%E4%B8%9C%E5%85%AB%E5%8C%BA%EF%BC%8C%E9%9C%80%E8%A6%81%E4%BF%AE%E6%94%B9%E3%80%82"><span class="toc-number">1.9.1.</span> <span class="toc-text">更改时区：由于当前固件默认时区非东八区，需要修改。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E5%9B%BD%E5%86%85%E8%BD%AF%E4%BB%B6%E6%BA%90-%E5%A6%82%E6%9E%9C%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%EF%BC%8C%E5%8F%AF%E4%B8%8D%E5%BF%85%E6%8D%A2"><span class="toc-number">1.9.2.</span> <span class="toc-text">更换国内软件源(如果能正常更新软件，可不必换)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%851panel"><span class="toc-number">1.9.3.</span> <span class="toc-text">安装1panel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85CasaOS"><span class="toc-number">1.9.4.</span> <span class="toc-text">2.安装CasaOS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OpenWrt"><span class="toc-number">1.9.5.</span> <span class="toc-text">OpenWrt</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%EF%BC%89%E6%89%93%E5%BC%80%E7%BD%91%E5%8D%A1%E6%B7%B7%E6%9D%82%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.9.5.1.</span> <span class="toc-text">1）打开网卡混杂模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%EF%BC%89%E5%88%9B%E5%BB%BAOpenWrt%E7%BD%91%E7%BB%9C-%E8%87%AA%E8%A1%8C%E6%9B%BF%E6%8D%A2%E7%BD%91%E6%AE%B5%EF%BC%8C%E7%BD%91%E5%85%B3"><span class="toc-number">1.9.5.2.</span> <span class="toc-text">2）创建OpenWrt网络(自行替换网段，网关)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%EF%BC%89%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F%E5%8C%85%E8%87%B3root"><span class="toc-number">1.9.5.3.</span> <span class="toc-text">3）下载镜像包至root</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4%EF%BC%89%E7%94%9F%E6%88%90%E9%95%9C%E5%83%8F"><span class="toc-number">1.9.5.4.</span> <span class="toc-text">4）生成镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5%EF%BC%89%E5%AE%89%E8%A3%85%E5%B9%B6%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-number">1.9.5.5.</span> <span class="toc-text">5）安装并启动容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6%EF%BC%89%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4IP"><span class="toc-number">1.9.5.6.</span> <span class="toc-text">6）修改默认IP</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEUFW%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-number">1.10.</span> <span class="toc-text">配置UFW防火墙</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text">参考文章</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/24/orin-nx-de-chong-chong/" title="Orin NX 的种种"><img src="/img/test/21.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="Orin NX 的种种"/></a><div class="content"><a class="title" href="/2026/01/24/orin-nx-de-chong-chong/" title="Orin NX 的种种">Orin NX 的种种</a><time datetime="2026-01-24T00:22:31.356Z" title="发表于 2026-01-24 08:22:31">2026-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/27/cloudflare-jia-su-onedrive-wen-jian-xia-zai/" title="cloudflare加速onedrive文件下载"><img src="/img/test/13.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="cloudflare加速onedrive文件下载"/></a><div class="content"><a class="title" href="/2025/12/27/cloudflare-jia-su-onedrive-wen-jian-xia-zai/" title="cloudflare加速onedrive文件下载">cloudflare加速onedrive文件下载</a><time datetime="2025-12-27T05:52:03.010Z" title="发表于 2025-12-27 13:52:03">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/27/rdk-s100p-de-chong-chong/" title="RDK S100P的种种"><img src="/img/test/49.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="RDK S100P的种种"/></a><div class="content"><a class="title" href="/2025/12/27/rdk-s100p-de-chong-chong/" title="RDK S100P的种种">RDK S100P的种种</a><time datetime="2025-12-27T00:27:09.891Z" title="发表于 2025-12-27 08:27:09">2025-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/12/wsl-an-zhuang-isaac-gym/" title="wsl安装isaac gym"><img src="/img/test/35.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="wsl安装isaac gym"/></a><div class="content"><a class="title" href="/2025/11/12/wsl-an-zhuang-isaac-gym/" title="wsl安装isaac gym">wsl安装isaac gym</a><time datetime="2025-11-12T03:04:44.842Z" title="发表于 2025-11-12 11:04:44">2025-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/08/26/exo/" title="exo"><img src="/img/test/47.png" onerror="this.onerror=null;this.src='/img/404.png'" alt="exo"/></a><div class="content"><a class="title" href="/2025/08/26/exo/" title="exo">exo</a><time datetime="2025-08-26T23:08:40.988Z" title="发表于 2025-08-27 07:08:40">2025-08-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2026 By Ziyourufeng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.polar-bear.eu.org/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.polar-bear.eu.org/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><meting-js id="8492133976" server="netease" type="playlist" fixed="true" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list"></meting-js><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/canvas-nest.min.js"></script><link rel="stylesheet" href="/css/APlayer.min.css" media="print" onload="this.media='all'"><script src="/js/APlayer.min.js"></script><script src="/js/Meting2.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script>
+    // 全局变量声明区域
+    var fdata = {
+      apiurl: 'https://friends.polar-bear.eu.org/',
+      initnumber: 30, //【可选】页面初始化展示文章数量
+      stepnumber: 30, //【可选】每次加载增加的篇数
+      error_img: 'https://npm.elemecdn.com/akilar-candyassets/image/404.gif' //【可选，头像图片加载失败时的默认头像】
+    }
+    //存入本地存储
+    localStorage.setItem("fdatalist",JSON.stringify(fdata))
+    </script>
+    <script data-pjax src="/js/fetch.js"></script><script data-pjax src="https://polar-bear.eu.org/js/random-friends-post.js"></script><script async src="/js/ali_font.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="/js/hexo-filter-gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='all'|| 'all' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitapi.polar-bear.eu.org/api?51hhh",['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8ba', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06'],'51hhh')
+    }
+  </script><script data-pjax src="https://npm.elemecdn.com/oh-my-live2d@0.3.0/dist/index.min.js"></script><script>
+OML2D.loadOhMyLive2D({
+  source:"",
+  mobileShow:true,
+  sayHello:false,
+  transitionTime:1000,
+  models:[{"scale":1.2,"path":"/live2d-model-xiaohei/黑崽生日快乐2023.model3.json","x":0,"y":0,"stageStyle":{"backgroundColor":"rgba(0, 0, 0, 0)","width":"auto","height":"auto"}}],
+  tips:{
+    style:{"width":230,"height":120,"offsetX":0,"offsetY":90},
+    
+    
+    idleTips:{
+      
+      
+      interval:15000,
+      
+      remote:function() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      type: 'get',
+      url: 'https://v1.hitokoto.cn?c=i',
+      dataType: 'json',
+      success: res => {
+       // console.log(res);
+        resolve({text: res.hitokoto});
+      }
+    });
+  });
+}
+,
+    }
+  }
+  });
+  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":180,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>
