@@ -1,0 +1,194 @@
+/* Dedicated music pages already provide their own full-size player. */
+body:has(#anMusic-page) .global-music-player .aplayer,
+body:has(.music-old-player) .global-music-player .aplayer {
+  display: none;
+}
+
+/* Keep the global player compact; its lyrics otherwise cover page footers. */
+.global-music-player .aplayer-lrc {
+  display: none !important;
+}
+
+body:has(#anMusic-page) #oml2d-stage,
+body:has(.music-old-player) #oml2d-stage,
+body:has(#anMusic-page) #rightside {
+  display: none !important;
+}
+
+/* Map the friend-circle theme tokens to Butterfly's active color scheme. */
+.fcircle_page {
+  --anzhiyu-background: var(--global-bg);
+  --anzhiyu-card-bg: var(--card-bg);
+  --anzhiyu-fontcolor: var(--font-color);
+  --anzhiyu-hovertext: var(--default-bg-color);
+  --anzhiyu-lighttext: var(--default-bg-color);
+  --anzhiyu-main: var(--default-bg-color);
+  --anzhiyu-none: transparent;
+  --anzhiyu-secondtext: var(--card-meta);
+  --anzhiyu-shadow-border: var(--card-box-shadow);
+  --anzhiyu-shadow-main: 0 8px 24px rgba(73, 177, 245, 0.24);
+  --anzhiyu-theme: var(--default-bg-color);
+  --anzhiyu-white: #fff;
+  --style-border: 1px solid rgba(127, 127, 127, 0.18);
+  --style-border-always: 1px solid rgba(127, 127, 127, 0.18);
+  --style-border-hover: 1px solid var(--default-bg-color);
+}
+
+.fcircle_page .author-content-item-tips,
+.fcircle_page .author-content-item-title,
+.fcircle_page .content-bottom {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.68);
+}
+
+/* Let the site background show through cards without sacrificing readability. */
+:root {
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --footer-glass-bg: rgba(255, 255, 255, 0.72);
+  --footer-glass-border: rgba(255, 255, 255, 0.42);
+  --footer-glass-color: rgba(40, 48, 57, 0.82);
+}
+
+[data-theme='dark'] {
+  --card-bg: rgba(18, 18, 18, 0.82);
+  --footer-glass-bg: rgba(18, 18, 18, 0.76);
+  --footer-glass-border: rgba(255, 255, 255, 0.12);
+  --footer-glass-color: rgba(255, 255, 255, 0.78);
+}
+
+#recent-posts .recent-post-item,
+#aside-content .card-widget,
+.layout > div:first-child:not(#recent-posts):not(.nc) {
+  -webkit-backdrop-filter: blur(10px) saturate(125%);
+  backdrop-filter: blur(10px) saturate(125%);
+}
+
+/* Fade the banner into the fixed site background instead of ending at a hard edge.
+   The fade must NOT be a mask on #page-header itself: any mask-image makes an
+   element clip everything it paints to its own box, and #nav is a child of
+   #page-header — so the sticky nav (position: fixed, shown when scrolling up)
+   was clipped away on every page that has a top image. Instead cut the header's
+   own background off where the fade starts (background-clip), and re-paint just
+   the fade band on ::after, which copies the same background via `inherit` so
+   the two halves stay aligned. Masking a pseudo-element is safe: it has no
+   descendants to clip. Applies to the home banner (140px), article covers and
+   every other top_img page — tags, categories, archives, custom pages (72px);
+   their title/metadata blocks all end above the fade band. */
+#page-header.full_page,
+#page-header.post-bg,
+#page-header.not-home-page {
+  --banner-fade: 72px;
+  /* box-sizing is border-box site-wide, so this only shrinks the content box —
+     the header keeps its height and absolutely positioned children keep their
+     offsets, because those resolve against the unchanged padding box. */
+  padding-bottom: var(--banner-fade);
+  background-clip: content-box;
+}
+
+#page-header.full_page {
+  --banner-fade: 140px;
+}
+
+#page-header.full_page::after,
+#page-header.post-bg::after,
+#page-header.not-home-page::after {
+  position: absolute;
+  /* behind the header's children (nav, title, scroll-down arrow) but in front of
+     the header's own — now clipped — background */
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* same image, same position/size/attachment as the header, so the band picks
+     up exactly where the clipped background stops */
+  background: inherit;
+  background-clip: border-box;
+  -webkit-mask-image: linear-gradient(to bottom, transparent calc(100% - var(--banner-fade)), #000 calc(100% - var(--banner-fade)), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent calc(100% - var(--banner-fade)), #000 calc(100% - var(--banner-fade)), transparent 100%);
+  content: '';
+}
+
+/* The theme's mask.header tint (#page-header:before) covers the whole header, so
+   it has to fade out with the image or it would end in a hard edge of its own. */
+#page-header.full_page:before,
+#page-header.post-bg:before,
+#page-header.not-home-page:before {
+  -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 calc(100% - var(--banner-fade)), transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0, #000 calc(100% - var(--banner-fade)), transparent 100%);
+}
+
+#page-header.post-bg #post-info {
+  bottom: 76px;
+}
+
+/* Continue the glass surface through the footer in both color schemes. */
+#footer {
+  border-top: 1px solid var(--footer-glass-border);
+  background: var(--footer-glass-bg);
+  box-shadow: 0 -8px 24px rgba(7, 17, 27, 0.08);
+  -webkit-backdrop-filter: blur(12px) saturate(125%);
+  backdrop-filter: blur(12px) saturate(125%);
+}
+
+#footer > *,
+#footer a {
+  color: var(--footer-glass-color);
+}
+
+#footer a:hover {
+  color: var(--btn-bg);
+}
+
+/* /mao/ — the catch-the-cat canvas is a fixed 730x639 CSS box and draws its
+   status text in hardcoded black, so it keeps a light board in both schemes and
+   is scaled down proportionally once the content column is narrower than that. */
+#catch-the-cat {
+  text-align: center;
+}
+
+#catch-the-cat canvas {
+  max-width: 100%;
+  height: auto !important;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --card-bg: rgba(255, 255, 255, 0.86);
+  }
+
+  [data-theme='dark'] {
+    --card-bg: rgba(18, 18, 18, 0.88);
+  }
+
+  #recent-posts .recent-post-item,
+  #aside-content .card-widget,
+  .layout > div:first-child:not(#recent-posts):not(.nc) {
+    -webkit-backdrop-filter: blur(6px) saturate(115%);
+    backdrop-filter: blur(6px) saturate(115%);
+  }
+
+  #footer {
+    -webkit-backdrop-filter: blur(8px) saturate(115%);
+    backdrop-filter: blur(8px) saturate(115%);
+  }
+}
+
+/* Keep Butterfly's controls beside the Live2D stage instead of underneath it. */
+@media screen and (min-width: 769px) {
+  #rightside.rightside-show {
+    transform: translate(-278px, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #oml2d-stage {
+    display: none !important;
+  }
+
+  #rightside.rightside-show {
+    transform: translate(-58px, 0);
+  }
+}
