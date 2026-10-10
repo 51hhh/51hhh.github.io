@@ -1,0 +1,601 @@
+{
+  "Version": 3,
+  "Type": 0,
+  "FileReferences": {
+    "Moc": "黑崽生日快乐2023.moc3",
+    "Textures": [
+      "黑崽生日快乐2023.4096/texture_00.png",
+      "黑崽生日快乐2023.4096/texture_01.png"
+    ],
+    "Physics": "黑崽生日快乐2023.physics3.json",
+    "PhysicsV2": {
+      "File": "黑崽生日快乐2023.physics3.json"
+    },
+    "Motions": {
+      "跟宠": [
+        {
+          "Name": "motion/嘿咻.motion3.json",
+          "File": "motion/嘿咻.motion3.json",
+          "Sound": "mp3/嘿咻.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/小白.motion3.json",
+          "File": "motion/小白.motion3.json",
+          "Sound": "mp3/小白.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/山新.motion3.json",
+          "File": "motion/山新.motion3.json",
+          "Sound": "mp3/山新.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/无限.motion3.json",
+          "File": "motion/无限.motion3.json",
+          "Sound": "mp3/无限.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/比丢.motion3.json",
+          "File": "motion/比丢.motion3.json",
+          "Sound": "mp3/比丢.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/阿根.motion3.json",
+          "File": "motion/阿根.motion3.json",
+          "Sound": "mp3/阿根.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/嘿咻小白.motion3.json",
+          "File": "motion/嘿咻小白.motion3.json",
+          "Sound": "mp3/小白2.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        }
+      ],
+      "桌面": [
+        {
+          "Name": "motion/数位板.motion3.json",
+          "File": "motion/数位板.motion3.json",
+          "Sound": "mp3/嘿嘿嘿2.MP3",
+          "Priority": 3,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/鼠标.motion3.json",
+          "File": "motion/鼠标.motion3.json",
+          "Sound": "mp3/嘿嘿嘿.MP3",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/按键1.motion3.json",
+          "File": "motion/按键1.motion3.json",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/按键2.motion3.json",
+          "File": "motion/按键2.motion3.json",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/按键3.motion3.json",
+          "File": "motion/按键3.motion3.json",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/右.motion3.json",
+          "File": "motion/右.motion3.json",
+          "Priority": 2,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/左.motion3.json",
+          "File": "motion/左.motion3.json",
+          "Priority": 2,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "Name": "motion/回车.motion3.json",
+          "File": "motion/回车.motion3.json",
+          "Sound": "mp3/嘿咻2.MP3",
+          "SoundChannel": 1,
+          "Priority": 3,
+          "Ignorable": true,
+          "Interruptable": true
+        }
+      ],
+      "左耳": [
+        {
+          "Name": "motion/左耳10.motion3.json",
+          "File": "motion/左耳10.motion3.json",
+          "Sound": "mp3/你也是执行者？.MP3"
+        },
+        {
+          "File": "motion/左耳10.motion3.json",
+          "Sound": "mp3/嘿嘿嘿2.MP3"
+        },
+        {
+          "File": "motion/左耳10大坏蛋.motion3.json",
+          "Sound": "mp3/大坏蛋.MP3",
+          "SoundVolume": 0.633
+        }
+      ],
+      "书": [
+        {
+          "Name": "motion/书.motion3.json",
+          "File": "motion/书.motion3.json",
+          "Sound": "mp3/哇~ [vocals].mp3",
+          "SoundVolume": 0.593
+        },
+        {
+          "Name": "motion/吸管.motion3.json",
+          "File": "motion/吸管.motion3.json"
+        },
+        {
+          "Name": "motion/橡皮.motion3.json",
+          "File": "motion/橡皮.motion3.json"
+        },
+        {
+          "Name": "motion/油漆桶.motion3.json",
+          "File": "motion/油漆桶.motion3.json"
+        },
+        {
+          "Name": "motion/翻页.motion3.json",
+          "File": "motion/翻页.motion3.json",
+          "Sound": "mp3/啊？ 执行者.MP3"
+        },
+        {
+          "Name": "motion/魔棒.motion3.json",
+          "File": "motion/魔棒.motion3.json"
+        },
+        {
+          "Name": "motion/画笔.motion3.json",
+          "File": "motion/画笔.motion3.json"
+        }
+      ],
+      "背景": [
+        {
+          "Name": "motion/地毯.motion3.json",
+          "File": "motion/地毯.motion3.json",
+          "Sound": "mp3/嗯？.MP3",
+          "SoundVolume": 0.606
+        },
+        {
+          "Name": "motion/背景.motion3.json",
+          "File": "motion/背景.motion3.json",
+          "Sound": "mp3/哇~ [vocals].mp3",
+          "SoundVolume": 0.735
+        }
+      ],
+      "制作者": [
+        {
+          "Name": "制作者",
+          "File": "motion/生日帽.motion3.json",
+          "Sound": "mp3/嘿嘿嘿.MP3",
+          "Text": "—祝小黑2023生日快乐！！！—\r\n◆模型角色：罗小黑\r\n◆绘制+模型：bilibili@躺下做卷腹\r\n*此模型已上线live2dViewerEX的创意工坊，请勿二次上传。\r\n",
+          "TextDuration": 5000,
+          "Ignorable": true,
+          "Interruptable": true
+        }
+      ],
+      "Shake": [
+        {
+          "File": "motion/问号.motion3.json"
+        },
+        {
+          "File": "motion/进度条.motion3.json"
+        }
+      ],
+      "生日帽": [
+        {
+          "File": "motion/生日帽.motion3.json",
+          "Sound": "mp3/嘿嘿嘿.MP3",
+          "SoundVolume": 0.6
+        },
+        {
+          "File": "motion/生日帽.motion3.json",
+          "Sound": "mp3/我不知道自己的生日 (1).mp3"
+        },
+        {
+          "File": "motion/生日帽.motion3.json",
+          "Sound": "mp3/到时候也介绍师傅给你认识.MP3"
+        }
+      ],
+      "恢复": [
+        {
+          "File": "motion/恢复.motion3.json",
+          "Sound": "mp3/问号 嗯？.MP3",
+          "SoundChannel": 1,
+          "Ignorable": true,
+          "Interruptable": true
+        }
+      ],
+      "右耳": [
+        {
+          "File": "motion/右耳10.motion3.json",
+          "Sound": "mp3/我叫小黑.MP3",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "File": "motion/右耳aaa.motion3.json",
+          "Sound": "mp3/耳朵啊啊啊啊.MP3",
+          "SoundVolume": 0.574,
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "File": "motion/右耳aaa.motion3.json",
+          "Sound": "mp3/只是还不太会变啦.MP3",
+          "SoundVolume": 0.509,
+          "Ignorable": true,
+          "Interruptable": true
+        }
+      ],
+      "Start": [
+        {
+          "File": "motion/右耳10.motion3.json",
+          "Sound": "mp3/你也是执行者？.MP3",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "File": "motion/左耳10.motion3.json",
+          "Sound": "mp3/嘿嘿嘿2.MP3",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "File": "motion/我叫小黑.motion3.json",
+          "Sound": "mp3/我叫小黑.MP3",
+          "Ignorable": true,
+          "Interruptable": true
+        },
+        {
+          "File": "motion/生日帽.motion3.json",
+          "Sound": "mp3/我不知道自己的生日 (1).mp3"
+        }
+      ],
+      "Idle": [
+        {
+          "File": "motion/右耳10.motion3.json",
+          "MotionDuration": 15000
+        },
+        {
+          "File": "motion/左.motion3.json",
+          "MotionDuration": 15000
+        },
+        {
+          "File": "motion/回车.motion3.json",
+          "MotionDuration": 15000
+        }
+      ]
+    }
+  },
+  "Controllers": {
+    "ParamHit": {
+      "Items": [
+        {
+          "Name": "左耳",
+          "Id": "Param55",
+          "HitArea": "左耳",
+          "Axis": 1,
+          "Factor": 0.1,
+          "ReleaseType": 0,
+          "EndMtn": "左耳"
+        },
+        {
+          "Name": "右耳",
+          "Id": "Param57",
+          "HitArea": "右耳",
+          "Axis": 1,
+          "Factor": 0.1,
+          "ReleaseType": 0,
+          "EndMtn": "右耳"
+        }
+      ],
+      "Enabled": true
+    },
+    "ParamLoop": {},
+    "KeyTrigger": {
+      "Items": [
+        {
+          "Input": 9000,
+          "DownMtn": "桌面:motion/左.motion3.json"
+        },
+        {
+          "Input": 9001,
+          "DownMtn": "桌面:motion/右.motion3.json"
+        },
+        {
+          "Input": 13,
+          "DownMtn": "桌面:motion/回车.motion3.json"
+        },
+        {
+          "Input": 66,
+          "DownMtn": "书:motion/画笔.motion3.json"
+        },
+        {
+          "Input": 69,
+          "DownMtn": "书:motion/橡皮.motion3.json"
+        },
+        {
+          "Input": 164,
+          "DownMtn": "书:motion/吸管.motion3.json"
+        },
+        {
+          "Input": 70,
+          "DownMtn": "书:motion/油漆桶.motion3.json"
+        },
+        {
+          "Input": 87,
+          "DownMtn": "书:motion/魔棒.motion3.json"
+        },
+        {
+          "Input": 32,
+          "DownMtn": "桌面:motion/回车.motion3.json"
+        },
+        {
+          "Input": 20,
+          "DownMtn": "桌面:motion/按键1.motion3.json"
+        },
+        {
+          "Input": 160,
+          "DownMtn": "桌面:motion/按键2.motion3.json"
+        },
+        {
+          "Input": 162,
+          "DownMtn": "桌面:motion/按键3.motion3.json"
+        },
+        {
+          "Input": 38,
+          "DownMtn": "桌面:motion/按键2.motion3.json"
+        },
+        {
+          "Input": 40,
+          "DownMtn": "桌面:motion/按键2.motion3.json"
+        },
+        {
+          "Input": 37,
+          "DownMtn": "桌面:motion/按键3.motion3.json"
+        },
+        {
+          "Input": 39,
+          "DownMtn": "桌面:motion/按键1.motion3.json"
+        }
+      ],
+      "Enabled": true
+    },
+    "ParamTrigger": {},
+    "AreaTrigger": {},
+    "HandTrigger": {},
+    "EyeBlink": {
+      "MinInterval": 500,
+      "MaxInterval": 6000,
+      "Enabled": true
+    },
+    "LipSync": {
+      "Gain": 10.0,
+      "SmoothTime": 0.165374786,
+      "Enabled": true
+    },
+    "MouseTracking": {
+      "SmoothTime": 0.0666136146,
+      "Items": [
+        {
+          "Id": "ParamAngleX",
+          "Min": -30.0,
+          "Max": 30.0,
+          "BlendMode": 1,
+          "Input": 0
+        },
+        {
+          "Id": "ParamAngleY",
+          "Min": -30.0,
+          "Max": 30.0,
+          "BlendMode": 1,
+          "Axis": 1,
+          "Input": 0
+        },
+        {
+          "Id": "ParamAngleZ",
+          "Min": -30.0,
+          "Max": 30.0,
+          "Inverted": true,
+          "BlendMode": 1,
+          "Axis": 2,
+          "Input": 0
+        },
+        {
+          "Id": "Param49",
+          "Min": -30.0,
+          "Max": 30.0,
+          "BlendMode": 1,
+          "Input": 0
+        },
+        {
+          "Id": "Param50",
+          "Min": -30.0,
+          "Max": 30.0,
+          "BlendMode": 1,
+          "Axis": 1,
+          "Input": 0
+        },
+        {
+          "Id": "ParamEyeBallX",
+          "Min": -1.0,
+          "Max": 1.0,
+          "BlendMode": 1,
+          "Input": 0
+        },
+        {
+          "Id": "ParamEyeBallY",
+          "Min": -1.0,
+          "Max": 1.0,
+          "BlendMode": 1,
+          "Axis": 1,
+          "Input": 0
+        }
+      ],
+      "Enabled": true
+    },
+    "AutoBreath": {
+      "Enabled": true
+    },
+    "ExtraMotion": {
+      "Enabled": true
+    },
+    "Accelerometer": {
+      "Enabled": true
+    },
+    "Microphone": {},
+    "Transform": {},
+    "FaceTracking": {
+      "Enabled": true
+    },
+    "HandTracking": {},
+    "ParamValue": {},
+    "PartOpacity": {},
+    "ArtmeshOpacity": {},
+    "ArtmeshColor": {},
+    "ArtmeshCulling": {
+      "DefaultMode": 0
+    },
+    "IntimacySystem": {}
+  },
+  "HitAreas": [
+    {
+      "Name": "小白 跟宠出现",
+      "Id": "ArtMesh123",
+      "Motion": "跟宠:motion/小白.motion3.json"
+    },
+    {
+      "Name": "比丢切换小白",
+      "Id": "ArtMesh40",
+      "Motion": "跟宠:motion/嘿咻小白.motion3.json"
+    },
+    {
+      "Name": "山新",
+      "Id": "ArtMesh8",
+      "Motion": "跟宠:motion/山新.motion3.json"
+    },
+    {
+      "Name": "根哥",
+      "Id": "ArtMesh15",
+      "Motion": "跟宠:motion/阿根.motion3.json"
+    },
+    {
+      "Name": "无限",
+      "Id": "ArtMesh24",
+      "Motion": "跟宠:motion/无限.motion3.json"
+    },
+    {
+      "Name": "比丢",
+      "Id": "ArtMesh21",
+      "Motion": "跟宠:motion/比丢.motion3.json"
+    },
+    {
+      "Name": "嘿咻",
+      "Id": "ArtMesh33",
+      "Motion": "跟宠:motion/嘿咻.motion3.json"
+    },
+    {
+      "Name": "生日帽 ArtMesh144",
+      "Id": "ArtMesh143",
+      "Motion": "生日帽"
+    },
+    {
+      "Name": "生日帽ArtMesh143 ",
+      "Id": "ArtMesh144",
+      "Motion": "生日帽"
+    },
+    {
+      "Name": "数位板01  ArtMesh44",
+      "Id": "ArtMesh71",
+      "Motion": "桌面:motion/数位板.motion3.json"
+    },
+    {
+      "Name": "数位板01 ArtMesh71 ",
+      "Id": "ArtMesh44",
+      "Motion": "桌面:motion/数位板.motion3.json"
+    },
+    {
+      "Name": "键盘01 ",
+      "Id": "ArtMesh55",
+      "Motion": "桌面:motion/鼠标.motion3.json"
+    },
+    {
+      "Name": "书01 ",
+      "Id": "ArtMesh70",
+      "Motion": "书:motion/书.motion3.json"
+    },
+    {
+      "Name": "翻页",
+      "Id": "ArtMesh56",
+      "Motion": "书:motion/翻页.motion3.json"
+    },
+    {
+      "Name": "地毯",
+      "Id": "ArtMesh149",
+      "Motion": "背景:motion/地毯.motion3.json"
+    },
+    {
+      "Name": "背景",
+      "Id": "ArtMesh95",
+      "Motion": "背景:motion/背景.motion3.json"
+    },
+    {
+      "Name": "右耳",
+      "Id": "ArtMesh148"
+    },
+    {
+      "Name": "左耳",
+      "Id": "ArtMesh79"
+    },
+    {
+      "Name": "恢复 ArtMesh182",
+      "Id": "ArtMesh54",
+      "Motion": "恢复"
+    },
+    {
+      "Name": "恢复ArtMesh54 ",
+      "Id": "ArtMesh182",
+      "Motion": "恢复"
+    },
+    {
+      "Name": "制作者",
+      "Id": "ArtMesh88",
+      "Motion": "制作者"
+    },
+    {
+      "Name": "桌面嘿咻",
+      "Id": "ArtMesh184",
+      "Motion": "桌面:motion/回车.motion3.json"
+    }
+  ],
+  "Options": {}
+}
