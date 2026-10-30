@@ -1,0 +1,421 @@
+#page:has(#anMusic-page) {
+  border: 0;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+/* 背景图就是当前封面，封面是任意的：亮封面会把整页的白字冲掉。用 darken 把
+   封面的每个通道钳制在 #555 以下——暗封面几乎原样保留，亮封面自动压暗，所以
+   白字在任何一张封面下都有足够对比度，不必再靠明暗主题去猜。 */
+#an_music_bg {
+  display: none;
+  background-color: #555;
+  background-blend-mode: darken;
+  /* darken 是逐通道取最小值，会把高饱和的亮封面压成灰，saturate 补回一点色相 */
+  filter: blur(63px) saturate(1.2);
+  opacity: 0.6;
+  position: fixed;
+  z-index: -999;
+  background-attachment: local;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  transform: rotate(0deg);
+}
+body:has(#anMusic-page) #an_music_bg {
+  display: block;
+}
+
+/* 整个播放页只有一套配色：深色。页面上的文字全部压在封面背景上，深浅只能由封面
+   决定，跟站点的明暗主题无关——所以浅色模式下也把主题变量固定成深色那一套，
+   否则导航标题、搜索、下拉菜单和移动端歌单抽屉会是「深色字 + 浅色块」压在深色
+   封面上。取值同 themes/butterfly/source/css/_mode/darkmode.styl 编译结果。
+   color-scheme 让滚动条等原生控件在浅色主题下也跟着变深。 */
+body:has(#anMusic-page) {
+  --font-color: rgba(255, 255, 255, 0.7);
+  --light-grey: rgba(255, 255, 255, 0.7);
+  --dark-grey: rgba(255, 255, 255, 0.2);
+  --white: rgba(255, 255, 255, 0.9);
+  --text-highlight-color: rgba(255, 255, 255, 0.9);
+  --text-bg-hover: #383838;
+  --card-bg: #121212;
+  --sidebar-bg: #121212;
+  --sidebar-menu-bg: #1f1f1f;
+  --mark-bg: rgba(0, 0, 0, 0.6);
+  --btn-bg: #1f1f1f;
+  --btn-color: #ccc;
+  --btn-hover-color: #787878;
+  --scrollbar-color: #525252;
+  /* 搜索弹窗和它的分割线也要一起固定：上面的 --font-color 会继承进弹窗，
+     浅色模式下会变成「白字 + 浅色面板」，直接看不见。 */
+  --search-bg: #121212;
+  --search-input-color: rgba(255, 255, 255, 0.7);
+  --search-a-color: rgba(255, 255, 255, 0.7);
+  --hr-border: rgba(255, 255, 255, 0.4);
+  --hr-before-color: rgba(255, 255, 255, 0.7);
+  background: rgb(13, 13, 13);
+  color-scheme: dark;
+}
+
+#anMusic-page meting-js .aplayer {
+  display: flex;
+  flex-direction: row-reverse;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: none;
+}
+
+body:has(#anMusic-page) #web_bg {
+  display: none;
+}
+body:has(#anMusic-page) #footer,
+body:has(#anMusic-page) #nav-music {
+  display: none;
+}
+
+#anMusic-page .aplayer-body {
+  width: 40%;
+  height: 75vh;
+}
+
+#anMusic-page ol > li:hover {
+  background: #ffffff33;
+  border-radius: 6px;
+}
+#anMusic-page .aplayer-pic {
+  float: none;
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+#anMusic-page .aplayer-info {
+  margin: 0 20px 0 20px;
+  border-bottom: none;
+}
+
+#anMusic-page .aplayer-info .aplayer-music {
+  text-align: center;
+  height: auto;
+  margin: 15px;
+}
+
+#anMusic-page .aplayer-info .aplayer-music .aplayer-author,
+#anMusic-page .aplayer-info .aplayer-music .aplayer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#anMusic-page .aplayer-info .aplayer-lrc {
+  height: 800%;
+  margin-top: 80px;
+  mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #0000, #0000);
+}
+#anMusic-page .aplayer-info .aplayer-lrc p {
+  font-size: 14px;
+  color: #fff;
+}
+#anMusic-page .aplayer .aplayer-lrc:after,
+#anMusic-page .aplayer .aplayer-lrc:before {
+  display: none;
+}
+
+/* 控制器 */
+#anMusic-page .aplayer-info .aplayer-controller {
+  position: fixed;
+  max-width: 1500px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+}
+#anMusic-page .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+  margin: 0 160px 0 150px;
+}
+#anMusic-page .aplayer-info .aplayer-controller .aplayer-played {
+  background: #fff !important;
+}
+#anMusic-page .aplayer-info .aplayer-controller .aplayer-thumb {
+  -webkit-transform: none;
+  transform: none;
+  background: #fff !important;
+}
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-back,
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-forward,
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-play {
+  display: inline;
+  position: fixed;
+}
+#anMusic-page .aplayer-info .aplayer-time {
+  position: absolute;
+  width: 100%;
+  bottom: 21px;
+  height: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#anMusic-page .aplayer-info .aplayer-time .aplayer-time-inner {
+  margin-right: 18px;
+  margin-top: -8px;
+}
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-back {
+  position: absolute;
+  left: 0;
+}
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-play {
+  position: absolute;
+  left: 40px;
+}
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-forward {
+  position: absolute;
+  left: 80px;
+}
+
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 15px;
+}
+
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon-menu {
+  display: none;
+}
+
+#anMusic-page .aplayer-info .aplayer-time .aplayer-icon path {
+  fill: #fff;
+  opacity: 0.8;
+}
+
+#anMusic-page .aplayer-list {
+  width: 60%;
+  max-height: none !important;
+  height: 100%;
+}
+#anMusic-page ol {
+  max-height: 75vh !important;
+  padding-right: 25px;
+}
+#anMusic-page ol > li {
+  border-top: 1px solid transparent;
+  font-size: 14px;
+}
+#anMusic-page ol > li.aplayer-list-light {
+  background: rgb(255 255 255 / 20%);
+  border-radius: 6px;
+}
+
+#anMusic-page ol > li span {
+  color: #fff;
+}
+
+#anMusic-page ol > li.aplayer-list-light .aplayer-list-cur {
+  display: none;
+}
+#anMusic-page ol > li span.aplayer-list-author {
+  opacity: 0.6;
+}
+
+/* 导航栏 */
+.page:has(#anMusic-page) #nav {
+  backdrop-filter: none !important;
+  background: 0 0 !important;
+  border-bottom: none !important;
+  /* 导航条本身透明，浅色模式却留着 not-top-img 的灰色投影，在深色封面上是一道
+     灰线；深色模式本来就把它置成全透明，这里统一去掉。 */
+  box-shadow: none !important;
+}
+
+.page:has(#anMusic-page) #page-header.not-top-img #nav a,
+.page:has(#anMusic-page) #page-header #nav .back-home-button {
+  color: #fff;
+}
+
+body:has(#anMusic-page) .s-sticker div {
+  color: #fff !important;
+}
+
+body:has(#anMusic-page) .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-loop {
+  margin-right: 15px;
+}
+
+.page:has(#anMusic-page) #page-header:before {
+  background-color: transparent;
+}
+
+/* **** 移动端样式 ***** */
+@media screen and (max-width: 768px) {
+  body:has(#anMusic-page) #rightside {
+    display: none;
+  }
+  body:has(#anMusic-page) #content-inner,
+  body:has(#anMusic-page) #page {
+    z-index: auto;
+  }
+  /* 歌曲列表 */
+  #anMusic-page .aplayer-list {
+    position: fixed;
+    z-index: 1002;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: var(--sidebar-bg);
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px 0px;
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: transform 0.35s ease, opacity 0.25s ease, visibility 0.35s;
+  }
+  #anMusic-page .aplayer-list.aplayer-list-hide {
+    max-height: none !important;
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #anMusic-page ol {
+    max-height: 60vh !important;
+    padding-right: 0px;
+  }
+  #anMusic-page ol > li {
+    display: flex;
+    margin: 0 10px;
+  }
+  #anMusic-page ol > li span.aplayer-list-title {
+    width: 30%;
+  }
+  #anMusic-page ol > li.aplayer-list-light {
+    background: #33a673;
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+  #anMusic-page ol > li.aplayer-list-light span {
+    color: #fff;
+  }
+  #anMusic-page ol > li span.aplayer-list-title {
+    max-width: 55%;
+    width: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+  #anMusic-page ol > li span.aplayer-list-author {
+    position: absolute;
+    right: 10px;
+    width: auto;
+    max-width: 35%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+  #anMusic-page ol > li.aplayer-list-light span.aplayer-list-author {
+    right: 15px;
+  }
+  /* 歌词信息 */
+  #anMusic-page .aplayer-body {
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 88px;
+    height: calc(100vh - 176px);
+  }
+  #anMusic-page .aplayer-info .aplayer-lrc {
+    margin-top: 40px;
+    height: auto;
+    max-height: 200%;
+    min-height: 100%;
+    mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #0000, #0000);
+  }
+  #anMusic-page .aplayer-info .aplayer-lrc p.aplayer-lrc-current {
+    color: #33a673;
+  }
+  /* 控制按键和进度条 */
+  #anMusic-page .aplayer-info .aplayer-controller {
+    width: 100%;
+    bottom: 64px;
+  }
+  #anMusic-page .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+    margin: 0 30px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time {
+    bottom: -40px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-time-inner {
+    position: absolute;
+    width: 100%;
+    margin-right: 0;
+    margin-top: -33px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-time-inner .aplayer-dtime {
+    position: absolute;
+    right: 30px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-time-inner .aplayer-ptime {
+    position: absolute;
+    left: 35px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-back {
+    margin: auto;
+    right: 110px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-play {
+    margin: auto;
+    right: 0;
+    left: 0;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-forward {
+    margin: auto;
+    left: 110px;
+    right: 0;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-order {
+    position: absolute;
+    left: 22px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-loop {
+    position: absolute;
+    right: 25px;
+  }
+  #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-menu {
+    display: inline;
+    position: absolute;
+    right: 25px;
+    top: -90px;
+  }
+  #anMusic-page .aplayer-volume-bar-wrap {
+    bottom: 0px;
+    right: 7px;
+  }
+  #anMusic-page .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap {
+    left: -66px;
+  }
+
+  #anMusic-page .aplayer-info .aplayer-music {
+    margin: 14px 8px;
+    white-space: normal;
+  }
+
+  #anMusic-page .aplayer-info .aplayer-music .aplayer-author,
+  #anMusic-page .aplayer-info .aplayer-music .aplayer-title {
+    display: inline;
+    font-size: clamp(1.35rem, 7vw, 2rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+}
