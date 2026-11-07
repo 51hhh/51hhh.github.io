@@ -1,0 +1,191 @@
+{
+  "跟宠": [
+    {
+      "name": "motion/嘿咻.motion3.json",
+      "file": "motion/嘿咻.motion3.json",
+      "sound": "mp3/嘿咻.MP3",
+      "sound_channel": 1
+    },
+    {
+      "name": "motion/小白.motion3.json",
+      "file": "motion/小白.motion3.json",
+      "sound": "mp3/小白.MP3",
+      "sound_channel": 1
+    },
+    {
+      "name": "motion/山新.motion3.json",
+      "file": "motion/山新.motion3.json",
+      "sound": "mp3/山新.MP3",
+      "sound_channel": 1
+    },
+    {
+      "name": "motion/无限.motion3.json",
+      "file": "motion/无限.motion3.json",
+      "sound": "mp3/无限.MP3",
+      "sound_channel": 1
+    },
+    {
+      "name": "motion/比丢.motion3.json",
+      "file": "motion/比丢.motion3.json",
+      "sound": "mp3/比丢.MP3",
+      "sound_channel": 1
+    },
+    {
+      "name": "motion/阿根.motion3.json",
+      "file": "motion/阿根.motion3.json",
+      "sound": "mp3/阿根.MP3",
+      "sound_channel": 1
+    },
+    {
+      "name": "motion/嘿咻小白.motion3.json",
+      "file": "motion/嘿咻小白.motion3.json",
+      "sound": "mp3/小白2.MP3",
+      "sound_channel": 1
+    }
+  ],
+  "桌面": [
+    {
+      "name": "motion/数位板.motion3.json",
+      "file": "motion/数位板.motion3.json",
+      "sound": "mp3/嘿嘿嘿2.MP3",
+      "priority": 3
+    },
+    {
+      "name": "motion/鼠标.motion3.json",
+      "file": "motion/鼠标.motion3.json",
+      "sound": "mp3/喵 长.MP3"
+    },
+    {
+      "name": "motion/按键1.motion3.json",
+      "file": "motion/按键1.motion3.json"
+    },
+    {
+      "name": "motion/按键2.motion3.json",
+      "file": "motion/按键2.motion3.json"
+    },
+    {
+      "name": "motion/按键3.motion3.json",
+      "file": "motion/按键3.motion3.json"
+    },
+    {
+      "name": "motion/右.motion3.json",
+      "file": "motion/右.motion3.json",
+      "priority": 2
+    },
+    {
+      "name": "motion/左.motion3.json",
+      "file": "motion/左.motion3.json",
+      "priority": 2
+    },
+    {
+      "name": "motion/回车.motion3.json",
+      "file": "motion/回车.motion3.json",
+      "sound": "mp3/嘿咻2.MP3",
+      "priority": 3
+    }
+  ],
+  "左耳": [
+    {
+      "name": "motion/左耳10.motion3.json",
+      "file": "motion/左耳10.motion3.json",
+      "sound": "mp3/你也是执行者？.MP3"
+    },
+    {
+      "file": "motion/左耳10.motion3.json",
+      "sound": "mp3/嘿嘿嘿2.MP3"
+    }
+  ],
+  "书": [
+    {
+      "name": "motion/书.motion3.json",
+      "file": "motion/书.motion3.json",
+      "sound": "mp3/哇~ [vocals].mp3"
+    },
+    {
+      "name": "motion/吸管.motion3.json",
+      "file": "motion/吸管.motion3.json"
+    },
+    {
+      "name": "motion/橡皮.motion3.json",
+      "file": "motion/橡皮.motion3.json"
+    },
+    {
+      "name": "motion/油漆桶.motion3.json",
+      "file": "motion/油漆桶.motion3.json"
+    },
+    {
+      "name": "motion/翻页.motion3.json",
+      "file": "motion/翻页.motion3.json",
+      "sound": "mp3/喵 小声.MP3"
+    },
+    {
+      "name": "motion/魔棒.motion3.json",
+      "file": "motion/魔棒.motion3.json"
+    },
+    {
+      "name": "motion/画笔.motion3.json",
+      "file": "motion/画笔.motion3.json"
+    }
+  ],
+  "背景": [
+    {
+      "name": "motion/地毯.motion3.json",
+      "file": "motion/地毯.motion3.json",
+      "sound": "mp3/嗯？.MP3",
+      "sound_volume": 0.606
+    },
+    {
+      "name": "motion/背景.motion3.json",
+      "file": "motion/背景.motion3.json",
+      "sound": "mp3/哇~ [vocals].mp3",
+      "sound_volume": 0.735
+    }
+  ],
+  "制作者": [
+    {
+      "name": "制作者",
+      "text": "祝小黑2023生日快乐！！！\r\r制作者：\r模型角色：罗小黑《罗小黑战绩》\r绘制+模型：bilibili@躺下做卷腹\r*此模型已上线live2dViewerEX的创意工坊，请勿二次上传。\r"
+    }
+  ],
+  "Shake": [
+    {
+      "file": "motion/问号.motion3.json"
+    },
+    {
+      "file": "motion/进度条.motion3.json"
+    }
+  ],
+  "生日帽": [
+    {
+      "file": "motion/生日帽.motion3.json",
+      "sound": "mp3/嘿嘿嘿.MP3",
+      "sound_volume": 0.6
+    },
+    {
+      "file": "motion/生日帽.motion3.json",
+      "sound": "mp3/我不知道自己的生日 (1).mp3"
+    },
+    {
+      "file": "motion/生日帽.motion3.json",
+      "sound": "mp3/到时候也介绍师傅给你认识.MP3"
+    }
+  ],
+  "恢复": [
+    {
+      "file": "motion/恢复.motion3.json",
+      "sound": "mp3/问号 嗯？.MP3",
+      "sound_channel": 1
+    }
+  ],
+  "右耳": [
+    {
+      "file": "motion/右耳10.motion3.json",
+      "sound": "mp3/我叫小黑.MP3"
+    },
+    {
+      "file": "motion/右耳10.motion3.json",
+      "sound": "mp3/耳朵啊啊啊啊.MP3",
+      "sound_volume": 0.574
+    }
+  ]
+}
